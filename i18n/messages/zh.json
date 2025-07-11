@@ -1,0 +1,142 @@
+{
+  "metadata": {
+    "title": "在线工具集合 - 免费实用工具 | TinyToolFlare",
+    "description": "TinyToolFlare 提供丰富的在线工具，涵盖文本处理、图片编辑、编码转换等多种实用功能，无需安装，免费使用。",
+    "keywords": "在线工具, 免费工具, 文本工具, 图片工具, 编码工具, TinyToolFlare"
+  },
+  "user": {
+    "sign_in": "登录",
+    "sign_out": "退出登录",
+    "credits": "额度",
+    "api_keys": "API 密钥",
+    "my_orders": "我的订单"
+  },
+  "sign_modal": {
+    "sign_in_title": "登录",
+    "sign_in_description": "登录您的账户",
+    "sign_up_title": "注册",
+    "sign_up_description": "创建新账户",
+    "email_title": "邮箱",
+    "email_placeholder": "请输入您的邮箱",
+    "password_title": "密码",
+    "password_placeholder": "请输入您的密码",
+    "forgot_password": "忘记密码？",
+    "or": "或",
+    "continue": "继续",
+    "no_account": "还没有账户？",
+    "email_sign_in": "使用邮箱登录",
+    "google_sign_in": "使用 Google 登录",
+    "github_sign_in": "使用 GitHub 登录",
+    "close_title": "关闭",
+    "cancel_title": "取消"
+  },
+  "my_orders": {
+    "title": "我的订单",
+    "description": "在 TinyToolFlare 上购买的订单。",
+    "no_orders": "未找到订单",
+    "tip": "",
+    "activate_order": "激活订单",
+    "actived": "已激活",
+    "join_discord": "加入 Discord",
+    "read_docs": "阅读文档",
+    "table": {
+      "order_no": "订单号",
+      "email": "邮箱",
+      "product_name": "产品名称",
+      "amount": "金额",
+      "paid_at": "支付时间",
+      "github_username": "GitHub 用户名",
+      "status": "状态"
+    }
+  },
+  "my_credits": {
+    "title": "我的积分",
+    "left_tip": "剩余积分: {left_credits}",
+    "no_credits": "没有积分记录",
+    "recharge": "充值",
+    "table": {
+      "trans_no": "交易号",
+      "trans_type": "交易类型",
+      "credits": "积分",
+      "updated_at": "更新时间",
+      "status": "状态"
+    }
+  },
+  "api_keys": {
+    "title": "API 密钥",
+    "tip": "请妥善保管您的 API 密钥，避免泄露",
+    "no_api_keys": "没有 API 密钥",
+    "create_api_key": "创建 API 密钥",
+    "table": {
+      "name": "名称",
+      "key": "密钥",
+      "created_at": "创建时间"
+    },
+    "form": {
+      "name": "名称",
+      "name_placeholder": "API 密钥名称",
+      "submit": "提交"
+    }
+  },
+  "blog": {
+    "title": "博客",
+    "description": "关于 TinyToolFlare 的新闻、资源和更新",
+    "read_more_text": "阅读更多"
+  },
+  "tools": {
+    "categories": {
+      "calculator": {
+        "name": "计算器",
+        "tools": {
+          "percentage_calculator": {
+            "title": "百分比计算器",
+            "description": "快速计算百分比、折扣、税率等。"
+          },
+          "unit_converter": {
+            "title": "单位转换器",
+            "description": "长度、重量、温度等单位转换。"
+          },
+          "age_calculator": {
+            "title": "年龄计算器",
+            "description": "计算年龄、生日倒计时等。"
+          }
+        }
+      },
+      "generator": {
+        "name": "生成器",
+        "tools": {
+          "password_generator": {
+            "title": "密码生成器",
+            "description": "生成安全、随机的密码。"
+          },
+          "uuid_generator": {
+            "title": "UUID 生成器",
+            "description": "生成唯一标识符。"
+          },
+          "qr_code_generator": {
+            "title": "二维码生成器",
+            "description": "生成自定义二维码。"
+          }
+        }
+      },
+      "formatter": {
+        "name": "格式化器",
+        "tools": {
+          "json_formatter": {
+            "title": "JSON 格式化",
+            "description": "美化和验证 JSON 数据。"
+          },
+          "xml_formatter": {
+            "title": "XML 格式化",
+            "description": "美化和验证 XML 数据。"
+          },
+          "sql_formatter": {
+            "title": "SQL 格式化",
+            "description": "美化和格式化 SQL 查询语句。"
+          }
+        }
+      }
+    },
+    "open": "打开"
+  }
+}
