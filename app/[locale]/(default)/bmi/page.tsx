@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
 import AntdScoreGauge from '@/components/blocks/AntdScoreGauge'
@@ -20,24 +19,26 @@ function calculateBMI_US(heightFt: number, heightIn: number, weightLb: number) {
 }
 
 function getBMIStatus(bmi: number, t: any) {
-  if (bmi < 18.5) return { label: t("bmi_status", { status: t("underweight", "偏瘦") }), color: "#60a5fa" };
-  if (bmi < 25) return { label: t("bmi_status", { status: t("normal", "正常") }), color: "#22c55e" };
-  if (bmi < 30) return { label: t("bmi_status", { status: t("overweight", "超重") }), color: "#facc15" };
-  return { label: t("bmi_status", { status: t("obese", "肥胖") }), color: "#ef4444" };
+  // WHO国际标准
+  if (bmi < 16.0) return { label: t("bmi_status", { status: t("severely_underweight", "重度偏瘦") }), color: "#3B82F6" };
+  if (bmi < 18.5) return { label: t("bmi_status", { status: t("underweight", "偏瘦") }), color: "#60A5FA" };
+  if (bmi < 25.0) return { label: t("bmi_status", { status: t("normal", "正常") }), color: "#22C55E" };
+  if (bmi < 30.0) return { label: t("bmi_status", { status: t("overweight", "超重") }), color: "#FACC15" };
+  if (bmi < 35.0) return { label: t("bmi_status", { status: t("obese_class_1", "肥胖I级") }), color: "#F97316" };
+  if (bmi < 40.0) return { label: t("bmi_status", { status: t("obese_class_2", "肥胖II级") }), color: "#EF4444" };
+  return { label: t("bmi_status", { status: t("obese_class_3", "肥胖III级") }), color: "#DC2626" };
 }
 
 export default function BMICalculatorPage() {
   const t = useTranslations("tools.categories.calculator.tools.bmi_calculator");
   const [tab, setTab] = useState("metric");
-  const [age, setAge] = useState(25);
-  const [gender, setGender] = useState("male");
   // Metric
   const [heightCm, setHeightCm] = useState(170);
   const [weightKg, setWeightKg] = useState(65);
   // US
   const [heightFt, setHeightFt] = useState(5);
   const [heightIn, setHeightIn] = useState(7);
-  const [weightLb, setWeightLb] = useState(160);
+  const [weightLb, setWeightLb] = useState(140);
   // 结果
   const [bmi, setBmi] = useState<number | null>(null);
 
@@ -84,20 +85,20 @@ export default function BMICalculatorPage() {
 
   const status = bmi ? getBMIStatus(bmi, t) : null;
 
-  // 健康体重区间
+  // 健康体重区间 - 使用WHO国际标准
   const minWeight = tab === "metric"
     ? (18.5 * (heightCm / 100) ** 2).toFixed(1)
     : (18.5 * ((heightFt * 12 + heightIn) ** 2) / 703).toFixed(1);
   const maxWeight = tab === "metric"
-    ? (25 * (heightCm / 100) ** 2).toFixed(1)
-    : (25 * ((heightFt * 12 + heightIn) ** 2) / 703).toFixed(1);
+    ? (24.9 * (heightCm / 100) ** 2).toFixed(1)
+    : (24.9 * ((heightFt * 12 + heightIn) ** 2) / 703).toFixed(1);
   const healthyWeightStr = tab === "metric"
     ? t("healthy_weight", { height: `${heightCm}cm`, min: minWeight + "kg", max: maxWeight + "kg" })
     : t("healthy_weight", { height: `${heightFt}ft${heightIn}in`, min: minWeight + "lb", max: maxWeight + "lb" });
 
 
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4">
+    <div className="md:max-w-7xl mx-auto py-10 px-4">
       <h1 className="text-3xl font-bold mb-6">{t("title")}</h1>
       <Card className="mb-8">
         <CardHeader>
@@ -112,23 +113,6 @@ export default function BMICalculatorPage() {
             <TabsContent value="metric">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
-                  <label className="block mb-1 font-medium">{t("age")}</label>
-                  <Input type="number" min={2} max={120} value={age} onChange={e => setAge(Number(e.target.value))} onBlur={handleBlur} />
-                </div>
-                <div>
-                  <label className="block mb-1 font-medium">{t("gender")}</label>
-                  <RadioGroup value={gender} onValueChange={setGender} className="flex gap-6 mt-2">
-                    <div className="flex items-center gap-1">
-                      <RadioGroupItem value="male" id="male" />
-                      <label htmlFor="male">{t("male")}</label>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <RadioGroupItem value="female" id="female" />
-                      <label htmlFor="female">{t("female")}</label>
-                    </div>
-                  </RadioGroup>
-                </div>
-                <div>
                   <label className="block mb-1 font-medium">{t("height_cm")}</label>
                   <Input type="number" min={50} max={250} value={heightCm} onChange={handleInputChange(setHeightCm)} onBlur={handleBlur} />
                 </div>
@@ -140,23 +124,6 @@ export default function BMICalculatorPage() {
             </TabsContent>
             <TabsContent value="us">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div>
-                  <label className="block mb-1 font-medium">{t("age")}</label>
-                  <Input type="number" min={2} max={120} value={age} onChange={e => setAge(Number(e.target.value))} onBlur={handleBlur} />
-                </div>
-                <div>
-                  <label className="block mb-1 font-medium">{t("gender")}</label>
-                  <RadioGroup value={gender} onValueChange={setGender} className="flex gap-6 mt-2">
-                    <div className="flex items-center gap-1">
-                      <RadioGroupItem value="male" id="male_us" />
-                      <label htmlFor="male_us">{t("male")}</label>
-                    </div>
-                    <div className="flex items-center gap-1">
-                      <RadioGroupItem value="female" id="female_us" />
-                      <label htmlFor="female_us">{t("female")}</label>
-                    </div>
-                  </RadioGroup>
-                </div>
                 <div className="flex gap-2 items-end">
                   <div className="flex-1">
                     <label className="block mb-1 font-medium">{t("height_ft")}</label>
@@ -194,96 +161,120 @@ export default function BMICalculatorPage() {
               <ul className="text-base space-y-1">
                 <li>{t("healthy_range")}</li>
                 <li>{healthyWeightStr}</li>
-                <li>{t("bmi_prime", { prime: (bmi / 25).toFixed(2) })}</li>
-                <li>{t("ponderal_index", {
-                  pi: tab === "metric"
-                    ? (weightKg / Math.pow(heightCm / 100, 3)).toFixed(1)
-                    : (weightLb / Math.pow((heightFt * 12 + heightIn) * 0.0254, 3)).toFixed(1)
-                })}</li>
               </ul>
             </div>
           )}
-          <div className="mt-6">
-            <Button variant="outline" className="border-primary text-primary">
-              {t("share_image")}
-            </Button>
-          </div>
         </CardContent>
       </Card>
       <section className="mt-10 space-y-8">
         <div>
           <h2 className="text-xl font-bold mb-2">{t("what_is_bmi_title")}</h2>
           <p className="text-muted-foreground leading-relaxed mb-2">
-            BMI（Body Mass Index，身体质量指数）是国际上常用的衡量人体胖瘦程度以及健康风险的重要指标。它通过体重和身高的比例来评估个体的体重状况，适用于大多数成年人。BMI 计算简便，广泛用于流行病学调查和临床评估。
+            {t("bmi_explanation")}
           </p>
           <ul className="list-disc pl-6 text-muted-foreground text-sm space-y-1">
-            <li>BMI 主要用于反映全身性脂肪含量，不能区分脂肪和肌肉。</li>
-            <li>对于运动员、孕妇、老年人等特殊人群，BMI 仅供参考。</li>
-            <li>BMI 过高或过低都可能增加慢性疾病风险，如心血管疾病、糖尿病等。</li>
+            <li>{t("bmi_limitations.0")}</li>
+            <li>{t("bmi_limitations.1")}</li>
+            <li>{t("bmi_limitations.2")}</li>
           </ul>
         </div>
         <div>
-          <h2 className="text-xl font-bold mb-2">BMI 计算公式</h2>
-          <div className="bg-muted rounded-lg p-4 mb-2">
-            <div className="mb-2 font-medium">公制单位：</div>
-            <div className="text-lg font-mono mb-2">
-              <span>BMI = </span>
-              <span className="inline-block align-middle">
-                <svg width="120" height="32" viewBox="0 0 120 32">
-                  <text x="0" y="18" fontSize="18">体重(kg)</text>
-                  <line x1="0" y1="22" x2="70" y2="22" stroke="#333" strokeWidth="2" />
-                  <text x="0" y="32" fontSize="18">身高(m)</text>
-                  <text x="60" y="32" fontSize="16">²</text>
-                </svg>
-              </span>
+          <h2 className="text-xl font-bold mb-2">{t("formula_title")}</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {/* 公制公式 */}
+            <div className="bg-muted rounded-lg p-6 flex flex-col justify-center">
+              <h3 className="font-semibold text-lg mb-6 text-center">{t("formula_metric")}</h3>
+              <div className="flex justify-center items-center mb-6 min-h-[120px]">
+                <div className="text-2xl font-mono bg-white rounded-lg p-6 shadow-sm">
+                  <div className="flex items-center justify-center space-x-2">
+                    <span className="text-blue-600 font-bold">BMI</span>
+                    <span className="mx-2">=</span>
+                    <div className="inline-flex flex-col items-center">
+                      <div className="text-center">{t("formula_weight_kg")}</div>
+                      <div className="border-t-2 border-gray-800 w-full my-1"></div>
+                      <div className="text-center">{t("formula_height_m")}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="text-sm text-muted-foreground text-center">
+                <p className="mb-2">{t("formula_example_metric")}</p>
+                <div className="bg-white rounded p-3 font-mono text-xs">
+                  {t("formula_calculation_metric")}
+                </div>
+              </div>
             </div>
-            <div className="mb-2 font-medium">美制单位：</div>
-            <div className="text-lg font-mono">
-              <span>BMI = </span>
-              <span className="inline-block align-middle">
-                <svg width="200" height="32" viewBox="0 0 200 32">
-                  <text x="0" y="18" fontSize="18">体重(lb)</text>
-                  <line x1="0" y1="22" x2="70" y2="22" stroke="#333" strokeWidth="2" />
-                  <text x="0" y="32" fontSize="18">身高(in)</text>
-                  <text x="60" y="32" fontSize="16">²</text>
-                  <text x="90" y="18" fontSize="18">× 703</text>
-                </svg>
-              </span>
+
+            {/* 英制公式 */}
+            <div className="bg-muted rounded-lg p-6 flex flex-col justify-center">
+              <h3 className="font-semibold text-lg mb-6 text-center">{t("formula_us")}</h3>
+              <div className="flex justify-center items-center mb-6 min-h-[120px]">
+                <div className="text-2xl font-mono bg-white rounded-lg p-6 shadow-sm">
+                  <div className="flex items-center justify-center space-x-2">
+                    <span className="text-blue-600 font-bold">BMI</span>
+                    <span className="mx-2">=</span>
+                    <div className="inline-flex flex-col items-center">
+                      <div className="text-center">{t("formula_weight_lb")}</div>
+                      <div className="border-t-2 border-gray-800 w-full my-1"></div>
+                      <div className="text-center">{t("formula_height_in")}</div>
+                    </div>
+                    <span className="mx-2">{t("formula_multiply")}</span>
+                    <span className="text-green-600">{t("formula_conversion_factor")}</span>
+                  </div>
+                </div>
+              </div>
+              <div className="text-sm text-muted-foreground text-center">
+                <p className="mb-2">{t("formula_example_us")}</p>
+                <div className="bg-white rounded p-3 font-mono text-xs">
+                  {t("formula_calculation_us")}
+                </div>
+              </div>
             </div>
           </div>
-          <p className="text-muted-foreground text-sm">BMI 计算结果仅供参考，具体健康状况请结合体脂率、腰围等指标综合判断。</p>
+          
+          <div className="mt-6 bg-blue-50 border border-blue-200 rounded-lg p-4">
+            <h4 className="font-semibold text-blue-800 mb-2">{t("formula_note_title")}</h4>
+            <ul className="text-sm text-blue-700 space-y-1">
+              <li>• {t("formula_note_1")}</li>
+              <li>• {t("formula_note_2")}</li>
+              <li>• {t("formula_note_3")}</li>
+            </ul>
+          </div>
         </div>
         <div>
-          <h2 className="text-xl font-bold mb-2">成年人 BMI 标准</h2>
+          <h2 className="text-xl font-bold mb-2">{t("adult_standards_title")}</h2>
           <div className="overflow-x-auto">
             <table className="min-w-[340px] w-full border text-center text-sm bg-white rounded-lg shadow">
               <thead className="bg-muted">
                 <tr>
-                  <th className="py-2 px-3 border-b">分类</th>
-                  <th className="py-2 px-3 border-b">BMI 范围 (kg/m²)</th>
+                  <th className="py-2 px-3 border-b">{t("standards_table.category")}</th>
+                  <th className="py-2 px-3 border-b">{t("standards_table.bmi_range")}</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td className="py-2 px-3">偏瘦</td><td className="py-2 px-3">&lt; 18.5</td></tr>
-                <tr><td className="py-2 px-3">正常</td><td className="py-2 px-3">18.5 - 24.9</td></tr>
-                <tr><td className="py-2 px-3">超重</td><td className="py-2 px-3">25 - 29.9</td></tr>
-                <tr><td className="py-2 px-3">肥胖</td><td className="py-2 px-3">≥ 30</td></tr>
+                <tr><td className="py-2 px-3">{t("standards_table.severely_underweight")}</td><td className="py-2 px-3">&lt; 16.0</td></tr>
+                <tr><td className="py-2 px-3">{t("standards_table.underweight")}</td><td className="py-2 px-3">16.0 - 18.4</td></tr>
+                <tr><td className="py-2 px-3">{t("standards_table.normal")}</td><td className="py-2 px-3">18.5 - 24.9</td></tr>
+                <tr><td className="py-2 px-3">{t("standards_table.overweight")}</td><td className="py-2 px-3">25.0 - 29.9</td></tr>
+                <tr><td className="py-2 px-3">{t("standards_table.obese_class_1")}</td><td className="py-2 px-3">30.0 - 34.9</td></tr>
+                <tr><td className="py-2 px-3">{t("standards_table.obese_class_2")}</td><td className="py-2 px-3">35.0 - 39.9</td></tr>
+                <tr><td className="py-2 px-3">{t("standards_table.obese_class_3")}</td><td className="py-2 px-3">≥ 40.0</td></tr>
               </tbody>
             </table>
           </div>
-          <p className="text-muted-foreground text-xs mt-2">* 参考世界卫生组织（WHO）标准。部分亚洲国家将“正常”上限设为 23.9。</p>
+          <p className="text-muted-foreground text-xs mt-2">{t("adult_standards_note")}</p>
         </div>
         <div>
-          <h2 className="text-xl font-bold mb-2">儿童青少年 BMI 标准</h2>
+          <h2 className="text-xl font-bold mb-2">{t("child_standards_title")}</h2>
           <div className="overflow-x-auto">
             <table className="min-w-[340px] w-full border text-center text-sm bg-white rounded-lg shadow">
               <thead className="bg-muted">
                 <tr>
-                  <th className="py-2 px-3 border-b">年龄</th>
-                  <th className="py-2 px-3 border-b">偏瘦</th>
-                  <th className="py-2 px-3 border-b">正常</th>
-                  <th className="py-2 px-3 border-b">超重</th>
-                  <th className="py-2 px-3 border-b">肥胖</th>
+                  <th className="py-2 px-3 border-b">{t("standards_table.age")}</th>
+                  <th className="py-2 px-3 border-b">{t("standards_table.underweight")}</th>
+                  <th className="py-2 px-3 border-b">{t("standards_table.normal")}</th>
+                  <th className="py-2 px-3 border-b">{t("standards_table.overweight")}</th>
+                  <th className="py-2 px-3 border-b">{t("standards_table.obese")}</th>
                 </tr>
               </thead>
               <tbody>
@@ -294,7 +285,7 @@ export default function BMICalculatorPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-muted-foreground text-xs mt-2">* 参考中国卫生行业标准《WS/T 586-2018》。</p>
+          <p className="text-muted-foreground text-xs mt-2">{t("child_standards_note")}</p>
         </div>
       </section>
       <div className="mt-8 text-sm text-muted-foreground leading-relaxed">
