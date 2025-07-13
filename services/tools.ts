@@ -23,35 +23,35 @@ export const toolIcons = {
 // 工具链接映射
 export const toolLinks = {
   // 计算器
-  percentage_calculator: "/tools/calculator/percentage",
-  unit_converter: "/tools/calculator/unit-converter",
-  age_calculator: "/tools/calculator/age",
-  bmi_calculator: "/tools/calculator/bmi",
+  // percentage_calculator: "/calculator/percentage",
+  // unit_converter: "/calculator/unit-converter",
+  // age_calculator: "/calculator/age",
+  bmi_calculator: "/calculator/bmi",
   
   // 生成器
-  password_generator: "/tools/generator/password",
-  uuid_generator: "/tools/generator/uuid",
-  qr_code_generator: "/tools/generator/qr-code",
+  password_generator: "/generator/password",
+  uuid_generator: "/generator/uuid",
+  // qr_code_generator: "/generator/qr-code",
   
   // 格式化器
-  json_formatter: "/tools/formatter/json",
-  xml_formatter: "/tools/formatter/xml",
-  sql_formatter: "/tools/formatter/sql",
+  json_formatter: "/formatter/json",
+  // xml_formatter: "/formatter/xml",
+  // sql_formatter: "/formatter/sql",
 };
 
 // 工具分类配置
 export const toolCategories: ToolConfig[] = [
   {
     key: "calculator",
-    tools: ["percentage_calculator", "unit_converter", "age_calculator", "bmi_calculator"],
+    tools: [ "bmi_calculator"],
   },
   {
     key: "generator", 
-    tools: ["password_generator", "uuid_generator", "qr_code_generator"],
+    tools: ["password_generator", "uuid_generator",],
   },
   {
     key: "formatter",
-    tools: ["json_formatter", "xml_formatter", "sql_formatter"],
+    tools: ["json_formatter",],
   },
 ];
 
@@ -64,6 +64,7 @@ export async function getToolCategories(locale: string): Promise<ToolCategory[]>
     
     return {
       name: t(`${categoryKey}.name`),
+      key: category.key,
       tools: category.tools.map(toolKey => ({
         icon: toolIcons[toolKey as keyof typeof toolIcons],
         title: t(`${categoryKey}.tools.${toolKey}.title`),

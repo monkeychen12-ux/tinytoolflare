@@ -15,31 +15,25 @@
       "items": [
         {
           "title": "Calculator",
-          "url": "/Generator",
+          "url": "/#calculator",
           "icon": "HiOutlineSparkles"
         },
         {
           "title": "Generator",
-          "url": "/Generator",
+          "url": "/#generator",
           "icon": "HiOutlineSparkles"
         },
         {
           "title": "Formatter",
-          "url": "/formatter",
+          "url": "/#formatter",
           "icon": "MdPayment"
-        },
-        {
-          "title": "Chrome Extension",
-          "url": "/extesnion",
-          "icon": "BiCube",
-          "children": []
         }
       ]
     },
     "buttons": [
       
     ],
-    "show_sign": true,
+    "show_sign": false,
     "show_theme": true,
     "show_locale": true
   },
@@ -97,7 +91,7 @@
     "name": "introduce",
     "title": "What is TinyToolFlare",
     "label": "Introduce",
-    "description": "TinyToolFlare is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    "description": "TinyToolFlare provides rich online tools covering text processing, image editing, code conversion and many other practical functions. No installation required, free to use.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -512,7 +506,7 @@
     "items": [
       {
         "title": "What exactly is TinyToolFlare and how does it work?",
-        "description": "TinyToolFlare is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "description": "TinyToolFlare provides rich online tools covering text processing, image editing, code conversion and many other practical functions. No installation required, free to use."
       },
       {
         "title": "Do I need advanced technical skills to use TinyToolFlare?",
@@ -559,7 +553,7 @@
     "name": "footer",
     "brand": {
       "title": "TinyToolFlare",
-      "description": "TinyToolFlare is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
+      "description": "TinyToolFlare provides rich online tools covering text processing, image editing, code conversion and many other practical functions. No installation required, free to use.",
       "logo": {
         "src": "/logo.png",
         "alt": "TinyToolFlare"

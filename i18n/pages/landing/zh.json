@@ -13,14 +13,12 @@
     },
     "nav": {
       "items": [
-        { "title": "计算器", "url": "/Generator", "icon": "HiOutlineSparkles" },
-        { "title": "生成器", "url": "/Generator", "icon": "HiOutlineSparkles" },
-        { "title": "格式化器", "url": "/formatter", "icon": "MdPayment" },
-        { "title": "Chrome 插件", "url": "/extesnion", "icon": "BiCube", "children": [] }
-      ]
+        { "title": "计算器", "url": "#calculator", "icon": "HiOutlineSparkles" },
+        { "title": "生成器", "url": "#enerator", "icon": "HiOutlineSparkles" },
+        { "title": "格式化器", "url": "#formatter", "icon": "MdPayment" }      ]
     },
     "buttons": [],
-    "show_sign": true,
+    "show_sign": false,
     "show_theme": true,
     "show_locale": true
   },

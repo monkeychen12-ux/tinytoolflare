@@ -6,6 +6,7 @@ export interface Tool {
 }
 
 export interface ToolCategory {
+  key: string;
   name: string;
   tools: Tool[];
 }

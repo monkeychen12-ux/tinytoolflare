@@ -188,11 +188,40 @@
         "tools": {
           "password_generator": {
             "title": "密码生成器",
-            "description": "生成安全、随机的密码。"
+            "description": "生成安全、随机的密码，支持自定义长度和字符类型。",
+            "input_title": "设置密码规则",
+            "input_length": "密码长度",
+            "input_uppercase": "包含大写字母",
+            "input_lowercase": "包含小写字母",
+            "input_number": "包含数字",
+            "input_symbol": "包含符号",
+            "input_count": "生成数量",
+            "generate": "生成密码",
+            "clear": "清空",
+            "copy": "复制密码",
+            "copied": "已复制到剪贴板",
+            "result_title": "生成结果",
+            "success": "生成成功",
+            "page_title": "随机密码生成器 - 在线安全密码生成 | TinyToolFlare",
+            "page_description": "免费在线密码生成器，支持自定义长度、字符类型，快速生成高强度安全密码，适合注册、登录、管理账号等场景。",
+            "page_keywords": "密码生成器, 随机密码, 安全密码, 在线密码, 密码工具, TinyToolFlare",
+            "security_title": "密码安全建议",
+            "security_desc": "1. 密码应包含大小写字母、数字和符号，长度建议12位以上。2. 不要在多个网站重复使用同一密码。3. 定期更换密码，避免使用生日、手机号等易被猜到的信息。4. 建议使用密码管理器安全保存复杂密码。5. 本工具所有密码均在本地浏览器生成，不会上传服务器，确保隐私安全。"
           },
           "uuid_generator": {
-            "title": "UUID 生成器",
-            "description": "生成唯一标识符。"
+            "title": "UUID生成器",
+            "description": "一键生成唯一标识符（UUID），适合开发、数据库、分布式系统等场景。",
+            "generate": "生成UUID",
+            "clear": "清空",
+            "copy": "复制UUID",
+            "input_count": "生成数量",
+            "about_title": "什么是UUID？",
+            "about_desc": "UUID（通用唯一标识符）是一种128位长度的数字标识符，通常以32个字符的16进制字符串表示。\n\nUUID广泛用于数据库主键、分布式系统、会话标识、唯一文件名等场景，确保全局唯一性。\n\n常见版本为UUID v4，基于随机数生成，几乎不可能重复。UUID无需中心协调即可生成，适合分布式环境。",
+            "result_title": "生成结果",
+            "success": "生成成功",
+            "page_title": "UUID生成器 - 在线唯一标识符生成 | TinyToolFlare",
+            "page_description": "免费在线UUID生成器，一键生成标准格式的唯一标识符，适合开发、数据库、分布式系统等多种应用场景。",
+            "page_keywords": "UUID生成器, 唯一标识符, 在线UUID, UUID工具, TinyToolFlare"
           },
           "qr_code_generator": {
             "title": "二维码生成器",
@@ -204,12 +233,40 @@
         "name": "格式化器",
         "tools": {
           "json_formatter": {
-            "title": "JSON 格式化",
-            "description": "美化和验证 JSON 数据。"
+            "title": "JSON 格式化工具",
+            "description": "一键美化、校验和查看 JSON 数据，支持复制粘贴，提升开发效率。",
+            "input_title": "输入 JSON 内容",
+            "input_placeholder": "请粘贴或输入原始 JSON 数据",
+            "output_title": "格式化结果",
+            "format": "格式化",
+            "clear": "清空",
+            "copy": "复制结果",
+            "copied": "已复制到剪贴板",
+            "success": "格式化成功",
+            "invalid_json": "JSON 格式无效，请检查输入内容",
+            "deep_parse": "深层解析字符串JSON",
+            "page_title": "JSON格式化工具 - 在线美化/校验/深层解析JSON | TinyToolFlare",
+            "page_description": "免费在线JSON格式化工具，支持美化、校验、复制、深层递归解析JSON字符串为对象。支持多层嵌套JSON字符串一键还原，适合开发调试和数据处理。JSON（JavaScript Object Notation）是一种轻量级的数据交换格式，广泛用于前后端通信、接口调试、配置文件等场景。",
+            "page_keywords": "JSON格式化, JSON美化, JSON校验, JSON解析, 深层JSON解析, 在线工具, JSON字符串转对象, JSON递归解析, JSON开发, JSON调试, TinyToolFlare",
+            "about_json": "JSON（JavaScript对象表示法）是一种轻量级的数据交换格式，易于人阅读和编写，也易于机器解析和生成。常用于前后端数据通信、接口调试、配置文件等场景。",
+            "about_json_title": "什么是JSON？",
+            "feature_intro": "本工具支持：1. JSON美化与高亮显示；2. 校验JSON格式合法性；3. 一键复制格式化结果；4. 深层递归解析嵌套的JSON字符串为对象，适合处理复杂数据结构。",
+            "feature_intro_title": "工具功能",
+            "deep_parse_intro": "深层格式化功能可自动递归解析所有字段中的JSON字符串，无论嵌套多少层，均可一键还原为原始对象或数组，极大提升开发与调试效率。",
+            "deep_parse_intro_title": "深层格式化说明"
           },
           "xml_formatter": {
-            "title": "XML 格式化",
-            "description": "美化和验证 XML 数据。"
+            "title": "XML 格式化工具",
+            "description": "一键美化、校验和查看 XML 数据，支持复制粘贴，适合开发与数据处理。",
+            "input_title": "输入 XML 内容",
+            "input_placeholder": "请粘贴或输入原始 XML 数据",
+            "output_title": "格式化结果",
+            "format": "格式化",
+            "clear": "清空",
+            "copy": "复制结果",
+            "copied": "已复制到剪贴板",
+            "success": "格式化成功",
+            "invalid_xml": "XML 格式无效，请检查输入内容"
           },
           "sql_formatter": {
             "title": "SQL 格式化",
