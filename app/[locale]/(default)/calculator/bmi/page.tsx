@@ -1,5 +1,7 @@
 "use client";
 
+export const runtime = 'edge';
+
 import { useState, useEffect } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";

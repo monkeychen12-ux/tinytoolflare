@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import Branding from "@/components/blocks/branding";
 import CTA from "@/components/blocks/cta";
 import FAQ from "@/components/blocks/faq";
