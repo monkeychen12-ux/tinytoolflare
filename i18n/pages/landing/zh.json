@@ -173,7 +173,7 @@
     "name": "footer",
     "brand": {
       "title": "TinyToolFlare",
-      "description": "TinyToolFlare 是一个用于构建 AI SaaS 创业项目的 NextJS 模板。通过丰富的模板和组件快速启动。",
+      "description": "TinyToolFlare 提供丰富的在线工具，涵盖文本处理、图片编辑、代码转换等多种实用功能。无需安装，免费使用。",
       "logo": { "src": "/logo.png", "alt": "TinyToolFlare" },
       "url": "/"
     },
