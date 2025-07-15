@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://TinyToolFlare.com/</loc>
-    <lastmod>2025-07-13T10:00:00+00:00</lastmod>
-  </url>
+  <url><loc>https://TinyToolFlare.com/</loc></url>
+  <url><loc>https://TinyToolFlare.com/zh</loc></url>
+  <url><loc>https://TinyToolFlare.com/en</loc></url>
+
+
+  <url><loc>https://TinyToolFlare.com/zh/generator/icon-gen</loc></url>
+  <url><loc>https://TinyToolFlare.com/generator/icon-gen</loc></url>
+  <url><loc>https://TinyToolFlare.com/zh/generator/password</loc></url>
+  <url><loc>https://TinyToolFlare.com/generator/password</loc></url>
+  <url><loc>https://TinyToolFlare.com/zh/generator/uuid</loc></url>
+  <url><loc>https://TinyToolFlare.com/generator/uuid</loc></url>
+
+
+  <url><loc>https://TinyToolFlare.com/zh/formatter/json</loc></url>
+  <url><loc>https://TinyToolFlare.com/formatter/json</loc></url>
+  <url><loc>https://TinyToolFlare.com/zh/formatter/xml</loc></url>
+  <url><loc>https://TinyToolFlare.com/formatter/xml</loc></url>
+
+
+  <url><loc>https://TinyToolFlare.com/zh/calculator/bmi</loc></url>
+  <url><loc>https://TinyToolFlare.com/calculator/bmi</loc></url>
 </urlset>
