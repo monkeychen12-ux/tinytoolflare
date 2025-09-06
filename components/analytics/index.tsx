@@ -1,3 +1,4 @@
+import GoogleAdSense from "./google-adsense";
 import GoogleAnalytics from "./google-analytics";
 import OpenPanelAnalytics from "./open-panel";
 
@@ -9,7 +10,7 @@ export default function Analytics() {
   return (
     <>
       <OpenPanelAnalytics />
-
+      <GoogleAdSense />
       <GoogleAnalytics />
     </>
   );
