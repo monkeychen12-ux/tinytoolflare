@@ -271,6 +271,44 @@
           }
         }
       },
+      "image": {
+        "name": "图片工具",
+        "tools": {
+          "image_compressor": {
+            "title": "图片压缩到指定大小",
+            "description": "将 JPG、PNG、WebP 图片压缩到 500KB 以内、1MB 或自定义大小。所有处理都在本地浏览器完成。",
+            "settings_title": "压缩设置",
+            "upload_label": "图片",
+            "upload_placeholder": "点击上传图片",
+            "upload_hint": "支持 JPG、PNG 和 WebP",
+            "target_size": "目标大小",
+            "format": "输出格式",
+            "compress": "压缩图片",
+            "compressing": "压缩中...",
+            "clear": "清空",
+            "result_title": "压缩结果",
+            "original_size": "原始大小",
+            "compressed_size": "压缩后大小",
+            "saved": "节省",
+            "download": "下载",
+            "original_preview": "原图预览",
+            "compressed_preview": "压缩后预览",
+            "no_image": "上传图片后可预览",
+            "no_result": "压缩后的图片会显示在这里",
+            "upload_required": "请先上传图片",
+            "invalid_file": "请上传有效的图片文件",
+            "success": "图片压缩成功",
+            "target_warning": "最接近的结果仍然超过目标大小。可以尝试更小目标或 JPG/WebP 输出。",
+            "error": "压缩失败，请尝试其他图片或输出格式。",
+            "output_detail": "{width}×{height}，质量 {quality}%",
+            "about_title": "本地浏览器压缩，保护隐私",
+            "about_desc": "这个工具适合上传限制、报名表、证件照或资料提交场景。可以将图片压缩到 500KB 以内、压缩到 1MB，或按自定义 KB 大小减少照片体积，文件不会上传到服务器。",
+            "page_title": "图片压缩到指定大小 - 压缩图片到500KB以内或1MB | TinyToolFlare",
+            "page_description": "免费在线图片压缩到指定大小工具，支持 JPG、PNG、WebP，可压缩图片到500KB以内、1MB或自定义KB大小，适合上传资料和表单提交，文件在本地浏览器处理。",
+            "page_keywords": "图片压缩到指定大小, 图片压缩到500KB以内, 图片压缩到1MB, 减小照片大小, 在线图片压缩, TinyToolFlare"
+          }
+        }
+      },
       "formatter": {
         "name": "格式化器",
         "tools": {

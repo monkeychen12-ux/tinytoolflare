@@ -272,6 +272,44 @@
           }
         }
       },
+      "image": {
+        "name": "Image",
+        "tools": {
+          "image_compressor": {
+            "title": "Image Compressor to Target Size",
+            "description": "Compress JPG, PNG, and WebP images to a target size such as under 500KB or 1MB. All processing happens locally in your browser.",
+            "settings_title": "Compression Settings",
+            "upload_label": "Image",
+            "upload_placeholder": "Click to upload an image",
+            "upload_hint": "Supports JPG, PNG, and WebP",
+            "target_size": "Target Size",
+            "format": "Output Format",
+            "compress": "Compress Image",
+            "compressing": "Compressing...",
+            "clear": "Clear",
+            "result_title": "Compression Result",
+            "original_size": "Original Size",
+            "compressed_size": "Compressed Size",
+            "saved": "Saved",
+            "download": "Download",
+            "original_preview": "Original Preview",
+            "compressed_preview": "Compressed Preview",
+            "no_image": "Upload an image to preview it",
+            "no_result": "Compressed image will appear here",
+            "upload_required": "Please upload an image first",
+            "invalid_file": "Please upload a valid image file",
+            "success": "Image compressed successfully",
+            "target_warning": "The closest result is still above the target size. Try a smaller target or JPG/WebP output.",
+            "error": "Compression failed. Please try another image or output format.",
+            "output_detail": "{width}×{height}, quality {quality}%",
+            "about_title": "Private browser-based compression",
+            "about_desc": "This tool is designed for upload limits and application forms. It can reduce photo size for upload, compress image under 500KB, or compress image to 1MB without sending your file to a server.",
+            "page_title": "Image Compressor to Target Size - Compress Image Under 500KB or 1MB | TinyToolFlare",
+            "page_description": "Free online image compressor to target size. Compress JPG, PNG, and WebP images under 500KB, to 1MB, or a custom KB size for uploads. Files are processed locally in your browser.",
+            "page_keywords": "image compressor to target size, compress image under 500kb, compress image to 1mb, reduce photo size for upload, online image compressor, TinyToolFlare"
+          }
+        }
+      },
       "formatter": {
         "name": "Formatter",
         "tools": {

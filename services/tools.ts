@@ -20,6 +20,9 @@ export const toolIcons = {
   xml_formatter: "RiCodeSSlashLine",
   sql_formatter: "RiDatabase2Line",
   icon_generator: "RiImage2Line",
+
+  // 图片
+  image_compressor: "RiImageEditLine",
 };
 
 // 工具链接映射
@@ -35,6 +38,9 @@ export const toolLinks = {
   uuid_generator: "/generator/uuid",
   icon_generator: "/generator/icon-gen",
   // qr_code_generator: "/generator/qr-code",
+
+  // 图片
+  image_compressor: "/image/compressor",
   
   // 格式化器
   json_formatter: "/formatter/json",
@@ -51,6 +57,10 @@ export const toolCategories: ToolConfig[] = [
   {
     key: "generator", 
     tools: ["password_generator", "uuid_generator", "icon_generator"],
+  },
+  {
+    key: "image",
+    tools: ["image_compressor"],
   },
   {
     key: "formatter",

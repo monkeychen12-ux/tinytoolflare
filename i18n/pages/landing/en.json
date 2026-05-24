@@ -24,6 +24,11 @@
           "icon": "HiOutlineSparkles"
         },
         {
+          "title": "Image",
+          "url": "/image",
+          "icon": "HiOutlineSparkles"
+        },
+        {
           "title": "Formatter",
           "url": "/formatter",
           "icon": "MdPayment"

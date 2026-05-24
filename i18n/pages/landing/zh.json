@@ -15,6 +15,7 @@
       "items": [
         { "title": "计算器", "url": "/zh/calculator", "icon": "HiOutlineSparkles" },
         { "title": "生成器", "url": "/zh/generator", "icon": "HiOutlineSparkles" },
+        { "title": "图片工具", "url": "/zh/image", "icon": "HiOutlineSparkles" },
         { "title": "格式化器", "url": "/zh/formatter", "icon": "MdPayment" }      ]
     },
     "buttons": [],
