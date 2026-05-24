@@ -29,7 +29,19 @@ const nextConfig = {
     ],
   },
   async redirects() {
-    return [];
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "tinytoolflare.com",
+          },
+        ],
+        destination: "https://www.tinytoolflare.com/:path*",
+        permanent: true,
+      },
+    ];
   },
 };
 
