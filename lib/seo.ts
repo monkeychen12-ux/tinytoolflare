@@ -32,6 +32,56 @@ export function getOpenGraphLocale(locale: string) {
   return locale === "zh" ? "zh_CN" : "en_US";
 }
 
+export function createPageMetadata({
+  locale,
+  path,
+  title,
+  description,
+  keywords,
+}: {
+  locale: string;
+  path: string;
+  title: string;
+  description: string;
+  keywords?: string;
+}): Metadata {
+  const canonical = getCanonicalUrl(locale, path);
+
+  return {
+    metadataBase: new URL(siteUrl),
+    title,
+    description,
+    keywords,
+    alternates: {
+      canonical,
+      languages: getLanguageAlternates(path),
+    },
+    robots: indexRobots,
+    openGraph: {
+      type: "website",
+      title,
+      description,
+      url: canonical,
+      siteName,
+      locale: getOpenGraphLocale(locale),
+      images: [
+        {
+          url: "/logo.png",
+          width: 512,
+          height: 512,
+          alt: siteName,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary",
+      title,
+      description,
+      images: ["/logo.png"],
+    },
+  };
+}
+
 export const indexRobots: Metadata["robots"] = {
   index: true,
   follow: true,

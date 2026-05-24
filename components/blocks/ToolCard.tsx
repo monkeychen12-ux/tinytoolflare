@@ -1,5 +1,6 @@
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import Icon from "@/components/icon";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 
 interface ToolCardProps {
@@ -26,10 +27,8 @@ export default function ToolCard({ icon, title, description, link }: ToolCardPro
       </CardContent>
       <CardFooter className="flex items-center pt-4">
         {link && (
-          <a
+          <Link
             href={link}
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-primary font-medium flex items-center gap-1 transition-colors cursor-pointer group/open hover:text-primary hover:font-semibold"
           >
             {openText}
@@ -38,7 +37,7 @@ export default function ToolCard({ icon, title, description, link }: ToolCardPro
                 <path d="M7 4L12 9L7 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </span>
-          </a>
+          </Link>
         )}
       </CardFooter>
     </Card>

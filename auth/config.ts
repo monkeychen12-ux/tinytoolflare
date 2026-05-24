@@ -115,6 +115,10 @@ export const providerMap = providers
   .filter((provider) => provider.id !== "google-one-tap");
 
 export const authOptions: NextAuthConfig = {
+  secret:
+    process.env.AUTH_SECRET ||
+    process.env.NEXTAUTH_SECRET ||
+    "tinytoolflare-local-development-secret",
   providers,
   pages: {
     signIn: "/auth/signin",

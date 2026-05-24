@@ -219,7 +219,10 @@
             "success": "Generated successfully",
             "copied": "Copied to clipboard",
             "about_title": "What is UUID?",
-            "about_desc": "A UUID (Universally Unique Identifier) is a 128-bit number used to uniquely identify information. It is usually represented as a 32-character hexadecimal string.\n\nUUIDs are widely used for database primary keys, distributed systems, session identifiers, unique filenames, and more, ensuring global uniqueness.\n\nThe most common version is UUID v4, which is randomly generated and virtually impossible to duplicate. UUIDs can be generated without central coordination, making them ideal for distributed environments."
+            "about_desc": "A UUID (Universally Unique Identifier) is a 128-bit number used to uniquely identify information. It is usually represented as a 32-character hexadecimal string.\n\nUUIDs are widely used for database primary keys, distributed systems, session identifiers, unique filenames, and more, ensuring global uniqueness.\n\nThe most common version is UUID v4, which is randomly generated and virtually impossible to duplicate. UUIDs can be generated without central coordination, making them ideal for distributed environments.",
+            "page_title": "UUID Generator - Free Online Unique Identifier Tool | TinyToolFlare",
+            "page_description": "Free online UUID generator for creating standard unique identifiers for development, databases, distributed systems, sessions, and filenames.",
+            "page_keywords": "UUID generator, online UUID, unique identifier, UUID v4, developer tool, TinyToolFlare"
           },
           "qr_code_generator": {
             "title": "QR Code Generator",
@@ -306,7 +309,10 @@
             "copy": "Copy Result",
             "copied": "Copied to clipboard",
             "success": "Format successful",
-            "invalid_xml": "Invalid XML format. Please check your input."
+            "invalid_xml": "Invalid XML format. Please check your input.",
+            "page_title": "XML Formatter Tool - Online Beautify and Validate XML | TinyToolFlare",
+            "page_description": "Free online XML formatter for beautifying, validating, and copying XML data instantly. Useful for API debugging, configuration files, and data processing.",
+            "page_keywords": "XML formatter, XML beautify, XML validate, online XML tool, XML parser, developer tool, TinyToolFlare"
           },
           "sql_formatter": {
             "title": "SQL Formatter",

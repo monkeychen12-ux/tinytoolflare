@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import { notFound } from "next/navigation";
 
 const content = {
@@ -23,9 +22,7 @@ const content = {
       </ul>
       <h3>5. 知识产权</h3>
       <p>平台内容归 TinyToolFlare 或权利人所有，未经授权不得使用。</p>
-      <h3>6. 法律适用</h3>
-      <p>本条款适用中华人民共和国法律，争议提交平台所在地法院。</p>
-      <h3>7. 条款变更</h3>
+      <h3>6. 条款变更</h3>
       <p>平台有权随时更新条款，更新后在网站公示。</p>
     </div>
   ),
@@ -50,9 +47,7 @@ const content = {
       </ul>
       <h3>5. Intellectual Property</h3>
       <p>All content belongs to TinyToolFlare or rights holders. Unauthorized use is prohibited.</p>
-      <h3>6. Governing Law</h3>
-      <p>These terms are governed by the laws of China. Disputes are submitted to the court where the platform is located.</p>
-      <h3>7. Terms Update</h3>
+      <h3>6. Terms Update</h3>
       <p>We may update these terms at any time. Updates will be posted on the website.</p>
     </div>
   ),

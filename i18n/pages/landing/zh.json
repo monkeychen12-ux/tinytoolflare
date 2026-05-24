@@ -13,9 +13,9 @@
     },
     "nav": {
       "items": [
-        { "title": "计算器", "url": "#calculator", "icon": "HiOutlineSparkles" },
-        { "title": "生成器", "url": "#enerator", "icon": "HiOutlineSparkles" },
-        { "title": "格式化器", "url": "#formatter", "icon": "MdPayment" }      ]
+        { "title": "计算器", "url": "/zh/calculator", "icon": "HiOutlineSparkles" },
+        { "title": "生成器", "url": "/zh/generator", "icon": "HiOutlineSparkles" },
+        { "title": "格式化器", "url": "/zh/formatter", "icon": "MdPayment" }      ]
     },
     "buttons": [],
     "show_sign": false,

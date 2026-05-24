@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { ToolCategory, ToolConfig } from "@/types/tools";
+import { getLocalizedPath } from "@/lib/seo";
 
 // 工具图标映射（Remix Icon 名称）
 export const toolIcons = {
@@ -37,7 +38,7 @@ export const toolLinks = {
   
   // 格式化器
   json_formatter: "/formatter/json",
-  // xml_formatter: "/formatter/xml",
+  xml_formatter: "/formatter/xml",
   // sql_formatter: "/formatter/sql",
 };
 
@@ -53,7 +54,7 @@ export const toolCategories: ToolConfig[] = [
   },
   {
     key: "formatter",
-    tools: ["json_formatter",],
+    tools: ["json_formatter", "xml_formatter"],
   },
 ];
 
@@ -71,7 +72,7 @@ export async function getToolCategories(locale: string): Promise<ToolCategory[]>
         icon: toolIcons[toolKey as keyof typeof toolIcons],
         title: t(`${categoryKey}.tools.${toolKey}.title`),
         description: t(`${categoryKey}.tools.${toolKey}.description`),
-        link: toolLinks[toolKey as keyof typeof toolLinks],
+        link: getLocalizedPath(locale, toolLinks[toolKey as keyof typeof toolLinks]),
       })),
     };
   });

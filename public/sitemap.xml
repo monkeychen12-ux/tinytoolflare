@@ -19,6 +19,12 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url><loc>https://www.tinytoolflare.com/calculator</loc><lastmod>2026-05-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tinytoolflare.com/zh/calculator</loc><lastmod>2026-05-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tinytoolflare.com/generator</loc><lastmod>2026-05-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tinytoolflare.com/zh/generator</loc><lastmod>2026-05-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tinytoolflare.com/formatter</loc><lastmod>2026-05-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.tinytoolflare.com/zh/formatter</loc><lastmod>2026-05-24</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.tinytoolflare.com/generator/icon-gen</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.tinytoolflare.com/zh/generator/icon-gen</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.tinytoolflare.com/generator/password</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -27,6 +33,8 @@
   <url><loc>https://www.tinytoolflare.com/zh/generator/uuid</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.tinytoolflare.com/formatter/json</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.tinytoolflare.com/zh/formatter/json</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tinytoolflare.com/formatter/xml</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.tinytoolflare.com/zh/formatter/xml</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.tinytoolflare.com/calculator/bmi</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.tinytoolflare.com/zh/calculator/bmi</loc><lastmod>2026-05-24</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

@@ -308,7 +308,10 @@
             "copy": "复制结果",
             "copied": "已复制到剪贴板",
             "success": "格式化成功",
-            "invalid_xml": "XML 格式无效，请检查输入内容"
+            "invalid_xml": "XML 格式无效，请检查输入内容",
+            "page_title": "XML格式化工具 - 在线美化和校验XML | TinyToolFlare",
+            "page_description": "免费在线XML格式化工具，支持一键美化、校验、复制XML数据，适合接口调试、配置文件和数据处理场景。",
+            "page_keywords": "XML格式化, XML美化, XML校验, 在线XML工具, XML解析, 开发工具, TinyToolFlare"
           },
           "sql_formatter": {
             "title": "SQL 格式化",

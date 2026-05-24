@@ -7,16 +7,17 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  const t = await getTranslations("tools.categories.generator.tools.uuid_generator");
+  const t = await getTranslations("tools.categories.formatter.tools.xml_formatter");
+
   return createPageMetadata({
     locale,
-    path: "/generator/uuid",
+    path: "/formatter/xml",
     title: t("page_title"),
     description: t("page_description"),
     keywords: t("page_keywords"),
   });
 }
 
-export default function UUIDLayout({ children }: { children: React.ReactNode }) {
+export default function XmlLayout({ children }: { children: React.ReactNode }) {
   return children;
-} 
+}

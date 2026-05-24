@@ -15,17 +15,17 @@
       "items": [
         {
           "title": "Calculator",
-          "url": "/#calculator",
+          "url": "/calculator",
           "icon": "HiOutlineSparkles"
         },
         {
           "title": "Generator",
-          "url": "/#generator",
+          "url": "/generator",
           "icon": "HiOutlineSparkles"
         },
         {
           "title": "Formatter",
-          "url": "/#formatter",
+          "url": "/formatter",
           "icon": "MdPayment"
         }
       ]
