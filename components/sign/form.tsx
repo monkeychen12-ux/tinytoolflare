@@ -13,7 +13,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
+import { getLocalizedPath } from "@/lib/seo";
 import { signIn } from "next-auth/react";
+import { useParams } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 export default function SignForm({
@@ -21,6 +23,8 @@ export default function SignForm({
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
   const t = useTranslations();
+  const params = useParams();
+  const locale = typeof params.locale === "string" ? params.locale : "en";
 
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
@@ -100,11 +104,11 @@ export default function SignForm({
       </Card>
       <div className="text-balance text-center text-xs text-muted-foreground [&_a]:underline [&_a]:underline-offset-4 [&_a]:hover:text-primary  ">
         By clicking continue, you agree to our{" "}
-        <a href="/terms-of-service" target="_blank">
+        <a href={getLocalizedPath(locale, "/terms-of-service")} target="_blank">
           Terms of Service
         </a>{" "}
         and{" "}
-        <a href="/privacy-policy" target="_blank">
+        <a href={getLocalizedPath(locale, "/privacy-policy")} target="_blank">
           Privacy Policy
         </a>
         .

@@ -16,7 +16,7 @@ export default async function DefaultLayout({
     <>
       {page.header && <Header header={page.header} />}
       <main className="overflow-x-hidden">{children}</main>
-      {page.footer && <Footer footer={page.footer} />}
+      {page.footer && <Footer footer={page.footer} locale={locale} />}
     </>
   );
 }

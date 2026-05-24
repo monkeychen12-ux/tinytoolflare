@@ -1,7 +1,22 @@
 import { Footer as FooterType } from "@/types/blocks/footer";
 import Icon from "@/components/icon";
+import { getLocalizedPath } from "@/lib/seo";
 
-export default function Footer({ footer }: { footer: FooterType }) {
+function getFooterUrl(url: string | undefined, locale: string | undefined) {
+  if (!url || !locale || !url.startsWith("/")) {
+    return url;
+  }
+
+  return getLocalizedPath(locale, url);
+}
+
+export default function Footer({
+  footer,
+  locale,
+}: {
+  footer: FooterType;
+  locale?: string;
+}) {
   if (footer.disabled) {
     return null;
   }
@@ -77,7 +92,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
               <ul className="flex justify-center gap-4 lg:justify-start">
                 {footer.agreement.items?.map((item, i) => (
                   <li key={i} className="hover:text-primary">
-                    <a href={item.url} target={item.target}>
+                    <a href={getFooterUrl(item.url, locale)} target={item.target}>
                       {item.title}
                     </a>
                   </li>
