@@ -321,6 +321,9 @@
         }
       }
     },
-    "open": "Open"
+    "open": "Open",
+    "search_placeholder": "Search tools",
+    "clear_search": "Clear search",
+    "no_search_results": "No tools found"
   }
 }

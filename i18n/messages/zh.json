@@ -320,6 +320,9 @@
         }
       }
     },
-    "open": "打开"
+    "open": "打开",
+    "search_placeholder": "搜索工具",
+    "clear_search": "清空搜索",
+    "no_search_results": "未找到相关工具"
   }
 }
