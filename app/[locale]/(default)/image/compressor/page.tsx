@@ -4,6 +4,12 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import {
   Select,
   SelectContent,
   SelectItem,
@@ -26,8 +32,36 @@ interface CompressionResult {
   format: OutputFormat;
 }
 
+interface TextBlock {
+  title: string;
+  description: string;
+}
+
+interface PlatformLimit {
+  platform: string;
+  limit: string;
+  note: string;
+}
+
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 const TARGET_PRESETS = [100, 200, 500, 1024];
 const MAX_DIMENSION = 6000;
+
+function asList<T>(value: unknown): T[] {
+  if (Array.isArray(value)) {
+    return value as T[];
+  }
+
+  if (value && typeof value === "object") {
+    return Object.values(value) as T[];
+  }
+
+  return [];
+}
 
 function formatBytes(bytes: number) {
   if (bytes < 1024 * 1024) {
@@ -197,6 +231,9 @@ async function compressToTargetSize({
 
 export default function ImageCompressorPage() {
   const t = useTranslations("tools.categories.image.tools.image_compressor");
+  const useCases = asList<TextBlock>(t.raw("use_cases.items"));
+  const platformLimits = asList<PlatformLimit>(t.raw("platform_limits.items"));
+  const faqs = asList<FaqItem>(t.raw("faq.items"));
   const [file, setFile] = useState<File | null>(null);
   const [targetKb, setTargetKb] = useState(500);
   const [format, setFormat] = useState<OutputFormat>("image/jpeg");
@@ -303,7 +340,7 @@ export default function ImageCompressorPage() {
 
   return (
     <div className="md:max-w-7xl mx-auto py-8 px-4">
-      <div className="mb-6">
+      <div className="mb-6 max-w-3xl">
         <h1 className="text-2xl font-bold">{t("title")}</h1>
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted-foreground">
           {t("description")}
@@ -502,14 +539,76 @@ export default function ImageCompressorPage() {
             </Card>
           </div>
 
-          <div className="text-sm leading-relaxed text-muted-foreground">
-            <div className="font-semibold text-foreground">
-              {t("about_title")}
-            </div>
-            <p className="mt-2">{t("about_desc")}</p>
-          </div>
         </div>
       </div>
+
+      <section className="mt-14">
+        <div className="max-w-3xl">
+          <h2 className="text-2xl font-bold">{t("use_cases.title")}</h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {t("use_cases.description")}
+          </p>
+        </div>
+        <div className="mt-6 grid gap-4 md:grid-cols-3">
+          {useCases.map((item) => (
+            <Card key={item.title}>
+              <CardHeader>
+                <CardTitle className="text-base">{item.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="text-sm leading-relaxed text-muted-foreground">
+                {item.description}
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-14">
+        <div className="max-w-3xl">
+          <h2 className="text-2xl font-bold">{t("platform_limits.title")}</h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {t("platform_limits.description")}
+          </p>
+        </div>
+        <div className="mt-6 overflow-hidden rounded-lg border">
+          <div className="grid grid-cols-[1fr_1fr_1.4fr] bg-muted px-4 py-3 text-sm font-medium">
+            <div>{t("platform_limits.platform")}</div>
+            <div>{t("platform_limits.limit")}</div>
+            <div>{t("platform_limits.note")}</div>
+          </div>
+          {platformLimits.map((item) => (
+            <div
+              key={item.platform}
+              className="grid grid-cols-[1fr_1fr_1.4fr] border-t px-4 py-3 text-sm"
+            >
+              <div className="font-medium">{item.platform}</div>
+              <div className="text-muted-foreground">{item.limit}</div>
+              <div className="text-muted-foreground">{item.note}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mt-14">
+        <div className="max-w-3xl">
+          <h2 className="text-2xl font-bold">{t("faq.title")}</h2>
+          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+            {t("faq.description")}
+          </p>
+        </div>
+        <Accordion type="single" collapsible className="mt-4">
+          {faqs.map((item, index) => (
+            <AccordionItem key={item.question} value={`faq-${index}`}>
+              <AccordionTrigger className="text-left">
+                {item.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                {item.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </section>
     </div>
   );
 }

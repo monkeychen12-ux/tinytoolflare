@@ -304,6 +304,79 @@
             "output_detail": "{width}×{height}, quality {quality}%",
             "about_title": "Private browser-based compression",
             "about_desc": "This tool is designed for upload limits and application forms. It can reduce photo size for upload, compress image under 500KB, or compress image to 1MB without sending your file to a server.",
+            "use_cases": {
+              "title": "Best Use Cases",
+              "description": "Use the compressor first, then use these guidelines when a site asks for a strict upload size.",
+              "items": [
+                {
+                  "title": "Compress image under 500KB",
+                  "description": "Set the target to 500 KB for forms, profile photos, application portals, and document upload pages with strict limits."
+                },
+                {
+                  "title": "Compress image to 1MB",
+                  "description": "Use the 1 MB preset when you need a cleaner image for websites, email attachments, CMS uploads, or product photos."
+                },
+                {
+                  "title": "Reduce photo size for upload",
+                  "description": "Choose JPG or WebP to shrink camera photos while keeping enough visual quality for identity, school, job, and support uploads."
+                }
+              ]
+            },
+            "platform_limits": {
+              "title": "Common Platform Size Limits",
+              "description": "Limits vary by country, service, and upload form. These common targets help you choose a practical compressed size.",
+              "platform": "Platform or use case",
+              "limit": "Common target",
+              "note": "Recommendation",
+              "items": [
+                {
+                  "platform": "Application forms",
+                  "limit": "100 KB - 500 KB",
+                  "note": "Start with 500 KB, then lower the target if the form still rejects the file."
+                },
+                {
+                  "platform": "Profile photos",
+                  "limit": "200 KB - 1 MB",
+                  "note": "Use JPG for photos and keep enough resolution for face details."
+                },
+                {
+                  "platform": "Email attachments",
+                  "limit": "Under 1 MB",
+                  "note": "Use WebP or JPG to reduce large phone photos before sending."
+                },
+                {
+                  "platform": "Website and CMS uploads",
+                  "limit": "500 KB - 1 MB",
+                  "note": "Use WebP when supported for smaller files and faster loading."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Image Compression FAQ",
+              "description": "Answers for common target-size compression questions.",
+              "items": [
+                {
+                  "question": "How do I compress an image under 500KB?",
+                  "answer": "Upload your image, set the target size to 500 KB, choose JPG or WebP, then click Compress Image. If the result is still above 500 KB, the tool will reduce dimensions and quality to get closer to the target."
+                },
+                {
+                  "question": "How do I compress an image to 1MB?",
+                  "answer": "Use the 1 MB preset or enter 1024 KB manually. This is a good target for uploads that need better detail than a 500 KB file."
+                },
+                {
+                  "question": "Are my images uploaded to a server?",
+                  "answer": "No. Compression runs locally in your browser with canvas, so the selected file does not leave your device."
+                },
+                {
+                  "question": "Which format should I choose?",
+                  "answer": "Choose JPG for ordinary photos, WebP for the smallest modern output, and PNG only when you need transparency or crisp graphics."
+                },
+                {
+                  "question": "Why can an image still be larger than the target size?",
+                  "answer": "Some images have complex detail or require PNG transparency. Try JPG or WebP, lower the target size, or accept a smaller final resolution."
+                }
+              ]
+            },
             "page_title": "Image Compressor to Target Size - Compress Image Under 500KB or 1MB | TinyToolFlare",
             "page_description": "Free online image compressor to target size. Compress JPG, PNG, and WebP images under 500KB, to 1MB, or a custom KB size for uploads. Files are processed locally in your browser.",
             "page_keywords": "image compressor to target size, compress image under 500kb, compress image to 1mb, reduce photo size for upload, online image compressor, TinyToolFlare"
