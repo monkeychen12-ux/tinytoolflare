@@ -23,6 +23,7 @@ export const toolIcons = {
 
   // 图片
   image_compressor: "RiImageEditLine",
+  photo_location_remover: "RiMapPinLine",
 };
 
 // 工具链接映射
@@ -41,6 +42,7 @@ export const toolLinks = {
 
   // 图片
   image_compressor: "/image/compressor",
+  photo_location_remover: "/image/remove-location",
   
   // 格式化器
   json_formatter: "/formatter/json",
@@ -60,7 +62,7 @@ export const toolCategories: ToolConfig[] = [
   },
   {
     key: "image",
-    tools: ["image_compressor"],
+    tools: ["image_compressor", "photo_location_remover"],
   },
   {
     key: "formatter",

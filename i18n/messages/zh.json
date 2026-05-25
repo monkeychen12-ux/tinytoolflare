@@ -306,6 +306,108 @@
             "page_title": "图片压缩到指定大小 - 压缩图片到500KB以内或1MB | TinyToolFlare",
             "page_description": "免费在线图片压缩到指定大小工具，支持 JPG、PNG、WebP，可压缩图片到500KB以内、1MB或自定义KB大小，适合上传资料和表单提交，文件在本地浏览器处理。",
             "page_keywords": "图片压缩到指定大小, 图片压缩到500KB以内, 图片压缩到1MB, 减小照片大小, 在线图片压缩, TinyToolFlare"
+          },
+          "photo_location_remover": {
+            "title": "移除照片位置数据",
+            "description": "分享前移除照片中的 GPS 位置信息。上传 JPG、PNG 或 WebP 图片，下载不携带原始 EXIF 元数据的干净副本。",
+            "tool_title": "移除 GPS 位置",
+            "upload_label": "照片",
+            "upload_placeholder": "点击上传照片",
+            "upload_hint": "支持 JPG、PNG 和 WebP，处理过程在本地浏览器完成。",
+            "original_size": "原始大小",
+            "clean_size": "清理后大小",
+            "remove": "移除位置数据",
+            "processing": "移除中...",
+            "clear": "清空",
+            "result_title": "干净照片",
+            "result_success": "位置元数据已移除",
+            "result_detail": "{width}×{height}，{format} 输出",
+            "download": "下载干净照片",
+            "empty_result": "上传照片并移除位置数据后，可下载干净副本。",
+            "original_preview": "原图预览",
+            "clean_preview": "清理后预览",
+            "no_image": "上传照片后可预览",
+            "no_clean_image": "清理后的照片会显示在这里",
+            "upload_required": "请先上传照片",
+            "invalid_file": "请上传有效的图片文件",
+            "success": "位置数据移除成功",
+            "error": "无法移除元数据，请尝试其他图片。",
+            "use_cases": {
+              "title": "什么时候需要移除照片位置数据",
+              "description": "先用工具生成干净副本，再分享到不希望暴露隐藏 GPS 数据的地方。",
+              "items": [
+                {
+                  "title": "发布社交媒体前",
+                  "description": "在发布旅行、家庭、学校或亲友照片前，先移除照片中的 GPS 位置信息。"
+                },
+                {
+                  "title": "二手平台或商品列表前",
+                  "description": "清理商品照片，避免 EXIF GPS 意外暴露住址或取货位置。"
+                },
+                {
+                  "title": "发送资料或证明前",
+                  "description": "把图片发送给客服、表单、论坛或公开社区前，先去除照片位置元数据。"
+                }
+              ]
+            },
+            "share_risks": {
+              "title": "照片元数据常见风险场景",
+              "description": "部分平台会移除元数据，但不同上传方式、文件类型和下载方式可能不同。自己先清理一遍更稳妥。",
+              "place": "分享位置",
+              "risk": "可能隐藏的数据",
+              "advice": "隐私处理建议",
+              "items": [
+                {
+                  "place": "社交动态",
+                  "risk": "GPS 坐标、相机型号、拍摄时间",
+                  "advice": "发布个人照片前使用干净副本。"
+                },
+                {
+                  "place": "二手平台",
+                  "risk": "EXIF GPS 可能包含住址或取货地点",
+                  "advice": "上传商品照片前先移除位置数据。"
+                },
+                {
+                  "place": "邮件和聊天附件",
+                  "risk": "原始文件可能保留元数据",
+                  "advice": "直接发送文件前先清理照片。"
+                },
+                {
+                  "place": "公开论坛",
+                  "risk": "他人下载图片后可能看到元数据",
+                  "advice": "公开发帖时使用不含位置的版本。"
+                }
+              ]
+            },
+            "faq": {
+              "title": "照片位置元数据常见问题",
+              "description": "关于 GPS、EXIF 和照片分享隐私的常见问题。",
+              "items": [
+                {
+                  "question": "如何在分享前移除照片 GPS 位置？",
+                  "answer": "上传照片，点击“移除位置数据”，然后下载干净副本。本工具会在浏览器里重新生成图片，原始 EXIF 元数据，包括 GPS 位置信息，不会被复制到新文件中。"
+                },
+                {
+                  "question": "这个工具会移除 EXIF 元数据吗？",
+                  "answer": "会。干净副本由图片像素重新生成，而不是复制原始文件元数据。常见 EXIF 字段，例如 GPS 坐标、相机型号和拍摄信息都会被移除。"
+                },
+                {
+                  "question": "我的照片会上传到服务器吗？",
+                  "answer": "不会。照片在你的浏览器本地处理，不会上传到 TinyToolFlare 服务器。"
+                },
+                {
+                  "question": "图片质量会变化吗？",
+                  "answer": "为了生成不含元数据的副本，图片会被重新编码。JPG 和 WebP 的文件大小可能略有变化，PNG 会保持无损像素输出。"
+                },
+                {
+                  "question": "可以移除 iPhone 或 Android 照片的位置吗？",
+                  "answer": "可以。把设备中的照片导出或上传到工具里，即可生成适合分享的干净副本。"
+                }
+              ]
+            },
+            "page_title": "移除照片位置数据 - 分享前删除GPS和EXIF信息 | TinyToolFlare",
+            "page_description": "免费在线移除照片位置数据工具，分享前删除 JPG、PNG、WebP 图片中的 GPS 和 EXIF 元数据，文件在本地浏览器处理，保护隐私。",
+            "page_keywords": "移除照片位置数据, 删除照片GPS, 移除EXIF元数据, 图片隐私工具, 分享前删除位置信息, TinyToolFlare"
           }
         }
       },

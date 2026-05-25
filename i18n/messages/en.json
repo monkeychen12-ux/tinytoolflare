@@ -380,6 +380,108 @@
             "page_title": "Image Compressor to Target Size - Compress Image Under 500KB or 1MB | TinyToolFlare",
             "page_description": "Free online image compressor to target size. Compress JPG, PNG, and WebP images under 500KB, to 1MB, or a custom KB size for uploads. Files are processed locally in your browser.",
             "page_keywords": "image compressor to target size, compress image under 500kb, compress image to 1mb, reduce photo size for upload, online image compressor, TinyToolFlare"
+          },
+          "photo_location_remover": {
+            "title": "Remove Location Data from Photo",
+            "description": "Remove GPS location from photos before sharing. Upload a JPG, PNG, or WebP image and download a clean copy without the original EXIF metadata.",
+            "tool_title": "Remove GPS Location",
+            "upload_label": "Photo",
+            "upload_placeholder": "Click to upload a photo",
+            "upload_hint": "Supports JPG, PNG, and WebP. Processing stays in your browser.",
+            "original_size": "Original Size",
+            "clean_size": "Clean Copy Size",
+            "remove": "Remove Location Data",
+            "processing": "Removing...",
+            "clear": "Clear",
+            "result_title": "Clean Photo",
+            "result_success": "Location metadata removed",
+            "result_detail": "{width}×{height}, {format} output",
+            "download": "Download Clean Photo",
+            "empty_result": "Upload a photo and remove location data to get a clean copy.",
+            "original_preview": "Original Preview",
+            "clean_preview": "Clean Preview",
+            "no_image": "Upload a photo to preview it",
+            "no_clean_image": "The clean photo will appear here",
+            "upload_required": "Please upload a photo first",
+            "invalid_file": "Please upload a valid image file",
+            "success": "Location data removed successfully",
+            "error": "Could not remove metadata. Please try another image.",
+            "use_cases": {
+              "title": "When to Remove Photo Location Data",
+              "description": "Use the tool first, then share the clean copy anywhere you do not want hidden GPS data attached.",
+              "items": [
+                {
+                  "title": "Before sharing on social media",
+                  "description": "Remove GPS location from photos before posting travel, home, school, or family pictures online."
+                },
+                {
+                  "title": "Before selling or listing items",
+                  "description": "Clean photos for marketplaces so product pictures do not accidentally reveal your home or pickup location."
+                },
+                {
+                  "title": "Before sending documents or evidence",
+                  "description": "Strip location metadata from photos before sending images to support teams, forms, forums, or public communities."
+                }
+              ]
+            },
+            "share_risks": {
+              "title": "Common Places Where Photo Metadata Matters",
+              "description": "Some platforms remove metadata, but behavior can vary by upload flow, file type, and download option. Removing metadata yourself is the safer default.",
+              "place": "Sharing place",
+              "risk": "Possible hidden data",
+              "advice": "Privacy step",
+              "items": [
+                {
+                  "place": "Social posts",
+                  "risk": "GPS coordinates, camera model, capture time",
+                  "advice": "Use a clean copy before posting personal photos."
+                },
+                {
+                  "place": "Marketplace listings",
+                  "risk": "Home or item pickup location from EXIF GPS",
+                  "advice": "Remove location data before uploading product photos."
+                },
+                {
+                  "place": "Email and chat attachments",
+                  "risk": "Original files can preserve metadata",
+                  "advice": "Clean photos before sending files directly."
+                },
+                {
+                  "place": "Public forums",
+                  "risk": "Downloaded images may expose metadata",
+                  "advice": "Share the no-location version for public posts."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Photo Location Metadata FAQ",
+              "description": "Answers for common privacy questions about GPS, EXIF, and sharing photos.",
+              "items": [
+                {
+                  "question": "How do I remove GPS location from photos before sharing?",
+                  "answer": "Upload the photo, click Remove Location Data, then download the clean copy. The tool re-encodes the image in your browser so the original EXIF metadata, including GPS location, is not carried into the new file."
+                },
+                {
+                  "question": "Does this remove EXIF metadata?",
+                  "answer": "Yes. The clean copy is generated from the image pixels through canvas rather than copying the original file metadata. This removes typical EXIF fields such as GPS coordinates, camera model, and capture details."
+                },
+                {
+                  "question": "Are my photos uploaded to a server?",
+                  "answer": "No. The photo is processed locally in your browser. The file is not uploaded to TinyToolFlare for metadata removal."
+                },
+                {
+                  "question": "Will the image quality change?",
+                  "answer": "The image is re-encoded to create a metadata-free copy. JPG and WebP output may change file size slightly, while PNG keeps lossless pixel output."
+                },
+                {
+                  "question": "Can I remove location data from iPhone or Android photos?",
+                  "answer": "Yes. Export or upload the photo from your device, then use this tool to create a clean copy before sharing it."
+                }
+              ]
+            },
+            "page_title": "Remove Location Data from Photo - Remove GPS Before Sharing | TinyToolFlare",
+            "page_description": "Free online tool to remove GPS location from photos before sharing. Strip EXIF metadata from JPG, PNG, and WebP images locally in your browser.",
+            "page_keywords": "remove location data from photo, remove GPS location from photos before sharing, remove EXIF metadata, strip GPS from image, photo privacy tool, TinyToolFlare"
           }
         }
       },
