@@ -435,6 +435,127 @@
             "page_description": "免费在线图片转 PDF 工具，支持 JPG、PNG、WebP、收据、截图和申请材料合并为一个 PDF，文件在浏览器本地生成。",
             "page_keywords": "图片转PDF, image to PDF, JPG转PDF, 截图转PDF, 多张图片合并PDF, 收据转PDF, 申请材料PDF, TinyToolFlare"
           },
+          "pdf_to_images": {
+            "title": "PDF 转图片工具",
+            "description": "将 PDF 页面转换为 PNG 或 JPG 图片，并打包为 ZIP 下载。可选择页码范围、图片质量和导出分辨率，全部在浏览器本地完成。",
+            "tool_title": "将 PDF 转为图片",
+            "upload_label": "PDF 文件",
+            "upload_placeholder": "点击上传 PDF",
+            "upload_hint": "可转换全部页面，也可输入 1-3,5 这样的页码范围。",
+            "zip_name": "ZIP 文件名",
+            "zip_name_placeholder": "pdf-pages",
+            "page_range": "页码范围",
+            "page_range_placeholder": "全部页面，或 1-3,5",
+            "format": "图片格式",
+            "scale": "分辨率",
+            "scale_standard": "标准",
+            "scale_high": "高清",
+            "scale_print": "打印级",
+            "quality": "JPG 质量",
+            "quality_high": "高质量",
+            "quality_balanced": "均衡",
+            "quality_small": "更小图片",
+            "pdf_size": "PDF 大小",
+            "pages": "页数",
+            "zip_size": "ZIP 大小",
+            "convert": "转换为图片",
+            "converting": "转换中...",
+            "clear": "清空",
+            "result_title": "ZIP 结果",
+            "result_ready": "图片已生成",
+            "result_detail": "已导出 {count} 页，ZIP 大小 {size}",
+            "empty_result": "转换 PDF 后会生成 ZIP 下载。",
+            "download": "下载 ZIP",
+            "preview_title": "图片预览",
+            "empty_preview": "渲染后的页面预览会显示在这里。",
+            "page_preview": "第 {page} 页预览",
+            "preview_detail": "第 {page} 页：{width}×{height}，{size}",
+            "upload_required": "请先上传 PDF",
+            "invalid_file": "请上传有效的 PDF 文件",
+            "invalid_range": "该页码范围内没有有效页面",
+            "success": "PDF 已成功转换为图片",
+            "error": "无法转换 PDF，请尝试其他文件或降低分辨率。",
+            "use_cases": {
+              "title": "PDF 转图片的常见场景",
+              "description": "当流程需要图片文件而不是 PDF 时，可以使用这个工具。",
+              "items": [
+                {
+                  "title": "PDF 转 JPG 上传",
+                  "description": "当表单只接受图片、不接受 PDF 时，可将页面导出为 JPG。"
+                },
+                {
+                  "title": "PDF 转 PNG 保持清晰",
+                  "description": "文字、图表、表格或扫描表单需要清晰页面图片时，适合使用 PNG。"
+                },
+                {
+                  "title": "提取 PDF 指定页面",
+                  "description": "输入页码范围，只导出需要的页面，而不是转换整个文档。"
+                },
+                {
+                  "title": "把 PDF 页面作为图片分享",
+                  "description": "将说明、练习题、菜单、传单或报告转成页面图片，用于聊天、网页或演示。"
+                }
+              ]
+            },
+            "export_needs": {
+              "title": "PDF 页面导出建议",
+              "description": "根据图片用途选择合适的格式和分辨率。",
+              "scenario": "场景",
+              "format_tip": "格式建议",
+              "page_tip": "页面建议",
+              "items": [
+                {
+                  "scenario": "上传表单",
+                  "formatTip": "使用 JPG 均衡质量，文件更小。",
+                  "pageTip": "只导出对方要求的页面。"
+                },
+                {
+                  "scenario": "扫描文件",
+                  "formatTip": "使用 PNG 或高质量 JPG，文字更清晰。",
+                  "pageTip": "小字表单建议使用高清分辨率。"
+                },
+                {
+                  "scenario": "演示幻灯片",
+                  "formatTip": "使用 PNG 保持幻灯片图片清晰。",
+                  "pageTip": "每一页或每张幻灯片导出为一张图片。"
+                },
+                {
+                  "scenario": "网页发布",
+                  "formatTip": "使用 JPG 更小图片，加快加载。",
+                  "pageTip": "只转换需要展示在线上的页面。"
+                }
+              ]
+            },
+            "faq": {
+              "title": "PDF 转图片常见问题",
+              "description": "关于 PDF to JPG、PDF to PNG 和页面图片导出的常见问题。",
+              "items": [
+                {
+                  "question": "如何把 PDF 转成图片？",
+                  "answer": "上传 PDF，选择 PNG 或 JPG，设置分辨率，然后点击“转换为图片”。页面会被渲染成图片，并打包成 ZIP 文件。"
+                },
+                {
+                  "question": "可以只转换 PDF 的指定页面吗？",
+                  "answer": "可以。输入 1-3,5 这样的范围，即可只导出第 1、2、3、5 页。"
+                },
+                {
+                  "question": "应该选择 PNG 还是 JPG？",
+                  "answer": "文字、图表和表单建议选择 PNG；如果希望文件更小，适合上传或网页使用，可以选择 JPG。"
+                },
+                {
+                  "question": "我的 PDF 会上传到服务器吗？",
+                  "answer": "不会。PDF 渲染和 ZIP 打包都在你的浏览器本地完成。"
+                },
+                {
+                  "question": "为什么 ZIP 文件很大？",
+                  "answer": "高清分辨率和 PNG 格式会生成较大的图片。想要更小文件，可以使用 JPG 或降低分辨率。"
+                }
+              ]
+            },
+            "page_title": "PDF 转图片工具 - PDF 转 JPG/PNG 并打包下载 | TinyToolFlare",
+            "page_description": "免费在线 PDF 转图片工具，支持 PDF 页面转 JPG 或 PNG，可选择页码范围，并将所有图片打包为 ZIP，本地浏览器处理。",
+            "page_keywords": "PDF转图片, PDF转JPG, PDF转PNG, PDF页面导出图片, 提取PDF页面图片, PDF图片打包下载, TinyToolFlare"
+          },
           "photo_location_remover": {
             "title": "移除照片位置数据",
             "description": "分享前移除照片中的 GPS 位置信息。上传 JPG、PNG 或 WebP 图片，下载不携带原始 EXIF 元数据的干净副本。",
