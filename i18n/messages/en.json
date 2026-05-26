@@ -381,6 +381,134 @@
             "page_description": "Free online image compressor to target size. Compress JPG, PNG, and WebP images under 500KB, to 1MB, or a custom KB size for uploads. Files are processed locally in your browser.",
             "page_keywords": "image compressor to target size, compress image under 500kb, compress image to 1mb, reduce photo size for upload, online image compressor, TinyToolFlare"
           },
+          "images_to_pdf": {
+            "title": "Images to PDF Converter",
+            "description": "Convert JPG, PNG, WebP, screenshots, receipts, forms, and ID photos into one PDF. Sort images, choose page settings, and create the PDF locally in your browser.",
+            "tool_title": "Create PDF from Images",
+            "upload_label": "Images",
+            "upload_placeholder": "Click to upload images",
+            "upload_hint": "Select multiple JPG, PNG, or WebP files. Drag selection order is not required; reorder below.",
+            "file_name": "PDF File Name",
+            "file_name_placeholder": "images-to-pdf",
+            "page_size": "Page Size",
+            "auto_size": "Auto image size",
+            "orientation": "Orientation",
+            "portrait": "Portrait",
+            "landscape": "Landscape",
+            "margin": "Margin",
+            "margin_normal": "Normal",
+            "margin_small": "Small",
+            "margin_none": "None",
+            "quality": "Image Quality",
+            "quality_high": "High",
+            "quality_balanced": "Balanced",
+            "quality_small": "Smaller PDF",
+            "images_count": "Images",
+            "input_size": "Input Size",
+            "pdf_size": "PDF Size",
+            "create_pdf": "Create PDF",
+            "creating": "Creating...",
+            "clear": "Clear",
+            "image_order_title": "Image Order",
+            "move_up": "Move up",
+            "move_down": "Move down",
+            "remove_image": "Remove image",
+            "empty_images": "Upload images to arrange their order before creating the PDF.",
+            "result_title": "PDF Result",
+            "result_ready": "Your PDF is ready",
+            "result_detail": "{count} images converted into one PDF, {size}",
+            "empty_result": "Create a PDF to see the download button.",
+            "download": "Download PDF",
+            "upload_required": "Please upload at least one image",
+            "invalid_file": "Only image files are supported",
+            "load_error": "One image could not be loaded",
+            "success": "PDF created successfully",
+            "error": "Could not create the PDF. Please try smaller images or fewer files.",
+            "use_cases": {
+              "title": "Common Reasons to Convert Images to PDF",
+              "description": "This tool is built for upload workflows where the final file needs to be one clean PDF.",
+              "items": [
+                {
+                  "title": "Application materials",
+                  "description": "Turn ID photos, certificates, forms, and supporting images into a single PDF for school, job, visa, or organization uploads."
+                },
+                {
+                  "title": "Receipts and invoices",
+                  "description": "Combine receipt photos into one PDF for reimbursement, accounting, expense reports, or tax records."
+                },
+                {
+                  "title": "Screenshots to PDF",
+                  "description": "Convert screenshots to PDF for bug reports, chat records, proof, tutorials, or step-by-step documentation."
+                },
+                {
+                  "title": "JPG to PDF",
+                  "description": "Convert JPG images into a PDF with A4 or Letter pages and keep the order exactly as you arranged it."
+                }
+              ]
+            },
+            "upload_needs": {
+              "title": "Practical PDF Upload Tips",
+              "description": "Requirements vary by school, employer, government form, and organization. These common patterns help prepare a clean PDF.",
+              "scenario": "Scenario",
+              "pdf_tip": "PDF setup",
+              "order_tip": "Ordering tip",
+              "items": [
+                {
+                  "scenario": "School forms",
+                  "pdfTip": "Use A4 or Letter pages with normal margins.",
+                  "orderTip": "Put the main form first, then IDs, certificates, and supporting screenshots."
+                },
+                {
+                  "scenario": "Job applications",
+                  "pdfTip": "Use balanced quality to keep the PDF easy to upload.",
+                  "orderTip": "Sort images in the same order requested by the application checklist."
+                },
+                {
+                  "scenario": "Receipts",
+                  "pdfTip": "Use portrait pages for phone photos of paper receipts.",
+                  "orderTip": "Place receipts by date or by expense category."
+                },
+                {
+                  "scenario": "Screenshots",
+                  "pdfTip": "Use auto image size or landscape pages for wide screenshots.",
+                  "orderTip": "Arrange screenshots in the exact reading or troubleshooting sequence."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Images to PDF FAQ",
+              "description": "Answers for image to PDF, JPG to PDF, and screenshot to PDF workflows.",
+              "items": [
+                {
+                  "question": "How do I convert multiple images to one PDF?",
+                  "answer": "Upload all images, arrange them in the order you want, choose page size and margin settings, then click Create PDF. Each image becomes one page in the final PDF."
+                },
+                {
+                  "question": "Can I convert screenshots to PDF?",
+                  "answer": "Yes. Upload screenshots, sort them in reading order, and choose auto image size or landscape pages if the screenshots are wide."
+                },
+                {
+                  "question": "Can I convert JPG to PDF?",
+                  "answer": "Yes. JPG, PNG, and WebP images are supported. The generated PDF embeds each image as a page."
+                },
+                {
+                  "question": "Are my images uploaded to a server?",
+                  "answer": "No. The PDF is generated locally in your browser, so your application materials, receipts, and screenshots do not leave your device."
+                },
+                {
+                  "question": "Why should I sort images before creating the PDF?",
+                  "answer": "Schools, organizations, and application forms often expect documents in a specific order. Sorting first avoids a PDF that has pages out of sequence."
+                },
+                {
+                  "question": "How do I make the PDF smaller?",
+                  "answer": "Choose the Smaller PDF quality setting, use normal or small margins, and avoid uploading very large duplicate images."
+                }
+              ]
+            },
+            "page_title": "Images to PDF Converter - JPG and Screenshots to PDF | TinyToolFlare",
+            "page_description": "Free online images to PDF converter. Convert JPG, PNG, WebP, receipts, screenshots, and application images into one PDF locally in your browser.",
+            "page_keywords": "images to PDF converter, image to PDF, jpg to PDF, screenshots to PDF, convert images to PDF online, receipts to PDF, application materials PDF, TinyToolFlare"
+          },
           "photo_location_remover": {
             "title": "Remove Location Data from Photo",
             "description": "Remove GPS location from photos before sharing. Upload a JPG, PNG, or WebP image and download a clean copy without the original EXIF metadata.",

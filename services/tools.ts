@@ -23,6 +23,7 @@ export const toolIcons = {
 
   // 图片
   image_compressor: "RiImageEditLine",
+  images_to_pdf: "RiFilePdf2Line",
   photo_location_remover: "RiMapPinLine",
 };
 
@@ -42,6 +43,7 @@ export const toolLinks = {
 
   // 图片
   image_compressor: "/image/compressor",
+  images_to_pdf: "/image/to-pdf",
   photo_location_remover: "/image/remove-location",
   
   // 格式化器
@@ -62,7 +64,7 @@ export const toolCategories: ToolConfig[] = [
   },
   {
     key: "image",
-    tools: ["image_compressor", "photo_location_remover"],
+    tools: ["image_compressor", "images_to_pdf", "photo_location_remover"],
   },
   {
     key: "formatter",

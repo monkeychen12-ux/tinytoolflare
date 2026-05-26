@@ -307,6 +307,134 @@
             "page_description": "免费在线图片压缩到指定大小工具，支持 JPG、PNG、WebP，可压缩图片到500KB以内、1MB或自定义KB大小，适合上传资料和表单提交，文件在本地浏览器处理。",
             "page_keywords": "图片压缩到指定大小, 图片压缩到500KB以内, 图片压缩到1MB, 减小照片大小, 在线图片压缩, TinyToolFlare"
           },
+          "images_to_pdf": {
+            "title": "图片转 PDF 工具",
+            "description": "将 JPG、PNG、WebP、截图、收据、表格和证件照片合并成一个 PDF。可排序图片、设置页面，并在浏览器本地生成 PDF。",
+            "tool_title": "从图片创建 PDF",
+            "upload_label": "图片",
+            "upload_placeholder": "点击上传图片",
+            "upload_hint": "可选择多张 JPG、PNG 或 WebP，上传后可在下方调整顺序。",
+            "file_name": "PDF 文件名",
+            "file_name_placeholder": "images-to-pdf",
+            "page_size": "页面尺寸",
+            "auto_size": "按图片自动适配",
+            "orientation": "方向",
+            "portrait": "纵向",
+            "landscape": "横向",
+            "margin": "页边距",
+            "margin_normal": "正常",
+            "margin_small": "较小",
+            "margin_none": "无",
+            "quality": "图片质量",
+            "quality_high": "高质量",
+            "quality_balanced": "均衡",
+            "quality_small": "更小 PDF",
+            "images_count": "图片数",
+            "input_size": "原图大小",
+            "pdf_size": "PDF 大小",
+            "create_pdf": "创建 PDF",
+            "creating": "创建中...",
+            "clear": "清空",
+            "image_order_title": "图片顺序",
+            "move_up": "上移",
+            "move_down": "下移",
+            "remove_image": "移除图片",
+            "empty_images": "上传图片后可先调整顺序，再创建 PDF。",
+            "result_title": "PDF 结果",
+            "result_ready": "PDF 已生成",
+            "result_detail": "{count} 张图片已转换为一个 PDF，大小 {size}",
+            "empty_result": "创建 PDF 后会显示下载按钮。",
+            "download": "下载 PDF",
+            "upload_required": "请至少上传一张图片",
+            "invalid_file": "仅支持图片文件",
+            "load_error": "有一张图片无法加载",
+            "success": "PDF 创建成功",
+            "error": "无法创建 PDF，请尝试更小图片或减少文件数量。",
+            "use_cases": {
+              "title": "图片转 PDF 的常见场景",
+              "description": "这个工具适合需要把多张图片整理成一个 PDF 再上传的流程。",
+              "items": [
+                {
+                  "title": "申请材料",
+                  "description": "把证件照、证书、表格和补充图片合并成一个 PDF，用于学校、求职、签证或组织上传。"
+                },
+                {
+                  "title": "收据和发票",
+                  "description": "将多张收据照片合并为一个 PDF，方便报销、记账、费用报告或税务留档。"
+                },
+                {
+                  "title": "截图转 PDF",
+                  "description": "把截图转换成 PDF，用于问题反馈、聊天记录、证明材料、教程或步骤说明。"
+                },
+                {
+                  "title": "JPG 转 PDF",
+                  "description": "将 JPG 图片转换为 PDF，可选择 A4 或 Letter 页面，并保持你排列好的页面顺序。"
+                }
+              ]
+            },
+            "upload_needs": {
+              "title": "实用 PDF 上传建议",
+              "description": "不同学校、雇主、政府表单和组织的要求不同。下面是常见的整理方式。",
+              "scenario": "场景",
+              "pdf_tip": "PDF 设置",
+              "order_tip": "排序建议",
+              "items": [
+                {
+                  "scenario": "学校表格",
+                  "pdfTip": "使用 A4 或 Letter 页面，并保留正常页边距。",
+                  "orderTip": "主表格放在前面，再放证件、证书和补充截图。"
+                },
+                {
+                  "scenario": "求职申请",
+                  "pdfTip": "使用均衡质量，保持 PDF 易于上传。",
+                  "orderTip": "按照申请清单要求的顺序排列图片。"
+                },
+                {
+                  "scenario": "收据整理",
+                  "pdfTip": "手机拍摄的纸质收据通常适合纵向页面。",
+                  "orderTip": "按日期或费用类别排列收据。"
+                },
+                {
+                  "scenario": "截图材料",
+                  "pdfTip": "宽截图可使用自动尺寸或横向页面。",
+                  "orderTip": "按阅读顺序或排查步骤排列截图。"
+                }
+              ]
+            },
+            "faq": {
+              "title": "图片转 PDF 常见问题",
+              "description": "关于 image to PDF、JPG to PDF、screenshots to PDF 的常见问题。",
+              "items": [
+                {
+                  "question": "如何把多张图片转换成一个 PDF？",
+                  "answer": "上传所有图片，按需要调整顺序，选择页面尺寸和页边距，然后点击“创建 PDF”。每张图片会成为 PDF 中的一页。"
+                },
+                {
+                  "question": "可以把截图转换成 PDF 吗？",
+                  "answer": "可以。上传截图，按阅读顺序排序。如果截图较宽，可以选择自动尺寸或横向页面。"
+                },
+                {
+                  "question": "可以 JPG 转 PDF 吗？",
+                  "answer": "可以。工具支持 JPG、PNG 和 WebP，生成的 PDF 会把每张图片嵌入为单独页面。"
+                },
+                {
+                  "question": "我的图片会上传到服务器吗？",
+                  "answer": "不会。PDF 在你的浏览器本地生成，申请材料、收据和截图不会离开你的设备。"
+                },
+                {
+                  "question": "为什么创建 PDF 前要排序图片？",
+                  "answer": "学校、组织和申请表通常要求材料按固定顺序排列。先排序可以避免 PDF 页面顺序错误。"
+                },
+                {
+                  "question": "如何让 PDF 更小？",
+                  "answer": "选择“更小 PDF”质量设置，使用正常或较小页边距，并避免上传过大的重复图片。"
+                }
+              ]
+            },
+            "page_title": "图片转 PDF 工具 - JPG 和截图转 PDF | TinyToolFlare",
+            "page_description": "免费在线图片转 PDF 工具，支持 JPG、PNG、WebP、收据、截图和申请材料合并为一个 PDF，文件在浏览器本地生成。",
+            "page_keywords": "图片转PDF, image to PDF, JPG转PDF, 截图转PDF, 多张图片合并PDF, 收据转PDF, 申请材料PDF, TinyToolFlare"
+          },
           "photo_location_remover": {
             "title": "移除照片位置数据",
             "description": "分享前移除照片中的 GPS 位置信息。上传 JPG、PNG 或 WebP 图片，下载不携带原始 EXIF 元数据的干净副本。",
