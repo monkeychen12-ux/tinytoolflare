@@ -180,6 +180,170 @@
               "对于运动员、孕妇、老年人等特殊人群，BMI 仅供参考。",
               "BMI 过高或过低都可能增加慢性疾病风险，如心血管疾病、糖尿病等。"
             ]
+          },
+          "raised_bed_soil_calculator": {
+            "title": "Raised Bed Soil Calculator",
+            "description": "计算高架菜床或种植箱需要多少土壤，包括立方英尺、立方码、升、袋数、配土比例和预估成本。",
+            "tool_title": "计算高架菜床土壤用量",
+            "unit_system": "单位系统",
+            "imperial": "英尺 + 英寸",
+            "metric": "米 + 厘米",
+            "common_sizes": "常见菜床尺寸",
+            "length_label": "菜床长度 ({unit})",
+            "width_label": "菜床宽度 ({unit})",
+            "depth_label": "土壤深度 ({unit})",
+            "beds_label": "菜床数量",
+            "filler_title": "假底或底部填充",
+            "filler_description": "从土壤深度中扣除树枝、纸板、枯叶、砾石等底部填充层高度。",
+            "filler_height": "填充高度 ({unit})",
+            "bag_size": "土壤袋规格",
+            "custom_bag": "自定义",
+            "custom_bag_size": "自定义袋容量",
+            "custom_bag_unit": "单位",
+            "price_label": "每袋价格（可选）",
+            "price_placeholder": "例如：8",
+            "safety_title": "深度提示",
+            "safety_text": "多数蔬菜常见规划深度约为 10-12 inches 或以上，但具体需求会受植物、气候、容器结构和浇水方式影响。这里用于采购规划，不是种植保证。",
+            "results_title": "所需土壤",
+            "bags_needed": "需要袋数",
+            "bags_detail": "按 {size} 每袋向上取整",
+            "total_volume": "总容量",
+            "cubic_feet": "立方英尺",
+            "cubic_yards": "立方码",
+            "liters": "升",
+            "estimated_cost": "预估成本",
+            "check_inputs": "检查输入",
+            "note": "提示",
+            "one_bed": "1 个菜床",
+            "many_beds": "{count} 个菜床",
+            "summary": "{beds}，尺寸 {length} x {width}，实际填土深度 {depth}，大约需要 {cuFt} cu ft 土壤，或 {bags} 袋 {bagSize} 土。",
+            "validation": {
+              "length": "菜床长度必须大于 0。",
+              "width": "菜床宽度必须大于 0。",
+              "depth": "土壤深度必须大于 0。",
+              "beds": "菜床数量至少为 1。",
+              "filler": "填充高度不能为负数。",
+              "price": "每袋价格不能为负数。",
+              "bag": "袋容量必须大于 0。",
+              "zero_depth": "填充高度已经等于或超过总深度，因此计算出的土壤深度为 0。",
+              "large": "这个土壤体积非常大，请确认单位和尺寸是否正确。",
+              "mix": "配土比例不能为负数。"
+            },
+            "mix": {
+              "title": "配土比例模式",
+              "description": "输入任意比例，例如 60 / 30 / 10。计算器会自动归一化比例，并显示每种材料需要多少。",
+              "topsoil": "表土",
+              "compost": "堆肥",
+              "potting_mix": "培养土",
+              "result_title": "配土用量拆分"
+            },
+            "use_cases": {
+              "title": "购买前先规划土壤用量",
+              "description": "这个 raised bed soil calculator 适合在去花园中心或下单散装土之前快速估算。",
+              "items": [
+                {
+                  "title": "计算高架菜床需要多少土",
+                  "description": "输入尺寸和深度，即可估算 raised bed soil volume 的立方英尺、立方码和升。"
+                },
+                {
+                  "title": "土壤袋数计算",
+                  "description": "选择 0.75、1、1.5、2 cu ft、40 L 或自定义袋容量，查看 how many bags of soil you need。"
+                },
+                {
+                  "title": "4x8 raised bed soil calculator",
+                  "description": "使用 4 ft x 8 ft 快捷按钮，再调整深度、数量、配土比例和成本。"
+                }
+              ]
+            },
+            "how_to": {
+              "title": "How to calculate raised bed soil",
+              "description": "基础公式是矩形体积：length x width x soil depth。先把所有尺寸转换到同一单位，再相乘。",
+              "formula": "Volume = length x width x soil depth",
+              "detail": "这个 garden soil calculator 会换算英尺、英寸、米、厘米、立方码、立方英尺和升。如果使用底部填充，会先扣除填充高度，再用剩余土壤深度乘以面积和菜床数量。"
+            },
+            "common_amounts": {
+              "title": "Common raised bed soil amounts",
+              "description": "下面示例按 12 inches 土壤深度和 1.5 cu ft 每袋计算，适合快速估算常见菜床。",
+              "size": "菜床尺寸",
+              "depth": "深度",
+              "cu_ft": "立方英尺",
+              "liters": "升",
+              "bags": "1.5 cu ft 袋数",
+              "bag_unit": "袋"
+            },
+            "depth_guide": {
+              "title": "Raised bed soil depth guide",
+              "description": "土壤深度取决于种植内容和菜床结构。以下是规划范围，不是保证。",
+              "items": [
+                {
+                  "depth": "6 inches",
+                  "use": "浅根香草和速生叶菜",
+                  "note": "部分浅根植物可用，尤其需要注意浇水管理。"
+                },
+                {
+                  "depth": "10-12 inches",
+                  "use": "常见蔬菜菜床规划深度",
+                  "note": "许多高架蔬菜床会把这个范围作为更稳妥的根系空间目标。"
+                },
+                {
+                  "depth": "18 inches",
+                  "use": "根系更深的作物或干燥地区",
+                  "note": "能提供更多水分缓冲和根系空间。"
+                },
+                {
+                  "depth": "24 inches or more",
+                  "use": "高菜床、深容器或无障碍菜床",
+                  "note": "如果不需要全深度填土，可以考虑假底或底部填充。"
+                }
+              ]
+            },
+            "bag_tips": {
+              "title": "Bag size conversion tips",
+              "description": "不同商店和国家的袋装土标签不同。先换算袋容量，再用总土量除以袋容量。",
+              "items": [
+                {
+                  "title": "立方英尺袋装土",
+                  "description": "美国常见袋装土以 cu ft 标注。用总立方英尺除以每袋立方英尺，再向上取整。"
+                },
+                {
+                  "title": "升装袋装土",
+                  "description": "40 L 大约等于 1.41 cu ft。本工具会自动把升换算成立方英尺。"
+                },
+                {
+                  "title": "散装立方码",
+                  "description": "散装土常按 cubic yard 售卖。1 cubic yard = 27 cubic feet。"
+                }
+              ]
+            },
+            "faq": {
+              "title": "Raised Bed Soil Calculator FAQ",
+              "description": "关于高架菜床土壤用量、袋数、底部填充和散装土的常见问题。",
+              "items": [
+                {
+                  "question": "How much soil do I need for a 4x8 raised bed?",
+                  "answer": "4 ft x 8 ft 菜床，如果填土深度为 12 inches，大约需要 32 cubic feet 土壤，约 1.19 cubic yards、906 L。如果每袋 1.5 cu ft，需要 22 袋。"
+                },
+                {
+                  "question": "How many bags of soil fill a raised bed?",
+                  "answer": "用总土壤体积除以每袋容量，然后向上取整。例如 32 cu ft 除以 1.5 cu ft 每袋，得到 21.33，因此应购买 22 袋。"
+                },
+                {
+                  "question": "What depth should a raised garden bed be?",
+                  "answer": "很多蔬菜高架床会按约 10-12 inches 或以上规划。浅根香草和叶菜可能可以更浅，根系更大的作物通常需要更深。"
+                },
+                {
+                  "question": "How do I calculate soil if I use filler at the bottom?",
+                  "answer": "先用总深度减去底部填充高度，再用 length x width x 剩余土壤深度计算。本工具开启 filler mode 后会自动处理。"
+                },
+                {
+                  "question": "Should I buy soil by bags or cubic yards?",
+                  "answer": "小菜床用袋装土更方便搬运。多个菜床或大体积需求通常更适合按 cubic yards 购买散装土，可能更省成本和包装。"
+                }
+              ]
+            },
+            "page_title": "Raised Bed Soil Calculator - 高架菜床土壤袋数计算 | TinyToolFlare",
+            "page_description": "免费 Raised Bed Soil Calculator，计算高架菜床需要多少土、4x8 菜床土量、袋数、升、立方码、配土比例和预估成本。",
+            "page_keywords": "raised bed soil calculator, how much soil for raised bed, raised bed soil calculator 4x8, garden soil calculator, soil bag calculator, how many bags of soil do I need, 高架菜床土壤计算器, TinyToolFlare"
           }
         }
       },

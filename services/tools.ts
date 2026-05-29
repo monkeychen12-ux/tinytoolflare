@@ -9,6 +9,7 @@ export const toolIcons = {
   unit_converter: "RiExchangeDollarLine",
   age_calculator: "RiCalendar2Line",
   bmi_calculator: "RiBarChart2Line",
+  raised_bed_soil_calculator: "RiSeedlingLine",
   
   // 生成器
   password_generator: "RiKey2Line",
@@ -35,6 +36,7 @@ export const toolLinks = {
   // unit_converter: "/calculator/unit-converter",
   // age_calculator: "/calculator/age",
   bmi_calculator: "/calculator/bmi",
+  raised_bed_soil_calculator: "/raised-bed-soil-calculator",
   
   // 生成器
   password_generator: "/generator/password",
@@ -58,7 +60,7 @@ export const toolLinks = {
 export const toolCategories: ToolConfig[] = [
   {
     key: "calculator",
-    tools: [ "bmi_calculator"],
+    tools: ["raised_bed_soil_calculator", "bmi_calculator"],
   },
   {
     key: "generator", 

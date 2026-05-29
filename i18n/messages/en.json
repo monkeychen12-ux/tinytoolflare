@@ -180,6 +180,170 @@
               "For special populations such as athletes, pregnant women, and the elderly, BMI is for reference only.",
               "Both high and low BMI may increase the risk of chronic diseases such as cardiovascular disease and diabetes."
             ]
+          },
+          "raised_bed_soil_calculator": {
+            "title": "Raised Bed Soil Calculator",
+            "description": "Calculate how much soil you need for a raised garden bed, including cubic feet, cubic yards, liters, bag count, fill mix, and estimated cost.",
+            "tool_title": "Calculate Raised Bed Soil",
+            "unit_system": "Unit system",
+            "imperial": "Feet + inches",
+            "metric": "Meters + centimeters",
+            "common_sizes": "Common raised bed sizes",
+            "length_label": "Bed length ({unit})",
+            "width_label": "Bed width ({unit})",
+            "depth_label": "Soil depth ({unit})",
+            "beds_label": "Number of beds",
+            "filler_title": "False bottom or filler",
+            "filler_description": "Subtract a bottom filler layer such as branches, cardboard, dry leaves, or gravel from the soil depth.",
+            "filler_height": "Filler height ({unit})",
+            "bag_size": "Soil bag size",
+            "custom_bag": "Custom",
+            "custom_bag_size": "Custom bag size",
+            "custom_bag_unit": "Unit",
+            "price_label": "Price per bag optional",
+            "price_placeholder": "Example: 8",
+            "safety_title": "Depth note",
+            "safety_text": "Many vegetables are commonly grown with about 10-12 inches or more of soil depth, but needs vary by plant, climate, container design, and watering. Use this as planning guidance, not a growing guarantee.",
+            "results_title": "Soil Needed",
+            "bags_needed": "Bags needed",
+            "bags_detail": "Rounded up for {size} bags",
+            "total_volume": "Total volume",
+            "cubic_feet": "Cubic feet",
+            "cubic_yards": "Cubic yards",
+            "liters": "Liters",
+            "estimated_cost": "Estimated cost",
+            "check_inputs": "Check inputs",
+            "note": "Note",
+            "one_bed": "a bed",
+            "many_beds": "{count} beds",
+            "summary": "For {beds} measuring {length} x {width} and filled {depth} deep, you need about {cuFt} cu ft of soil, or {bags} bags of {bagSize} soil.",
+            "validation": {
+              "length": "Bed length must be greater than 0.",
+              "width": "Bed width must be greater than 0.",
+              "depth": "Soil depth must be greater than 0.",
+              "beds": "Number of beds must be at least 1.",
+              "filler": "Filler height cannot be negative.",
+              "price": "Price per bag cannot be negative.",
+              "bag": "Bag size must be greater than 0.",
+              "zero_depth": "Filler height is equal to or deeper than the bed depth, so calculated soil depth is 0.",
+              "large": "This is a very large soil volume. Check that the selected unit and dimensions are correct.",
+              "mix": "Fill mix ratios cannot be negative."
+            },
+            "mix": {
+              "title": "Fill mix mode",
+              "description": "Enter any ratio, such as 60 / 30 / 10. The calculator normalizes the ratio and shows how much of each material to buy.",
+              "topsoil": "Topsoil",
+              "compost": "Compost",
+              "potting_mix": "Potting mix",
+              "result_title": "Fill Mix Breakdown"
+            },
+            "use_cases": {
+              "title": "Plan Soil Before You Buy",
+              "description": "Use this raised bed soil calculator for common garden planning questions before heading to the store or ordering bulk soil.",
+              "items": [
+                {
+                  "title": "How much soil for a raised bed",
+                  "description": "Enter the bed size and soil depth to estimate total raised bed soil volume in cubic feet, cubic yards, and liters."
+                },
+                {
+                  "title": "Soil bag calculator",
+                  "description": "Choose 0.75, 1, 1.5, 2 cu ft, 40 L, or a custom bag size to see how many bags of soil you need."
+                },
+                {
+                  "title": "Raised bed soil calculator 4x8",
+                  "description": "Use the 4 ft x 8 ft preset for a common garden bed size and adjust depth, number of beds, mix ratio, and cost."
+                }
+              ]
+            },
+            "how_to": {
+              "title": "How to calculate raised bed soil",
+              "description": "The basic raised bed soil formula is rectangular volume: length x width x soil depth. Convert everything to the same unit before multiplying.",
+              "formula": "Volume = length x width x soil depth",
+              "detail": "This garden soil calculator converts feet, inches, meters, centimeters, cubic yards, cubic feet, and liters. If you use bottom filler, the calculator subtracts filler height first, then multiplies the remaining soil depth by the bed area and number of beds."
+            },
+            "common_amounts": {
+              "title": "Common raised bed soil amounts",
+              "description": "These examples use 12 inches of soil depth and 1.5 cu ft bags, which makes them useful for quick raised bed soil planning.",
+              "size": "Bed size",
+              "depth": "Depth",
+              "cu_ft": "Cubic feet",
+              "liters": "Liters",
+              "bags": "1.5 cu ft bags",
+              "bag_unit": "bags"
+            },
+            "depth_guide": {
+              "title": "Raised bed soil depth guide",
+              "description": "Soil depth depends on what you grow and how the bed is built. These are planning ranges, not guarantees.",
+              "items": [
+                {
+                  "depth": "6 inches",
+                  "use": "Shallow herbs and quick greens",
+                  "note": "Can work for some shallow-rooted plants, especially with careful watering."
+                },
+                {
+                  "depth": "10-12 inches",
+                  "use": "Common vegetable planning depth",
+                  "note": "A common target for many raised vegetable beds when you want more root space."
+                },
+                {
+                  "depth": "18 inches",
+                  "use": "Deeper-rooted crops and dry climates",
+                  "note": "Adds moisture buffer and more room for larger root systems."
+                },
+                {
+                  "depth": "24 inches or more",
+                  "use": "Tall beds, deep containers, or accessibility beds",
+                  "note": "Consider using a false bottom or filler if the full depth does not need to be soil."
+                }
+              ]
+            },
+            "bag_tips": {
+              "title": "Bag size conversion tips",
+              "description": "Bag labels vary by store and country. Convert the label volume before dividing your total soil need by bag size.",
+              "items": [
+                {
+                  "title": "Cubic feet bags",
+                  "description": "Most US garden soil bags list volume in cubic feet. Divide total cubic feet by bag cubic feet, then round up."
+                },
+                {
+                  "title": "Liter bags",
+                  "description": "A 40 L bag is about 1.41 cu ft. This calculator converts liters to cubic feet automatically."
+                },
+                {
+                  "title": "Bulk cubic yards",
+                  "description": "Bulk soil is often sold by cubic yard. One cubic yard equals 27 cubic feet."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Raised Bed Soil Calculator FAQ",
+              "description": "Answers to common questions about how much soil for raised beds, bag counts, filler, and bulk soil.",
+              "items": [
+                {
+                  "question": "How much soil do I need for a 4x8 raised bed?",
+                  "answer": "For a 4 ft x 8 ft raised bed filled 12 inches deep, you need about 32 cubic feet of soil. That is about 1.19 cubic yards, 906 liters, or 22 bags if each bag is 1.5 cu ft."
+                },
+                {
+                  "question": "How many bags of soil fill a raised bed?",
+                  "answer": "Divide the total soil volume by the bag volume, then round up. For example, 32 cu ft divided by 1.5 cu ft per bag equals 21.33, so you should buy 22 bags."
+                },
+                {
+                  "question": "What depth should a raised garden bed be?",
+                  "answer": "Many vegetable gardeners plan for about 10-12 inches or more of soil depth. Some shallow herbs and greens can use less, while larger or deeper-rooted crops may benefit from more depth."
+                },
+                {
+                  "question": "How do I calculate soil if I use filler at the bottom?",
+                  "answer": "Subtract the filler height from the total bed depth first. Then multiply length x width x remaining soil depth. The calculator does this automatically when you enable filler mode."
+                },
+                {
+                  "question": "Should I buy soil by bags or cubic yards?",
+                  "answer": "Bags are convenient for small beds and easier to move. Cubic yards often make more sense for multiple beds or large volumes because bulk delivery can reduce cost and packaging."
+                }
+              ]
+            },
+            "page_title": "Raised Bed Soil Calculator - How Much Soil and Bags | TinyToolFlare",
+            "page_description": "Free raised bed soil calculator. Calculate how much soil for a raised bed, 4x8 bed soil volume, bags needed, liters, cubic yards, fill mix, and estimated cost.",
+            "page_keywords": "raised bed soil calculator, how much soil for raised bed, raised bed soil calculator 4x8, garden soil calculator, soil bag calculator, how many bags of soil do I need, TinyToolFlare"
           }
         }
       },
