@@ -16,6 +16,7 @@ export const toolIcons = {
   pdf_to_images: "RiFileImageLine",
   photo_location_remover: "RiMapPinLine",
   laundry_symbol_decoder: "RiTShirtAirLine",
+  wake_window_by_age_calculator: "RiMoonClearLine",
 } as const;
 
 export const toolLinks = {
@@ -29,6 +30,7 @@ export const toolLinks = {
   pdf_to_images: "/image/pdf-to-images",
   photo_location_remover: "/image/remove-location",
   laundry_symbol_decoder: "/laundry-symbol-decoder",
+  wake_window_by_age_calculator: "/wake-window-by-age-calculator",
   json_formatter: "/formatter/json",
   xml_formatter: "/formatter/xml",
 } as const;
@@ -57,7 +59,7 @@ export const toolCategories = [
   {
     key: "life",
     path: "/life",
-    tools: ["laundry_symbol_decoder"],
+    tools: ["wake_window_by_age_calculator", "laundry_symbol_decoder"],
   },
   {
     key: "formatter",

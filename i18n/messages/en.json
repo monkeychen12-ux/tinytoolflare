@@ -901,6 +901,161 @@
       "life": {
         "name": "Life Tools",
         "tools": {
+          "wake_window_by_age_calculator": {
+            "title": "Wake Window by Age Calculator",
+            "description": "Enter your baby's age in months and last wake time to estimate a practical wake window range and the next nap window.",
+            "tool_title": "Calculate Wake Window",
+            "age_label": "Baby age in months",
+            "age_presets": "Common ages",
+            "months_short": "{count} mo",
+            "last_wake_time_label": "Last woke up at",
+            "note_title": "Use as a flexible guide",
+            "note_text": "Wake windows vary by baby, nap quality, illness, feeding, and overnight sleep. Watch sleepy cues and adjust earlier or later when needed.",
+            "reset": "Reset",
+            "result_title": "Recommended Window",
+            "check_inputs": "Check inputs",
+            "wake_window_label": "Wake window range",
+            "range_caption": "Aim for this range before the next sleep.",
+            "nap_count_label": "Typical naps",
+            "nap_count_caption": "Common daytime nap count for this age.",
+            "next_nap_label": "Next nap window",
+            "how_to_use_title": "How to use the result",
+            "how_to_use_text": "Start calming activities before the early edge of the window, then aim to have baby asleep before the late edge if sleepy cues appear.",
+            "safety_text": "This is a planning helper, not medical advice. Ask a pediatrician or qualified sleep professional if your baby has feeding, growth, breathing, reflux, prematurity, or health concerns.",
+            "validation": {
+              "age": "Enter an age from 0 to 36 months.",
+              "time": "Enter a valid last wake time."
+            },
+            "duration": {
+              "minutes": "{count} min",
+              "hours": "{count} hr",
+              "hours_minutes": "{hours} hr {minutes} min"
+            },
+            "explanations": {
+              "newborn": "Newborn wake windows are short and can change quickly. If the nap was tiny or baby is fussy, use the earlier end.",
+              "young_infant": "At this age many babies still tire quickly, so the next nap often lands soon after feeding and a short play period.",
+              "three_months": "Around 3 months, many babies handle a little more awake time, but overtiredness can still arrive fast.",
+              "four_months": "Around 4 months, wake windows often stretch while naps may still be uneven during sleep development changes.",
+              "five_months": "Around 5 months, many babies are moving toward more predictable 3-nap days.",
+              "six_months": "Around 6 months, a 2 to 3 hour wake window is common, with many babies still doing about 3 naps.",
+              "older_infant": "Older infants often need longer play time before naps, especially before the second or third nap.",
+              "two_nap": "Many babies in this range are settled on 2 naps, so wake windows usually need enough room for morning and afternoon sleep.",
+              "transition": "This is a common 2-to-1 nap transition zone. Short naps, early waking, or skipped naps may mean the schedule needs a gentle adjustment.",
+              "toddler": "Toddlers on one nap often need a longer morning before nap time and a steady bedtime rhythm.",
+              "older_toddler": "Some older toddlers still nap, while others are close to dropping it. Mood and bedtime are useful clues."
+            },
+            "use_cases": {
+              "title": "Wake Windows by Month",
+              "description": "Use this wake window calculator when the real question is tied to a specific month, such as a 3 month old or 6 month old baby.",
+              "items": [
+                {
+                  "title": "3 month wake window calculator",
+                  "description": "Estimate how long a 3 month old may stay awake and when to begin the next nap routine."
+                },
+                {
+                  "title": "6 month wake window calculator",
+                  "description": "Check a practical 6 month wake window range and next nap window based on the last wake time."
+                },
+                {
+                  "title": "Next nap planning",
+                  "description": "Turn the wake window range into clock times so you can plan feeding, play, wind-down, and the next nap."
+                }
+              ]
+            },
+            "age_guide": {
+              "title": "Common Wake Window Ranges by Age",
+              "description": "These are practical planning ranges. Some babies need shorter or longer windows depending on temperament, nap length, and total sleep.",
+              "age": "Age",
+              "window": "Wake window",
+              "naps": "Typical naps",
+              "note": "Planning note",
+              "items": [
+                {
+                  "age": "0-1 month",
+                  "window": "45-75 min",
+                  "naps": "4-6",
+                  "note": "Very short awake time; sleepy cues matter more than the clock."
+                },
+                {
+                  "age": "2 months",
+                  "window": "60-90 min",
+                  "naps": "4-5",
+                  "note": "Many babies still need frequent naps and flexible days."
+                },
+                {
+                  "age": "3 months",
+                  "window": "75-110 min",
+                  "naps": "4-5",
+                  "note": "Use the shorter end after a short nap."
+                },
+                {
+                  "age": "4-5 months",
+                  "window": "90-150 min",
+                  "naps": "3-4",
+                  "note": "Wake windows often stretch while naps consolidate."
+                },
+                {
+                  "age": "6 months",
+                  "window": "2-3 hr",
+                  "naps": "3",
+                  "note": "A common range for babies still on a 3-nap rhythm."
+                },
+                {
+                  "age": "7-8 months",
+                  "window": "2.5-3.5 hr",
+                  "naps": "2-3",
+                  "note": "Some babies begin moving toward 2 naps."
+                },
+                {
+                  "age": "9-11 months",
+                  "window": "3-4 hr",
+                  "naps": "2",
+                  "note": "Morning and afternoon naps are common."
+                },
+                {
+                  "age": "12-15 months",
+                  "window": "3.5-4.5 hr",
+                  "naps": "1-2",
+                  "note": "This can be a transition from 2 naps to 1 nap."
+                },
+                {
+                  "age": "16-24 months",
+                  "window": "4.5-6 hr",
+                  "naps": "1",
+                  "note": "A steady one-nap schedule often works well."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Wake Window Calculator FAQ",
+              "description": "Answers to common wake window by age questions from newborn months through toddler naps.",
+              "items": [
+                {
+                  "question": "How long should a 3 month old stay awake?",
+                  "answer": "Many 3 month olds do well with roughly 75 to 110 minutes awake between sleeps. Use the shorter end after a short nap or a fussy morning."
+                },
+                {
+                  "question": "What is a typical 6 month wake window?",
+                  "answer": "A common 6 month wake window is about 2 to 3 hours. Some babies need the lower end early in the day and a longer window before bedtime."
+                },
+                {
+                  "question": "Should I follow wake windows or sleepy cues?",
+                  "answer": "Use both. Wake windows give a planning range, while yawning, zoning out, rubbing eyes, fussing, or losing interest can tell you to start the nap routine sooner."
+                },
+                {
+                  "question": "What if my baby takes a short nap?",
+                  "answer": "After a short nap, try the earlier end of the next wake window. A full nap often lets baby handle a longer window."
+                },
+                {
+                  "question": "Does this replace pediatric sleep advice?",
+                  "answer": "No. This calculator is for everyday planning. Ask a pediatrician or qualified professional if sleep issues connect with health, feeding, growth, reflux, breathing, or prematurity."
+                }
+              ]
+            },
+            "page_title": "Wake Window by Age Calculator - Baby Next Nap Window | TinyToolFlare",
+            "page_description": "Free wake window by age calculator. Enter baby age in months and last wake time to get a suggested wake window range, next nap window, typical nap count, and short explanation.",
+            "page_keywords": "wake window calculator, wake window by age calculator, 3 month wake window, 6 month wake window, baby next nap window, baby sleep schedule, TinyToolFlare"
+          },
           "laundry_symbol_decoder": {
             "title": "Laundry Symbol Decoder",
             "description": "Decode clothing care label symbols by choosing the tub, triangle, circle, X, dots, bars, and letter marks. No upload or OCR required.",
