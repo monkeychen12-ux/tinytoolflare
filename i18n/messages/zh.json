@@ -894,6 +894,105 @@
             "page_title": "移除照片位置数据 - 分享前删除GPS和EXIF信息 | TinyToolFlare",
             "page_description": "免费在线移除照片位置数据工具，分享前删除 JPG、PNG、WebP 图片中的 GPS 和 EXIF 元数据，文件在本地浏览器处理，保护隐私。",
             "page_keywords": "移除照片位置数据, 删除照片GPS, 移除EXIF元数据, 图片隐私工具, 分享前删除位置信息, TinyToolFlare"
+          },
+          "photo_from_emoji": {
+            "title": "Photo from Emoji 生成器",
+            "description": "把照片转换成 emoji 马赛克艺术。上传图片、选择 emoji 调色板，然后下载 PNG 或复制 emoji 文本。",
+            "tool_title": "创建 Emoji 马赛克",
+            "upload_label": "上传图片",
+            "upload_hint": "支持 JPG、PNG、WebP 和截图，处理过程在浏览器本地完成。",
+            "columns": "Emoji 列数",
+            "cell_size": "Emoji 像素大小",
+            "background": "背景颜色",
+            "preserve_color": "保留原图颜色",
+            "preserve_color_hint": "每个格子先绘制原图采样色，再叠加 emoji。这样人脸和轮廓会更接近原图。",
+            "skip_background": "跳过近白背景",
+            "skip_background_hint": "把很浅的背景留空，避免白纸或页边距被铺成一大片 emoji。",
+            "emoji_set": "Emoji 调色板",
+            "emoji_set_hint": "增删 emoji 可以改变颜色调色板。颜色越丰富，结果通常越清晰。",
+            "generate": "生成 Emoji 图片",
+            "generating": "生成中...",
+            "reset": "重置",
+            "preview_title": "原图预览",
+            "empty_preview": "上传图片后可预览。",
+            "result_title": "Emoji 图片结果",
+            "empty_result": "生成后会显示 emoji PNG 和文本输出。",
+            "output_grid": "网格",
+            "emoji_count": "Emoji 数量",
+            "palette_count": "调色板",
+            "skipped_count": "已跳过",
+            "download": "下载 PNG",
+            "copy_text": "复制 emoji 文本",
+            "upload_required": "请先上传图片。",
+            "invalid_file": "请上传有效的图片文件。",
+            "success": "Emoji 图片生成成功。",
+            "copied": "Emoji 文本已复制。",
+            "error": "无法生成 Emoji 图片，请尝试更小图片或更少列数。",
+            "use_cases": {
+              "title": "把照片做成 Emoji 艺术",
+              "description": "当你想要一个仍能看出原图轮廓的 playful emoji mosaic，可以用这个 photo from emoji generator。",
+              "items": [
+                {
+                  "title": "头像和社交图片",
+                  "description": "把人像或宠物照片转换成 emoji 马赛克，用于社交头像、聊天头像或社区帖子。"
+                },
+                {
+                  "title": "Emoji 文本艺术",
+                  "description": "复制纯 emoji 文本输出，用于消息、评论和轻量创意实验。"
+                },
+                {
+                  "title": "海报风格 PNG",
+                  "description": "下载由 emoji tile 组成的干净 PNG，用于演示、meme、贴纸或设计草稿。"
+                }
+              ]
+            },
+            "tips": {
+              "title": "Emoji 马赛克设置建议",
+              "description": "把图片颜色转换成 emoji tile 时，几个设置会明显影响效果。",
+              "items": [
+                {
+                  "title": "从简单图片开始",
+                  "description": "人脸、宠物、logo 和高对比主体通常比细节很多的风景照更容易识别。"
+                },
+                {
+                  "title": "增加列数提升细节",
+                  "description": "列数越高越能保留结构，但 emoji 会更小，文本输出也会更长。"
+                },
+                {
+                  "title": "调整调色板",
+                  "description": "删除无关颜色的 emoji，或加入接近原图颜色的 emoji，可以让马赛克更像原图。"
+                }
+              ]
+            },
+            "faq": {
+              "title": "Photo from Emoji 常见问题",
+              "description": "关于 image to emoji mosaic、emoji 文本艺术和本地图片处理的常见问题。",
+              "items": [
+                {
+                  "question": "如何把照片转换成 emoji？",
+                  "answer": "上传图片，选择 emoji 列数和调色板，然后点击生成。工具会采样图片颜色，并用最接近颜色的 emoji 替换每个小格。"
+                },
+                {
+                  "question": "我的图片会上传到服务器吗？",
+                  "answer": "不会。图片会在你的浏览器中通过 canvas 解码和转换，所选文件不会离开设备。"
+                },
+                {
+                  "question": "可以复制成 emoji 文本吗？",
+                  "answer": "可以。生成后点击复制 emoji 文本即可复制多行 emoji。网格太大时，部分聊天应用可能显示过宽。"
+                },
+                {
+                  "question": "为什么 emoji 图片看起来比较抽象？",
+                  "answer": "Emoji 的颜色和形状有限。可以减少列数得到更粗颗粒的图标感，增加列数保留细节，或调整调色板让颜色更贴近原图。"
+                },
+                {
+                  "question": "什么图片效果最好？",
+                  "answer": "单一主体、光线清楚、背景简单的照片通常最容易生成可识别的 emoji 马赛克。"
+                }
+              ]
+            },
+            "page_title": "Photo from Emoji 生成器 - 图片转 Emoji 马赛克 | TinyToolFlare",
+            "page_description": "免费 Photo from Emoji 生成器，在浏览器本地把图片转换成 emoji 马赛克艺术，可自定义 emoji 调色板、下载 PNG 或复制 emoji 文本。",
+            "page_keywords": "photo from emoji, 图片转emoji, emoji马赛克生成器, emoji art generator, 照片转emoji, emoji文本艺术, TinyToolFlare"
           }
         }
       },

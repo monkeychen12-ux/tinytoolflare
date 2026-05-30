@@ -895,6 +895,105 @@
             "page_title": "Remove Location Data from Photo - Remove GPS Before Sharing | TinyToolFlare",
             "page_description": "Free online tool to remove GPS location from photos before sharing. Strip EXIF metadata from JPG, PNG, and WebP images locally in your browser.",
             "page_keywords": "remove location data from photo, remove GPS location from photos before sharing, remove EXIF metadata, strip GPS from image, photo privacy tool, TinyToolFlare"
+          },
+          "photo_from_emoji": {
+            "title": "Photo from Emoji Generator",
+            "description": "Turn a photo into emoji mosaic art in your browser. Upload an image, choose the emoji palette, then download a PNG or copy the emoji text.",
+            "tool_title": "Create Emoji Mosaic",
+            "upload_label": "Upload image",
+            "upload_hint": "Supports JPG, PNG, WebP, and screenshots. Processing stays local.",
+            "columns": "Emoji columns",
+            "cell_size": "Emoji size in pixels",
+            "background": "Background color",
+            "preserve_color": "Preserve source colors",
+            "preserve_color_hint": "Draw each tile with the sampled photo color, then place the emoji on top. This keeps faces and outlines much closer to the original.",
+            "skip_background": "Skip near-white background",
+            "skip_background_hint": "Leave very light areas blank so white paper or page margins do not become rows of emoji.",
+            "emoji_set": "Emoji palette",
+            "emoji_set_hint": "Add or remove emoji to change the color palette. More color variety usually gives a clearer result.",
+            "generate": "Generate Emoji Photo",
+            "generating": "Generating...",
+            "reset": "Reset",
+            "preview_title": "Original Preview",
+            "empty_preview": "Upload an image to preview it.",
+            "result_title": "Emoji Photo Result",
+            "empty_result": "Generate the emoji mosaic to see the PNG and text output.",
+            "output_grid": "Grid",
+            "emoji_count": "Emoji count",
+            "palette_count": "Palette",
+            "skipped_count": "Skipped",
+            "download": "Download PNG",
+            "copy_text": "Copy emoji text",
+            "upload_required": "Please upload an image first.",
+            "invalid_file": "Please upload a valid image file.",
+            "success": "Emoji photo generated successfully.",
+            "copied": "Emoji text copied.",
+            "error": "Could not generate the emoji photo. Try a smaller image or fewer columns.",
+            "use_cases": {
+              "title": "Make Emoji Art from Photos",
+              "description": "Use this photo from emoji generator when you want a playful mosaic that still resembles the original image.",
+              "items": [
+                {
+                  "title": "Profile and avatar art",
+                  "description": "Convert a portrait or pet photo into emoji mosaic art for social profiles, chat avatars, and community posts."
+                },
+                {
+                  "title": "Emoji text art",
+                  "description": "Copy the emoji-only text output for messages, comments, and lightweight creative experiments."
+                },
+                {
+                  "title": "Poster-style PNG",
+                  "description": "Download a clean PNG made from emoji tiles for presentations, memes, stickers, or design drafts."
+                }
+              ]
+            },
+            "tips": {
+              "title": "Emoji Mosaic Tips",
+              "description": "A few settings make a big difference when converting image colors into emoji tiles.",
+              "items": [
+                {
+                  "title": "Start with a simple image",
+                  "description": "Faces, pets, logos, and high-contrast objects work better than busy scenery with tiny details."
+                },
+                {
+                  "title": "Use more columns for detail",
+                  "description": "Higher columns preserve more structure but create smaller emoji and a larger text output."
+                },
+                {
+                  "title": "Tune the palette",
+                  "description": "Remove unrelated emoji or add colors that match the image to make the mosaic easier to recognize."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Photo from Emoji FAQ",
+              "description": "Answers for image to emoji mosaic, emoji text art, and local image processing.",
+              "items": [
+                {
+                  "question": "How do I turn a photo into emoji?",
+                  "answer": "Upload an image, choose the emoji columns and palette, then click Generate Emoji Photo. The tool samples the image colors and replaces each tile with the closest emoji color."
+                },
+                {
+                  "question": "Are my images uploaded to a server?",
+                  "answer": "No. The image is decoded and converted with canvas in your browser, so the selected file does not leave your device."
+                },
+                {
+                  "question": "Can I copy the result as emoji text?",
+                  "answer": "Yes. After generating the mosaic, use Copy emoji text to copy rows of emoji. Very large grids may be too wide for some chat apps."
+                },
+                {
+                  "question": "Why does the emoji photo look abstract?",
+                  "answer": "Emoji have limited colors and shapes. Try fewer columns for a chunkier icon look, more columns for detail, or a custom emoji palette that matches your photo."
+                },
+                {
+                  "question": "What images work best?",
+                  "answer": "Clear photos with a single subject, strong lighting, and simple backgrounds usually create the most recognizable emoji mosaics."
+                }
+              ]
+            },
+            "page_title": "Photo from Emoji Generator - Image to Emoji Mosaic | TinyToolFlare",
+            "page_description": "Free photo from emoji generator. Convert an image to emoji mosaic art locally in your browser, customize the emoji palette, download PNG, or copy emoji text.",
+            "page_keywords": "photo from emoji, image to emoji, emoji mosaic generator, emoji art generator, convert photo to emoji, emoji text art, TinyToolFlare"
           }
         }
       },

@@ -15,6 +15,7 @@ export const toolIcons = {
   images_to_pdf: "RiFilePdf2Line",
   pdf_to_images: "RiFileImageLine",
   photo_location_remover: "RiMapPinLine",
+  photo_from_emoji: "RiEmotionHappyLine",
   laundry_symbol_decoder: "RiTShirtAirLine",
   wake_window_by_age_calculator: "RiMoonClearLine",
 } as const;
@@ -29,6 +30,7 @@ export const toolLinks = {
   images_to_pdf: "/image/to-pdf",
   pdf_to_images: "/image/pdf-to-images",
   photo_location_remover: "/image/remove-location",
+  photo_from_emoji: "/image/photo-from-emoji",
   laundry_symbol_decoder: "/laundry-symbol-decoder",
   wake_window_by_age_calculator: "/wake-window-by-age-calculator",
   json_formatter: "/formatter/json",
@@ -54,6 +56,7 @@ export const toolCategories = [
       "images_to_pdf",
       "pdf_to_images",
       "photo_location_remover",
+      "photo_from_emoji",
     ],
   },
   {
