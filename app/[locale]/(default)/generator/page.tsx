@@ -1,5 +1,5 @@
 import ToolCategoryPage from "@/components/blocks/ToolCategoryPage";
-import { createPageMetadata } from "@/lib/seo";
+import { createToolCategoryMetadata } from "@/lib/tool-category-seo";
 import { getToolCategories } from "@/services/tools";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -9,14 +9,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  return createPageMetadata({
+  return createToolCategoryMetadata({
     locale,
+    categoryKey: "generator",
     path: "/generator",
-    title: "Online Generators | TinyToolFlare",
-    description:
-      "Free online generators from TinyToolFlare, including password, UUID, and icon generation tools.",
-    keywords:
-      "online generator, password generator, UUID generator, icon generator, TinyToolFlare",
   });
 }
 
@@ -25,7 +21,8 @@ export default async function GeneratorPage({
 }: {
   params: { locale: string };
 }) {
-  const category = (await getToolCategories(locale)).find(
+  const categories = await getToolCategories(locale);
+  const category = categories.find(
     (item) => item.key === "generator"
   );
 
@@ -33,5 +30,11 @@ export default async function GeneratorPage({
     notFound();
   }
 
-  return <ToolCategoryPage category={category} />;
+  return (
+    <ToolCategoryPage
+      category={category}
+      categories={categories}
+      locale={locale}
+    />
+  );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { createPageMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
+import ToolSeoShell from "@/components/blocks/ToolSeoShell";
 
 export async function generateMetadata({
   params: { locale },
@@ -20,8 +21,19 @@ export async function generateMetadata({
 
 export default function BMILayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
-  return children;
+  return (
+    <ToolSeoShell
+      locale={locale}
+      categoryKey="calculator"
+      toolKey="bmi_calculator"
+      path="/calculator/bmi"
+    >
+      {children}
+    </ToolSeoShell>
+  );
 } 

@@ -13,5 +13,6 @@ export interface ToolCategory {
 
 export interface ToolConfig {
   key: string;
+  path: string;
   tools: string[];
-} 
+}

@@ -1,5 +1,5 @@
 import ToolCategoryPage from "@/components/blocks/ToolCategoryPage";
-import { createPageMetadata } from "@/lib/seo";
+import { createToolCategoryMetadata } from "@/lib/tool-category-seo";
 import { getToolCategories } from "@/services/tools";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -9,14 +9,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  return createPageMetadata({
+  return createToolCategoryMetadata({
     locale,
+    categoryKey: "formatter",
     path: "/formatter",
-    title: "Online Formatters | TinyToolFlare",
-    description:
-      "Free online formatter tools from TinyToolFlare for JSON, XML, and developer data processing.",
-    keywords:
-      "online formatter, JSON formatter, XML formatter, developer tools, TinyToolFlare",
   });
 }
 
@@ -25,7 +21,8 @@ export default async function FormatterPage({
 }: {
   params: { locale: string };
 }) {
-  const category = (await getToolCategories(locale)).find(
+  const categories = await getToolCategories(locale);
+  const category = categories.find(
     (item) => item.key === "formatter"
   );
 
@@ -33,5 +30,11 @@ export default async function FormatterPage({
     notFound();
   }
 
-  return <ToolCategoryPage category={category} />;
+  return (
+    <ToolCategoryPage
+      category={category}
+      categories={categories}
+      locale={locale}
+    />
+  );
 }

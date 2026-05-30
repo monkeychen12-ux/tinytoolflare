@@ -9,19 +9,19 @@ export async function generateMetadata({
   params: { locale: string };
 }): Promise<Metadata> {
   const t = await getTranslations(
-    "tools.categories.image.tools.image_compressor"
+    "tools.categories.life.tools.laundry_symbol_decoder"
   );
 
   return createPageMetadata({
     locale,
-    path: "/image/compressor",
+    path: "/laundry-symbol-decoder",
     title: t("page_title"),
     description: t("page_description"),
     keywords: t("page_keywords"),
   });
 }
 
-export default function ImageCompressorLayout({
+export default function LaundrySymbolDecoderLayout({
   children,
   params: { locale },
 }: {
@@ -31,9 +31,10 @@ export default function ImageCompressorLayout({
   return (
     <ToolSeoShell
       locale={locale}
-      categoryKey="image"
-      toolKey="image_compressor"
-      path="/image/compressor"
+      categoryKey="life"
+      toolKey="laundry_symbol_decoder"
+      path="/laundry-symbol-decoder"
+      structuredData={false}
     >
       {children}
     </ToolSeoShell>

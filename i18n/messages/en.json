@@ -898,6 +898,219 @@
           }
         }
       },
+      "life": {
+        "name": "Life Tools",
+        "tools": {
+          "laundry_symbol_decoder": {
+            "title": "Laundry Symbol Decoder",
+            "description": "Decode clothing care label symbols by choosing the tub, triangle, circle, X, dots, bars, and letter marks. No upload or OCR required.",
+            "tool_title": "Build the Care Symbol",
+            "base_title": "Choose the main symbol",
+            "modifier_title": "Add marks from the label",
+            "reset": "Reset",
+            "cross_label": "X mark / Do not",
+            "dots_title": "Dots",
+            "dots_not_used": "Dots are not used for this symbol type.",
+            "lines_title": "Bars or lines",
+            "lines_not_used": "Bars are not used for this symbol type.",
+            "letter_title": "Dry-clean letter",
+            "no_letter": "None",
+            "quick_title": "Common lookups",
+            "result_title": "Decoded Care Advice",
+            "care_advice": "One-sentence advice",
+            "parts_title": "Matched parts",
+            "copy": "Copy advice",
+            "copied": "Copied",
+            "privacy_title": "Local symbol matching",
+            "privacy_text": "This decoder does not upload photos or scan labels. You choose the visible pieces of the care symbol, and the rule match happens in your browser.",
+            "base_symbols": {
+              "wash": {
+                "label": "Wash tub",
+                "description": "Washing method, water temperature, and gentle cycles."
+              },
+              "bleach": {
+                "label": "Triangle",
+                "description": "Whether bleach is allowed, limited, or forbidden."
+              },
+              "tumble_dry": {
+                "label": "Square + circle",
+                "description": "Tumble drying and dryer heat settings."
+              },
+              "iron": {
+                "label": "Iron",
+                "description": "Ironing permission and heat level."
+              },
+              "dry_clean": {
+                "label": "Circle",
+                "description": "Professional dry cleaning, wet cleaning, and solvent letters."
+              }
+            },
+            "dot_options": {
+              "none": "No dots",
+              "one": "1 dot",
+              "two": "2 dots",
+              "three": "3 dots"
+            },
+            "line_options": {
+              "none": "No bars",
+              "one": "1 bar",
+              "two": "2 bars"
+            },
+            "parts": {
+              "x": "X mark",
+              "letter": "Letter {letter}"
+            },
+            "quick_presets": {
+              "triangle_x": "Triangle with X",
+              "circle_p": "Circle P laundry symbol",
+              "wash_one_line": "Wash tub with one bar",
+              "wash_two_dots": "Wash tub with two dots",
+              "tumble_dry_x": "Square circle with X",
+              "iron_one_dot": "Iron with one dot"
+            },
+            "rules": {
+              "blocked": {
+                "wash": "Do not wash this garment; use the other care-label instructions or ask a professional cleaner.",
+                "bleach": "Do not bleach this garment; avoid chlorine bleach and oxygen bleach.",
+                "tumble_dry": "Do not tumble dry this garment; air dry it instead.",
+                "iron": "Do not iron this garment; avoid steam and heat pressing.",
+                "dry_clean": "Do not dry clean this garment; follow the washing and drying symbols instead."
+              },
+              "wash_temperature": {
+                "none": "at the label's stated temperature",
+                "one": "cold, about 30 C",
+                "two": "warm, about 40 C",
+                "three": "hot, about 50 C"
+              },
+              "process": {
+                "none": "a normal process",
+                "one": "a mild process",
+                "two": "a very mild process"
+              },
+              "wash": {
+                "advice": "Machine wash {temperature} using {process}."
+              },
+              "bleach": {
+                "allowed": "Bleach is allowed when needed.",
+                "non_chlorine": "Use only non-chlorine bleach when needed."
+              },
+              "tumble_heat": {
+                "none": "normal heat",
+                "one": "low heat",
+                "two": "medium heat",
+                "three": "high heat"
+              },
+              "tumble_dry": {
+                "advice": "Tumble dry on {heat} using {process}."
+              },
+              "iron_heat": {
+                "none": "the label's stated heat",
+                "one": "low heat",
+                "two": "medium heat",
+                "three": "high heat"
+              },
+              "iron": {
+                "advice": "Iron on {heat} and avoid going hotter than the symbol allows."
+              },
+              "dry_clean_methods": {
+                "none": "professional dry cleaning",
+                "P": "professional dry cleaning with P solvents",
+                "F": "professional dry cleaning with hydrocarbon solvents",
+                "W": "professional wet cleaning"
+              },
+              "dry_clean": {
+                "advice": "Use {method} with {process}."
+              }
+            },
+            "use_cases": {
+              "title": "Decode Laundry Symbols Without Uploading a Photo",
+              "description": "Use the laundry symbol decoder when a clothing label is clear enough to identify by shape, but the meaning is not obvious.",
+              "items": [
+                {
+                  "title": "What does triangle with X mean on clothes?",
+                  "description": "Select the triangle and X mark to get a plain answer for the common do-not-bleach symbol."
+                },
+                {
+                  "title": "Circle P laundry symbol",
+                  "description": "Choose the circle and P letter to understand professional dry-cleaning instructions without reading a full care-symbol chart."
+                },
+                {
+                  "title": "Dots and bars on wash labels",
+                  "description": "Use dots for heat and bars for gentler processes, then read the direct washing or drying advice."
+                }
+              ]
+            },
+            "lookup_table": {
+              "title": "Common Care Label Matches",
+              "description": "These examples cover common laundry symbol questions, including what dots, bars, X marks, and circle letters usually mean.",
+              "symbol": "Symbol",
+              "meaning": "Meaning",
+              "advice": "Advice",
+              "items": [
+                {
+                  "symbol": "Triangle with X",
+                  "meaning": "Do not bleach",
+                  "advice": "Use detergent only and skip both chlorine and oxygen bleach."
+                },
+                {
+                  "symbol": "Circle with P",
+                  "meaning": "Professional dry clean with P solvents",
+                  "advice": "Take it to a cleaner and point out the P symbol."
+                },
+                {
+                  "symbol": "Tub with one bar",
+                  "meaning": "Mild washing process",
+                  "advice": "Use a reduced-spin or permanent-press style cycle."
+                },
+                {
+                  "symbol": "Tub with two bars",
+                  "meaning": "Very mild washing process",
+                  "advice": "Use a delicate cycle and avoid rough agitation."
+                },
+                {
+                  "symbol": "Iron with one dot",
+                  "meaning": "Low-heat ironing",
+                  "advice": "Use low heat and test a hidden area first."
+                },
+                {
+                  "symbol": "Square circle with X",
+                  "meaning": "Do not tumble dry",
+                  "advice": "Air dry or follow any line-drying symbol on the label."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Laundry Symbol Decoder FAQ",
+              "description": "Quick answers for common care-label symbols and clothing tag questions.",
+              "items": [
+                {
+                  "question": "What does a triangle with X mean on clothes?",
+                  "answer": "A triangle with an X means do not bleach. Avoid chlorine bleach and oxygen bleach unless another label instruction clearly says otherwise."
+                },
+                {
+                  "question": "What does the circle P laundry symbol mean?",
+                  "answer": "A circle with P means professional dry cleaning is allowed with P solvents. It is an instruction for the cleaner, not a home-washing step."
+                },
+                {
+                  "question": "What do dots mean on laundry symbols?",
+                  "answer": "Dots usually indicate heat level. One dot is lower heat, two dots are medium or warm, and three dots are hotter, depending on whether the symbol is for washing, tumble drying, or ironing."
+                },
+                {
+                  "question": "What do bars under a laundry symbol mean?",
+                  "answer": "Bars usually mean a gentler process. One bar means mild treatment, and two bars mean very mild treatment such as a delicate cycle."
+                },
+                {
+                  "question": "Can this decode a care label photo automatically?",
+                  "answer": "No. This tool intentionally avoids OCR and uploads. Match the visible shapes manually, then the decoder gives a local rule-based answer."
+                }
+              ]
+            },
+            "page_title": "Laundry Symbol Decoder - Triangle X, Circle P, Dots and Bars | TinyToolFlare",
+            "page_description": "Free laundry symbol decoder for clothing care labels. Choose the tub, triangle, circle, X, dots, bars, and P/F/W letters to get plain care advice without uploading a photo.",
+            "page_keywords": "laundry symbol decoder, what does triangle with x mean on clothes, circle p laundry symbol, care label symbols, washing symbols, clothing tag symbols, TinyToolFlare"
+          }
+        }
+      },
       "formatter": {
         "name": "Formatter",
         "tools": {
@@ -950,6 +1163,13 @@
     "open": "Open",
     "search_placeholder": "Search tools",
     "clear_search": "Clear search",
-    "no_search_results": "No tools found"
+    "no_search_results": "No tools found",
+    "related_tools": {
+      "eyebrow": "Related tools",
+      "title": "More {category} tools",
+      "fallback_title": "More online tools",
+      "browse_category": "Browse {category}",
+      "other_categories": "Other tool categories"
+    }
   }
 }

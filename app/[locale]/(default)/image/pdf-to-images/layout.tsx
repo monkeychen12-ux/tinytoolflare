@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import ToolSeoShell from "@/components/blocks/ToolSeoShell";
 
 export async function generateMetadata({
   params: { locale },
@@ -20,8 +21,19 @@ export async function generateMetadata({
 
 export default function PdfToImagesLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
-  return children;
+  return (
+    <ToolSeoShell
+      locale={locale}
+      categoryKey="image"
+      toolKey="pdf_to_images"
+      path="/image/pdf-to-images"
+    >
+      {children}
+    </ToolSeoShell>
+  );
 }

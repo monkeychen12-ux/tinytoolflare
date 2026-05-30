@@ -29,7 +29,7 @@ import {
   Ruler,
   Sprout,
 } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 
 const CU_FT_TO_LITERS = 28.3168;
@@ -129,6 +129,7 @@ function getBagOptions(t: ReturnType<typeof useTranslations>): BagOption[] {
 }
 
 export default function RaisedBedSoilCalculatorPage() {
+  const locale = useLocale();
   const t = useTranslations(
     "tools.categories.calculator.tools.raised_bed_soil_calculator"
   );
@@ -325,7 +326,10 @@ export default function RaisedBedSoilCalculatorPage() {
       name: t("title"),
       applicationCategory: "UtilitiesApplication",
       operatingSystem: "Any",
-      url: "https://www.tinytoolflare.com/raised-bed-soil-calculator",
+      url:
+        locale === "zh"
+          ? "https://www.tinytoolflare.com/zh/raised-bed-soil-calculator"
+          : "https://www.tinytoolflare.com/raised-bed-soil-calculator",
       description: t("page_description"),
       isAccessibleForFree: true,
       offers: {

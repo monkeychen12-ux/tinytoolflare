@@ -11,20 +11,18 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   return createToolCategoryMetadata({
     locale,
-    categoryKey: "image",
-    path: "/image",
+    categoryKey: "life",
+    path: "/life",
   });
 }
 
-export default async function ImagePage({
+export default async function LifePage({
   params: { locale },
 }: {
   params: { locale: string };
 }) {
   const categories = await getToolCategories(locale);
-  const category = categories.find(
-    (item) => item.key === "image"
-  );
+  const category = categories.find((item) => item.key === "life");
 
   if (!category) {
     notFound();

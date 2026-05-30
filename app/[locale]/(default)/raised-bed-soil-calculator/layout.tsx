@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/seo";
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import ToolSeoShell from "@/components/blocks/ToolSeoShell";
 
 export async function generateMetadata({
   params: { locale },
@@ -22,8 +23,20 @@ export async function generateMetadata({
 
 export default function RaisedBedSoilCalculatorLayout({
   children,
+  params: { locale },
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
-  return children;
+  return (
+    <ToolSeoShell
+      locale={locale}
+      categoryKey="calculator"
+      toolKey="raised_bed_soil_calculator"
+      path="/raised-bed-soil-calculator"
+      structuredData={false}
+    >
+      {children}
+    </ToolSeoShell>
+  );
 }

@@ -1,5 +1,5 @@
 import ToolCategoryPage from "@/components/blocks/ToolCategoryPage";
-import { createPageMetadata } from "@/lib/seo";
+import { createToolCategoryMetadata } from "@/lib/tool-category-seo";
 import { getToolCategories } from "@/services/tools";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -9,13 +9,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string };
 }): Promise<Metadata> {
-  return createPageMetadata({
+  return createToolCategoryMetadata({
     locale,
+    categoryKey: "calculator",
     path: "/calculator",
-    title: "Online Calculators | TinyToolFlare",
-    description:
-      "Free online calculators from TinyToolFlare, including BMI and practical everyday calculation tools.",
-    keywords: "online calculator, BMI calculator, free calculator, TinyToolFlare",
   });
 }
 
@@ -24,7 +21,8 @@ export default async function CalculatorPage({
 }: {
   params: { locale: string };
 }) {
-  const category = (await getToolCategories(locale)).find(
+  const categories = await getToolCategories(locale);
+  const category = categories.find(
     (item) => item.key === "calculator"
   );
 
@@ -32,5 +30,11 @@ export default async function CalculatorPage({
     notFound();
   }
 
-  return <ToolCategoryPage category={category} />;
+  return (
+    <ToolCategoryPage
+      category={category}
+      categories={categories}
+      locale={locale}
+    />
+  );
 }

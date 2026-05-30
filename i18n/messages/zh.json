@@ -467,6 +467,79 @@
             "output_detail": "{width}×{height}，质量 {quality}%",
             "about_title": "本地浏览器压缩，保护隐私",
             "about_desc": "这个工具适合上传限制、报名表、证件照或资料提交场景。可以将图片压缩到 500KB 以内、压缩到 1MB，或按自定义 KB 大小减少照片体积，文件不会上传到服务器。",
+            "use_cases": {
+              "title": "常见使用场景",
+              "description": "先用压缩工具处理图片，再根据上传表单的限制选择合适的目标大小。",
+              "items": [
+                {
+                  "title": "压缩图片到 500KB 以内",
+                  "description": "将目标大小设置为 500 KB，适合表单、头像、报名系统和资料上传页面。"
+                },
+                {
+                  "title": "压缩图片到 1MB",
+                  "description": "使用 1 MB 预设，在保留更多细节的同时减小网站、邮件、CMS 或商品图的体积。"
+                },
+                {
+                  "title": "减小照片大小用于上传",
+                  "description": "选择 JPG 或 WebP，可以在保持可读性的同时缩小手机照片、证件资料和客服附件。"
+                }
+              ]
+            },
+            "platform_limits": {
+              "title": "常见上传大小目标",
+              "description": "不同平台、国家和表单限制会变化。下面这些常见目标可帮助你快速选择压缩大小。",
+              "platform": "平台或用途",
+              "limit": "常见目标",
+              "note": "建议",
+              "items": [
+                {
+                  "platform": "报名或申请表",
+                  "limit": "100 KB - 500 KB",
+                  "note": "先从 500 KB 开始，如果表单仍拒绝上传，再降低目标大小。"
+                },
+                {
+                  "platform": "头像照片",
+                  "limit": "200 KB - 1 MB",
+                  "note": "照片建议使用 JPG，并保留足够分辨率以看清面部细节。"
+                },
+                {
+                  "platform": "邮件附件",
+                  "limit": "1 MB 以内",
+                  "note": "发送大尺寸手机照片前，可用 WebP 或 JPG 减小文件体积。"
+                },
+                {
+                  "platform": "网站和 CMS 上传",
+                  "limit": "500 KB - 1 MB",
+                  "note": "平台支持时优先选择 WebP，通常能获得更小文件和更快加载。"
+                }
+              ]
+            },
+            "faq": {
+              "title": "图片压缩常见问题",
+              "description": "关于指定大小压缩、500KB、1MB 和本地处理的常见答案。",
+              "items": [
+                {
+                  "question": "如何把图片压缩到 500KB 以内？",
+                  "answer": "上传图片后，将目标大小设置为 500 KB，选择 JPG 或 WebP，然后点击压缩图片。如果结果仍超过 500 KB，工具会继续降低尺寸和质量以尽量接近目标。"
+                },
+                {
+                  "question": "如何把图片压缩到 1MB？",
+                  "answer": "使用 1 MB 预设，或手动输入 1024 KB。这个目标适合比 500 KB 需要更多细节的上传场景。"
+                },
+                {
+                  "question": "我的图片会上传到服务器吗？",
+                  "answer": "不会。压缩过程通过浏览器 canvas 在本地完成，所选文件不会离开你的设备。"
+                },
+                {
+                  "question": "应该选择哪种输出格式？",
+                  "answer": "普通照片建议选择 JPG，追求更小体积可选 WebP，需要透明背景或清晰图形时再选择 PNG。"
+                },
+                {
+                  "question": "为什么压缩后仍可能超过目标大小？",
+                  "answer": "部分图片细节复杂，或 PNG 需要保留透明度，可能难以达到很低目标。可以尝试 JPG/WebP、更低目标大小，或接受较小的最终分辨率。"
+                }
+              ]
+            },
             "page_title": "图片压缩到指定大小 - 压缩图片到500KB以内或1MB | TinyToolFlare",
             "page_description": "免费在线图片压缩到指定大小工具，支持 JPG、PNG、WebP，可压缩图片到500KB以内、1MB或自定义KB大小，适合上传资料和表单提交，文件在本地浏览器处理。",
             "page_keywords": "图片压缩到指定大小, 图片压缩到500KB以内, 图片压缩到1MB, 减小照片大小, 在线图片压缩, TinyToolFlare"
@@ -824,6 +897,219 @@
           }
         }
       },
+      "life": {
+        "name": "生活工具",
+        "tools": {
+          "laundry_symbol_decoder": {
+            "title": "Laundry Symbol Decoder 洗标符号解码器",
+            "description": "通过点选盆、三角、圆圈、X、点数、横线和字母，快速看懂衣服洗标符号。不需要上传图片，也不需要 OCR。",
+            "tool_title": "拼出洗标符号",
+            "base_title": "选择主符号",
+            "modifier_title": "添加标签上的修饰",
+            "reset": "重置",
+            "cross_label": "X 标记 / 不可",
+            "dots_title": "点数",
+            "dots_not_used": "这个符号类型通常不使用点数。",
+            "lines_title": "横线或线条",
+            "lines_not_used": "这个符号类型通常不使用横线。",
+            "letter_title": "干洗字母",
+            "no_letter": "无",
+            "quick_title": "常见查询",
+            "result_title": "洗护建议",
+            "care_advice": "一句话建议",
+            "parts_title": "已匹配的组成",
+            "copy": "复制建议",
+            "copied": "已复制",
+            "privacy_title": "本地符号匹配",
+            "privacy_text": "这个工具不会上传照片，也不会扫描洗标。你只需要点选看得见的符号组成，规则匹配会在浏览器本地完成。",
+            "base_symbols": {
+              "wash": {
+                "label": "水洗盆",
+                "description": "表示水洗方式、水温和轻柔程度。"
+              },
+              "bleach": {
+                "label": "三角形",
+                "description": "表示是否可以漂白，或只能使用特定漂白方式。"
+              },
+              "tumble_dry": {
+                "label": "方框 + 圆圈",
+                "description": "表示是否可以烘干以及烘干温度。"
+              },
+              "iron": {
+                "label": "熨斗",
+                "description": "表示是否可以熨烫以及熨烫温度。"
+              },
+              "dry_clean": {
+                "label": "圆圈",
+                "description": "表示专业干洗、湿洗和溶剂字母。"
+              }
+            },
+            "dot_options": {
+              "none": "无点",
+              "one": "1 点",
+              "two": "2 点",
+              "three": "3 点"
+            },
+            "line_options": {
+              "none": "无横线",
+              "one": "1 条",
+              "two": "2 条"
+            },
+            "parts": {
+              "x": "X 标记",
+              "letter": "字母 {letter}"
+            },
+            "quick_presets": {
+              "triangle_x": "三角形加 X",
+              "circle_p": "圆圈 P 洗标",
+              "wash_one_line": "水洗盆加一条横线",
+              "wash_two_dots": "水洗盆加两点",
+              "tumble_dry_x": "方框圆圈加 X",
+              "iron_one_dot": "熨斗加一点"
+            },
+            "rules": {
+              "blocked": {
+                "wash": "这件衣物不可水洗；请遵循其他洗标说明或咨询专业清洁店。",
+                "bleach": "这件衣物不可漂白；请避免含氯漂白剂和氧系漂白剂。",
+                "tumble_dry": "这件衣物不可滚筒烘干；请改用自然晾干。",
+                "iron": "这件衣物不可熨烫；请避免蒸汽和高温压烫。",
+                "dry_clean": "这件衣物不可干洗；请按水洗和干燥符号处理。"
+              },
+              "wash_temperature": {
+                "none": "按标签标注的水温",
+                "one": "冷水，约 30 C",
+                "two": "温水，约 40 C",
+                "three": "热水，约 50 C"
+              },
+              "process": {
+                "none": "普通程序",
+                "one": "缓和程序",
+                "two": "非常缓和程序"
+              },
+              "wash": {
+                "advice": "使用{temperature}并选择{process}机洗。"
+              },
+              "bleach": {
+                "allowed": "需要时可以漂白。",
+                "non_chlorine": "需要时仅使用非氯漂白剂。"
+              },
+              "tumble_heat": {
+                "none": "普通温度",
+                "one": "低温",
+                "two": "中温",
+                "three": "高温"
+              },
+              "tumble_dry": {
+                "advice": "使用{heat}并选择{process}滚筒烘干。"
+              },
+              "iron_heat": {
+                "none": "标签允许的温度",
+                "one": "低温",
+                "two": "中温",
+                "three": "高温"
+              },
+              "iron": {
+                "advice": "使用{heat}熨烫，并避免超过符号允许的温度。"
+              },
+              "dry_clean_methods": {
+                "none": "专业干洗",
+                "P": "使用 P 类溶剂的专业干洗",
+                "F": "使用烃类溶剂的专业干洗",
+                "W": "专业湿洗"
+              },
+              "dry_clean": {
+                "advice": "使用{method}，并采用{process}。"
+              }
+            },
+            "use_cases": {
+              "title": "不用上传照片也能看懂洗标",
+              "description": "当衣服标签还能看清形状，但你不确定含义时，可以用这个 laundry symbol decoder 快速匹配。",
+              "items": [
+                {
+                  "title": "what does triangle with x mean on clothes",
+                  "description": "选择三角形和 X 标记，就能直接得到“不可漂白”的中文建议。"
+                },
+                {
+                  "title": "circle P laundry symbol",
+                  "description": "选择圆圈和 P 字母，快速判断这是给专业干洗店看的溶剂说明。"
+                },
+                {
+                  "title": "洗标上的点和横线",
+                  "description": "点数通常表示温度，横线通常表示更轻柔的程序，组合后可得到一句话护理建议。"
+                }
+              ]
+            },
+            "lookup_table": {
+              "title": "常见洗标符号匹配",
+              "description": "下面覆盖常见的衣服洗标问题，包括点数、横线、X 标记和圆圈字母通常代表什么。",
+              "symbol": "符号",
+              "meaning": "含义",
+              "advice": "建议",
+              "items": [
+                {
+                  "symbol": "三角形加 X",
+                  "meaning": "不可漂白",
+                  "advice": "只用洗涤剂，避免含氯漂白剂和氧系漂白剂。"
+                },
+                {
+                  "symbol": "圆圈加 P",
+                  "meaning": "可用 P 类溶剂专业干洗",
+                  "advice": "送去干洗店，并提醒店员查看 P 符号。"
+                },
+                {
+                  "symbol": "水洗盆加一条横线",
+                  "meaning": "缓和水洗程序",
+                  "advice": "使用较低转速或类似免烫/柔和的洗衣程序。"
+                },
+                {
+                  "symbol": "水洗盆加两条横线",
+                  "meaning": "非常缓和水洗程序",
+                  "advice": "使用精细衣物程序，避免强烈搅动。"
+                },
+                {
+                  "symbol": "熨斗加一点",
+                  "meaning": "低温熨烫",
+                  "advice": "使用低温，并先在不显眼处测试。"
+                },
+                {
+                  "symbol": "方框圆圈加 X",
+                  "meaning": "不可滚筒烘干",
+                  "advice": "改为自然晾干，或遵循标签上的晾干符号。"
+                }
+              ]
+            },
+            "faq": {
+              "title": "洗标符号常见问题",
+              "description": "关于衣服护理标签、洗衣符号和常见长尾问题的快速答案。",
+              "items": [
+                {
+                  "question": "衣服上三角形加 X 是什么意思？",
+                  "answer": "三角形加 X 表示不可漂白。除非标签另有明确说明，否则应避免含氯漂白剂和氧系漂白剂。"
+                },
+                {
+                  "question": "circle P laundry symbol 是什么意思？",
+                  "answer": "圆圈内有 P 表示可以使用 P 类溶剂进行专业干洗。这通常是给干洗店的说明，不是家庭水洗步骤。"
+                },
+                {
+                  "question": "洗标上的点数表示什么？",
+                  "answer": "点数通常表示温度等级。一点较低，两点中等，三点较高；具体会根据水洗、烘干或熨烫符号而变化。"
+                },
+                {
+                  "question": "洗标符号下面的横线是什么意思？",
+                  "answer": "横线通常表示更轻柔的处理。一条横线表示缓和程序，两条横线表示非常缓和程序，例如精细衣物模式。"
+                },
+                {
+                  "question": "这个工具可以自动识别洗标照片吗？",
+                  "answer": "不可以。这个工具刻意不做 OCR 和上传。你手动匹配可见形状后，解码器会在本地给出规则答案。"
+                }
+              ]
+            },
+            "page_title": "Laundry Symbol Decoder 洗标符号解码器 - 三角X和圆圈P | TinyToolFlare",
+            "page_description": "免费 Laundry Symbol Decoder 洗标符号解码器，点选水洗盆、三角、圆圈、X、点数、横线和 P/F/W 字母，不上传照片即可获得一句话洗护建议。",
+            "page_keywords": "laundry symbol decoder, 洗标符号, 衣服洗标符号, what does triangle with x mean on clothes, circle p laundry symbol, 洗衣符号, TinyToolFlare"
+          }
+        }
+      },
       "formatter": {
         "name": "格式化器",
         "tools": {
@@ -876,6 +1162,13 @@
     "open": "打开",
     "search_placeholder": "搜索工具",
     "clear_search": "清空搜索",
-    "no_search_results": "未找到相关工具"
+    "no_search_results": "未找到相关工具",
+    "related_tools": {
+      "eyebrow": "相关工具",
+      "title": "更多{category}工具",
+      "fallback_title": "更多在线工具",
+      "browse_category": "浏览{category}",
+      "other_categories": "其他工具分类"
+    }
   }
 }

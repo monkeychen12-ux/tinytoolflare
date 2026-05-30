@@ -29,6 +29,11 @@
           "icon": "HiOutlineSparkles"
         },
         {
+          "title": "Life Tools",
+          "url": "/life",
+          "icon": "HiOutlineSparkles"
+        },
+        {
           "title": "Formatter",
           "url": "/formatter",
           "icon": "MdPayment"

@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import ToolSeoShell from "@/components/blocks/ToolSeoShell";
 
 export async function generateMetadata({
   params: { locale },
@@ -18,6 +19,21 @@ export async function generateMetadata({
   });
 }
 
-export default function XmlLayout({ children }: { children: React.ReactNode }) {
-  return children;
+export default function XmlLayout({
+  children,
+  params: { locale },
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
+  return (
+    <ToolSeoShell
+      locale={locale}
+      categoryKey="formatter"
+      toolKey="xml_formatter"
+      path="/formatter/xml"
+    >
+      {children}
+    </ToolSeoShell>
+  );
 }

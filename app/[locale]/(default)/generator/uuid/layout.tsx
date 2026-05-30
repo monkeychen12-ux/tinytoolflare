@@ -1,6 +1,7 @@
 import { createPageMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import ToolSeoShell from "@/components/blocks/ToolSeoShell";
 
 export async function generateMetadata({
   params: { locale },
@@ -17,6 +18,21 @@ export async function generateMetadata({
   });
 }
 
-export default function UUIDLayout({ children }: { children: React.ReactNode }) {
-  return children;
+export default function UUIDLayout({
+  children,
+  params: { locale },
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
+  return (
+    <ToolSeoShell
+      locale={locale}
+      categoryKey="generator"
+      toolKey="uuid_generator"
+      path="/generator/uuid"
+    >
+      {children}
+    </ToolSeoShell>
+  );
 } 
