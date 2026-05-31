@@ -32,6 +32,10 @@ export function getOpenGraphLocale(locale: string) {
   return locale === "zh" ? "zh_CN" : "en_US";
 }
 
+function removeSiteNameSuffix(title: string) {
+  return title.replace(new RegExp(`\\s*\\|\\s*${siteName}\\s*$`), "").trim();
+}
+
 export function createPageMetadata({
   locale,
   path,
@@ -46,10 +50,11 @@ export function createPageMetadata({
   keywords?: string;
 }): Metadata {
   const canonical = getCanonicalUrl(locale, path);
+  const pageTitle = removeSiteNameSuffix(title);
 
   return {
     metadataBase: new URL(siteUrl),
-    title,
+    title: pageTitle,
     description,
     keywords,
     alternates: {
@@ -59,7 +64,7 @@ export function createPageMetadata({
     robots: indexRobots,
     openGraph: {
       type: "website",
-      title,
+      title: pageTitle,
       description,
       url: canonical,
       siteName,
@@ -75,7 +80,7 @@ export function createPageMetadata({
     },
     twitter: {
       card: "summary",
-      title,
+      title: pageTitle,
       description,
       images: ["/logo.png"],
     },

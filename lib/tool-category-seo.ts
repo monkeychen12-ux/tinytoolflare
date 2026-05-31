@@ -25,8 +25,8 @@ export async function createToolCategoryMetadata({
     path,
     title:
       locale === "zh"
-        ? `${categoryName} - 免费在线工具 | TinyToolFlare`
-        : `Online ${categoryName} Tools | TinyToolFlare`,
+        ? `${categoryName} - 免费在线工具`
+        : `Online ${categoryName} Tools`,
     description:
       locale === "zh"
         ? `浏览 TinyToolFlare 的${categoryName}工具，包括 ${toolNames}。无需安装，免费在线使用。`
