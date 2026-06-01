@@ -433,6 +433,131 @@
             "faq_how_to_use_note1": "- All image processing is done locally in your browser for privacy.",
             "faq_how_to_use_note2": "- Supports batch generation of multi-size, multi-style icons for web, PWA, app, etc.",
             "faq_how_to_use_note3": "- Auto-generates common HTML code for easy integration."
+          },
+          "text_card_generator": {
+            "title": "Text Card Generator",
+            "description": "Create shareable quote cards and social text images with platform-inspired styles, highlight words, author details, and PNG download.",
+            "editor_title": "Create Text Card",
+            "text_label": "Card text",
+            "style_label": "Style",
+            "size_label": "Canvas size",
+            "highlight_label": "Highlight words, comma separated",
+            "author_label": "Name",
+            "handle_label": "Handle",
+            "date_label": "Date",
+            "footer_label": "Footer",
+            "font_size_label": "Text size",
+            "template_label": "Content template",
+            "template_placeholder": "Choose a starter",
+            "custom_colors": "Custom colors",
+            "color_background": "Background",
+            "color_card": "Card",
+            "color_text": "Text",
+            "color_accent": "Accent",
+            "download": "Download PNG",
+            "copy_image": "Copy Image",
+            "reset": "Reset",
+            "preview_title": "Live preview",
+            "download_ready": "PNG is ready.",
+            "copied_image": "PNG copied to clipboard.",
+            "copy_fallback": "Image clipboard is not available here, so the PNG was downloaded instead.",
+            "clipboard_error": "Could not copy the image in this browser.",
+            "image_error": "Could not generate the image in this browser.",
+            "styles": {
+              "short_video": "Short video dark",
+              "red_note": "Red note clean",
+              "story": "Story gradient",
+              "quote": "Quote post",
+              "minimal": "Minimal editorial",
+              "thread": "Thread post",
+              "neon": "Neon poster",
+              "newspaper": "Newspaper",
+              "memo": "Memo note"
+            },
+            "sizes": {
+              "portrait": "Portrait 3:4",
+              "square": "Square 1:1",
+              "story": "Story 9:16"
+            },
+            "defaults": {
+              "text": "Why does this keep getting popular?\nCan someone at the scene explain what actually happened?",
+              "highlight": "popular,scene",
+              "author": "TinyToolFlare",
+              "footer": "10:31 Sunday"
+            },
+            "templates": {
+              "items": [
+                {
+                  "key": "breaking",
+                  "label": "Breaking update",
+                  "text": "Why does this keep getting popular?\nCan someone at the scene explain what actually happened?",
+                  "highlight": "popular,scene",
+                  "footer": "10:31 Sunday"
+                },
+                {
+                  "key": "quote",
+                  "label": "Quote highlight",
+                  "text": "The best ideas are usually simple enough to explain, but specific enough to remember.",
+                  "highlight": "simple,specific",
+                  "footer": "Quote card"
+                },
+                {
+                  "key": "announcement",
+                  "label": "Community notice",
+                  "text": "New update is live today.\nSave this card and share it with the team.",
+                  "highlight": "live,share",
+                  "footer": "Team update"
+                }
+              ]
+            },
+            "style_gallery": {
+              "title": "Supported Card Styles",
+              "description": "Pick a preset below, then fine-tune the background, card, text, and accent colors in the editor.",
+              "sample_before": "Make the key ",
+              "sample_highlight": "words stand out"
+            },
+            "use_cases": {
+              "title": "Make Text Images for Social Sharing",
+              "description": "Turn plain text into a polished share card for short videos, note posts, stories, newsletters, and community updates.",
+              "items": [
+                {
+                  "title": "Quote card generator",
+                  "description": "Paste a quote, highlight key words, add an author line, and export a clean quote image for posts or carousels."
+                },
+                {
+                  "title": "Social text image maker",
+                  "description": "Use platform-inspired layouts for short video covers, story screenshots, note-style cards, and feed posts."
+                },
+                {
+                  "title": "Local PNG export",
+                  "description": "The card is rendered and downloaded in your browser, so drafts and private text do not need to be uploaded."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Text Card Generator FAQ",
+              "items": [
+                {
+                  "question": "Can I make a TikTok-style or short video text card?",
+                  "answer": "Yes. Choose the short video dark style for a black card, bright accent highlights, creator metadata, and side social actions inspired by vertical video shares."
+                },
+                {
+                  "question": "How do I highlight certain words in the card?",
+                  "answer": "Enter words in the highlight field separated by commas. Matching text in the preview and downloaded PNG uses the selected style accent color."
+                },
+                {
+                  "question": "What image sizes can I export?",
+                  "answer": "The tool supports portrait 3:4, square 1:1, and story 9:16 PNG exports for common social sharing formats."
+                },
+                {
+                  "question": "Is my text uploaded to a server?",
+                  "answer": "No. Editing, preview, and PNG generation happen locally in your browser."
+                }
+              ]
+            },
+            "page_title": "Text Card Generator - Social Quote Image Maker | TinyToolFlare",
+            "page_description": "Free text card generator for quote cards, short video text images, story posts, note-style social cards, word highlights, and local PNG export.",
+            "page_keywords": "text card generator, quote card maker, social text image maker, TikTok style text card, text to image, share card generator, TinyToolFlare"
           }
         }
       },

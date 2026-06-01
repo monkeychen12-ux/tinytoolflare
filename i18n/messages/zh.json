@@ -432,6 +432,131 @@
             "faq_how_to_use_note1": "- 所有图片处理均在本地浏览器完成，保障隐私安全。",
             "faq_how_to_use_note2": "- 支持批量生成多尺寸、多风格图标，适配网站、PWA、App等多场景。",
             "faq_how_to_use_note3": "- 自动生成常用HTML代码，集成更便捷。"
+          },
+          "text_card_generator": {
+            "title": "文字卡片生成器",
+            "description": "生成适合社交平台分享的文字卡片，支持多种主流分享风格、关键词高亮、作者信息和 PNG 下载。",
+            "editor_title": "制作文字卡片",
+            "text_label": "卡片文字",
+            "style_label": "样式",
+            "size_label": "画布尺寸",
+            "highlight_label": "高亮词，用逗号分隔",
+            "author_label": "昵称",
+            "handle_label": "账号",
+            "date_label": "日期",
+            "footer_label": "底部信息",
+            "font_size_label": "文字大小",
+            "template_label": "内容模板",
+            "template_placeholder": "选择一个起始内容",
+            "custom_colors": "自定义颜色",
+            "color_background": "背景",
+            "color_card": "卡片",
+            "color_text": "文字",
+            "color_accent": "强调",
+            "download": "下载 PNG",
+            "copy_image": "复制图片",
+            "reset": "重置",
+            "preview_title": "实时预览",
+            "download_ready": "PNG 已生成。",
+            "copied_image": "PNG 已复制到剪贴板。",
+            "copy_fallback": "当前环境不支持复制图片，已改为下载 PNG。",
+            "clipboard_error": "当前浏览器无法复制图片。",
+            "image_error": "当前浏览器无法生成图片。",
+            "styles": {
+              "short_video": "短视频黑底",
+              "red_note": "小红书笔记",
+              "story": "Story 渐变",
+              "quote": "引用帖子",
+              "minimal": "极简编辑",
+              "thread": "动态帖子",
+              "neon": "霓虹海报",
+              "newspaper": "报纸标题",
+              "memo": "便签记录"
+            },
+            "sizes": {
+              "portrait": "竖版 3:4",
+              "square": "方图 1:1",
+              "story": "Story 9:16"
+            },
+            "defaults": {
+              "text": "中大怎么又烧起来了\n有没有现场的同志讲讲具体情况",
+              "highlight": "中大,现场",
+              "author": "盐然一夏",
+              "footer": "10:31 Sunday"
+            },
+            "templates": {
+              "items": [
+                {
+                  "key": "breaking",
+                  "label": "热点追问",
+                  "text": "中大怎么又烧起来了\n有没有现场的同志讲讲具体情况",
+                  "highlight": "中大,现场",
+                  "footer": "10:31 Sunday"
+                },
+                {
+                  "key": "quote",
+                  "label": "观点摘录",
+                  "text": "真正有传播力的观点，通常足够简单，也足够具体。",
+                  "highlight": "传播力,简单,具体",
+                  "footer": "Quote card"
+                },
+                {
+                  "key": "announcement",
+                  "label": "社群通知",
+                  "text": "今天有一个新更新上线。\n保存这张卡片并转发给团队。",
+                  "highlight": "新更新,转发",
+                  "footer": "Team update"
+                }
+              ]
+            },
+            "style_gallery": {
+              "title": "支持的卡片样式",
+              "description": "可以先选择下面的预设样式，再在编辑区微调背景、卡片、文字和强调色。",
+              "sample_before": "让重点",
+              "sample_highlight": "文字更醒目"
+            },
+            "use_cases": {
+              "title": "把文字做成适合分享的图片",
+              "description": "把普通文字快速变成精致的分享卡片，适合短视频封面、笔记配图、Story、社群公告和观点摘录。",
+              "items": [
+                {
+                  "title": "引用文字卡片",
+                  "description": "粘贴观点、金句或长文摘录，设置高亮词和作者信息，导出适合发布的 quote card。"
+                },
+                {
+                  "title": "社交平台文字图",
+                  "description": "使用接近短视频、小红书笔记、Story、引用帖的分享样式，快速制作 text image。"
+                },
+                {
+                  "title": "本地生成 PNG",
+                  "description": "编辑、预览和导出都在浏览器内完成，草稿文字不需要上传到服务器。"
+                }
+              ]
+            },
+            "faq": {
+              "title": "文字卡片生成器常见问题",
+              "items": [
+                {
+                  "question": "可以做类似短视频平台的黑底文字卡片吗？",
+                  "answer": "可以。选择“短视频黑底”样式，会得到黑色圆角卡片、亮色关键词、作者信息和侧边互动元素，适合竖屏分享。"
+                },
+                {
+                  "question": "怎么让某些词变成高亮色？",
+                  "answer": "在高亮词输入框里输入需要高亮的词，用逗号分隔。预览和下载的 PNG 都会按当前样式使用强调色。"
+                },
+                {
+                  "question": "支持哪些导出尺寸？",
+                  "answer": "目前支持竖版 3:4、方图 1:1 和 Story 9:16 三种 PNG 尺寸，覆盖常见社交分享场景。"
+                },
+                {
+                  "question": "输入的文字会上传吗？",
+                  "answer": "不会。文字编辑、预览和 PNG 生成都在你的浏览器本地完成。"
+                }
+              ]
+            },
+            "page_title": "文字卡片生成器 - 社交平台文字图片制作工具 | TinyToolFlare",
+            "page_description": "免费文字卡片生成器，制作 quote card、短视频黑底文字图、小红书笔记风格卡片、Story 分享图，支持关键词高亮和本地 PNG 导出。",
+            "page_keywords": "文字卡片生成器, 文字图片制作, quote card maker, 社交分享图, 小红书文字卡片, 短视频文字图, TinyToolFlare"
           }
         }
       },

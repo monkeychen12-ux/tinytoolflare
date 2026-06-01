@@ -7,6 +7,7 @@ export const toolIcons = {
   password_generator: "RiKey2Line",
   uuid_generator: "RiFingerprint2Line",
   qr_code_generator: "RiQrCodeLine",
+  text_card_generator: "RiTextSnippet",
   json_formatter: "RiBracesLine",
   xml_formatter: "RiCodeSSlashLine",
   sql_formatter: "RiDatabase2Line",
@@ -26,6 +27,7 @@ export const toolLinks = {
   password_generator: "/generator/password",
   uuid_generator: "/generator/uuid",
   icon_generator: "/generator/icon-gen",
+  text_card_generator: "/generator/text-card",
   image_compressor: "/image/compressor",
   images_to_pdf: "/image/to-pdf",
   pdf_to_images: "/image/pdf-to-images",
@@ -46,7 +48,12 @@ export const toolCategories = [
   {
     key: "generator",
     path: "/generator",
-    tools: ["password_generator", "uuid_generator", "icon_generator"],
+    tools: [
+      "password_generator",
+      "uuid_generator",
+      "icon_generator",
+      "text_card_generator",
+    ],
   },
   {
     key: "image",
