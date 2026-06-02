@@ -4,7 +4,7 @@
   "header": {
     "brand": {
       "title": "TinyToolFlare",
-      "slogan": "small but beautiful", 
+      "slogan": "small but beautiful",
       "logo": {
         "src": "/logo.png",
         "alt": "TinyToolFlare"
@@ -40,9 +40,7 @@
         }
       ]
     },
-    "buttons": [
-      
-    ],
+    "buttons": [],
     "show_sign": false,
     "show_theme": true,
     "show_locale": true
@@ -52,13 +50,12 @@
     "highlight_text": "Online Tools",
     "description": "TinyToolFlare provides rich online tools covering text processing, image editing, code conversion and many other practical functions.<br/>No installation required, free to use, making your daily work more convenient and efficient.",
     "tip": "",
-    "buttons": [
-    ],
+    "buttons": [],
     "show_happy_users": false,
     "show_badge": false
   },
   "branding": {
-    "title": "TinyToolFlare is built on the shoulders of giants",
+    "title": "TinyToolFlare brings practical browser tools together",
     "items": [
       {
         "title": "Next.js",
@@ -101,24 +98,24 @@
     "name": "introduce",
     "title": "What is TinyToolFlare",
     "label": "Introduce",
-    "description": "TinyToolFlare provides rich online tools covering text processing, image editing, code conversion and many other practical functions. No installation required, free to use.",
+    "description": "TinyToolFlare is a free collection of online tools for image work, code formatting, generators, calculators, and everyday utilities. Use the tools directly in your browser with no installation required.",
     "image": {
       "src": "/imgs/features/1.png"
     },
     "items": [
       {
-        "title": "Ready-to-use Templates",
-        "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
+        "title": "Ready-to-use Tools",
+        "description": "Open a tool page and finish common tasks like compressing images, formatting JSON, or generating secure passwords.",
         "icon": "RiNextjsFill"
       },
       {
-        "title": "Infrastructure Setup",
-        "description": "Get instant access to scalable infrastructure with best practices built-in.",
+        "title": "Fast Browser Workflows",
+        "description": "Most tools are designed for quick one-off tasks with clear inputs, instant previews, and direct downloads where needed.",
         "icon": "RiDatabase2Line"
       },
       {
-        "title": "Quick Deployment",
-        "description": "Deploy your AI SaaS application to production in hours, not days.",
+        "title": "Free and Simple",
+        "description": "No installation, no complicated setup, and no account required for everyday utility tools.",
         "icon": "RiCloudyFill"
       }
     ]
@@ -127,27 +124,27 @@
     "name": "benefit",
     "title": "Why Choose TinyToolFlare",
     "label": "Benefits",
-    "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    "description": "Use TinyToolFlare when you need small, focused tools for work, study, development, and daily life.",
     "items": [
       {
-        "title": "Complete Framework",
-        "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
+        "title": "Useful Daily Utilities",
+        "description": "Calculators, generators, formatters, image tools, and life tools are grouped so you can find the right task quickly.",
         "icon": "RiNextjsFill",
         "image": {
           "src": "/imgs/features/2.png"
         }
       },
       {
-        "title": "Rich Templates Library",
-        "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
+        "title": "Image and Document Helpers",
+        "description": "Compress images, convert images to PDF, export PDF pages to images, and remove photo location metadata online.",
         "icon": "RiClapperboardAiLine",
         "image": {
           "src": "/imgs/features/3.png"
         }
       },
       {
-        "title": "Technical Guidance",
-        "description": "Get dedicated support and join our developer community to ensure your successful launch.",
+        "title": "Developer-friendly Tools",
+        "description": "Format JSON and XML, generate UUIDs, create secure passwords, and handle common coding utilities in one place.",
         "icon": "RiCodeFill",
         "image": {
           "src": "/imgs/features/4.png"
@@ -157,8 +154,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Launch with TinyToolFlare",
-    "description": "Get your AI SaaS startup running in three simple steps:",
+    "title": "How to Use TinyToolFlare",
+    "description": "Finish common online tasks in a few simple steps:",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -166,29 +163,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Get TinyToolFlare",
-        "description": "Buy TinyToolFlare with a one-time payment. Check your email for the code and documentation.",
+        "title": "Choose a Tool",
+        "description": "Browse by category or open a specific tool page for images, formatters, generators, calculators, or life utilities.",
         "image": {
           "src": "/imgs/features/5.png"
         }
       },
       {
-        "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of TinyToolFlare. Start building your AI SaaS startup.",
+        "title": "Add Your Input",
+        "description": "Paste text, upload files, enter numbers, or choose the options required for the task.",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
-        "title": "Customize Your Project",
-        "description": "Modify the template with your data and contents. Specific AI functionality needs.",
+        "title": "Review the Result",
+        "description": "Check formatted output, generated values, converted files, or calculated results before using them.",
         "image": {
           "src": "/imgs/features/7.png"
         }
       },
       {
-        "title": "Deploy to Production",
-        "description": "Deploy your project to production with a few steps and start serving customers immediately.",
+        "title": "Copy or Download",
+        "description": "Copy the result, download the generated file, or move directly to another related tool.",
         "image": {
           "src": "/imgs/features/8.png"
         }
@@ -198,44 +195,44 @@
   "feature": {
     "name": "feature",
     "title": "Key Features of TinyToolFlare",
-    "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
+    "description": "Focused tools for image processing, code formatting, generators, calculators, and everyday tasks.",
     "items": [
       {
-        "title": "Next.js Boilerplate",
-        "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
+        "title": "Image Tools",
+        "description": "Compress images, convert images to PDF, export PDF pages to images, remove photo location data, and create photos from emoji prompts.",
         "icon": "RiNextjsFill"
       },
       {
-        "title": "Authentication & Payments",
-        "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
+        "title": "Formatters",
+        "description": "Clean up JSON and XML so data is easier to read, inspect, and share.",
         "icon": "RiKey2Fill"
       },
       {
-        "title": "Data Infrastructure",
-        "description": "Built-in Supabase integration for reliable and scalable data storage.",
+        "title": "Generators",
+        "description": "Generate strong passwords, UUIDs, icons, and text cards without installing extra software.",
         "icon": "RiDatabase2Line"
       },
       {
-        "title": "One-Click Deployment",
-        "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
+        "title": "Calculators",
+        "description": "Use practical calculators such as BMI and raised bed soil volume for everyday decisions.",
         "icon": "RiCloudy2Fill"
       },
       {
-        "title": "Business Analytics",
-        "description": "Integrated Google Analytics and Search Console for tracking growth.",
+        "title": "Life Tools",
+        "description": "Decode laundry symbols and calculate baby wake windows by age with simple guided inputs.",
         "icon": "RiBarChart2Line"
       },
       {
-        "title": "AI-Ready Infrastructure",
-        "description": "Pre-configured AI integration with built-in credits system and API sales.",
+        "title": "Browser-first Experience",
+        "description": "Lightweight pages, clear controls, and direct results make each tool easy to use from desktop or mobile.",
         "icon": "RiRobot2Line"
       }
     ]
   },
   "showcase": {
     "name": "showcase",
-    "title": "AI SaaS Startups built with TinyToolFlare",
-    "description": "Easy to use and fast to ship.",
+    "title": "Popular TinyToolFlare Tools",
+    "description": "A selection of free online tools available on TinyToolFlare.",
     "items": [
       {
         "title": "ThinkAny",
@@ -318,29 +315,30 @@
           "src": "/imgs/showcases/9.png"
         }
       }
-    ]
+    ],
+    "disabled": true
   },
   "stats": {
     "name": "stats",
     "label": "Stats",
-    "title": "People Love TinyToolFlare",
-    "description": "for it's easy to use and fast to ship.",
+    "title": "TinyToolFlare at a Glance",
+    "description": "A growing collection of focused online utilities.",
     "icon": "FaRegHeart",
     "items": [
       {
-        "title": "Trusted by",
-        "label": "99+",
-        "description": "Customers"
-      },
-      {
-        "title": "Built in",
-        "label": "20+",
-        "description": "Components"
-      },
-      {
-        "title": "Ship Fast in",
+        "title": "Tool categories",
         "label": "5",
-        "description": "Minutes"
+        "description": "Categories"
+      },
+      {
+        "title": "Online tools",
+        "label": "15+",
+        "description": "Utilities"
+      },
+      {
+        "title": "Installation",
+        "label": "0",
+        "description": "Required"
       }
     ]
   },
@@ -348,7 +346,7 @@
     "name": "pricing",
     "label": "Pricing",
     "title": "Pricing",
-    "description": "Get all features of TinyToolFlare, Ship your AI SaaS startups fast.",
+    "description": "TinyToolFlare tools are free to use online.",
     "groups": [],
     "items": [
       {
@@ -449,13 +447,14 @@
         "credits": 300,
         "valid_months": 12
       }
-    ]
+    ],
+    "disabled": true
   },
   "testimonial": {
     "name": "testimonial",
     "label": "Testimonial",
     "title": "What Users Say About TinyToolFlare",
-    "description": "Hear from developers and founders who launched their AI startups with TinyToolFlare.",
+    "description": "TinyToolFlare is built for quick, practical online tasks.",
     "icon": "GoThumbsup",
     "items": [
       {
@@ -506,7 +505,8 @@
           "src": "/imgs/users/6.png"
         }
       }
-    ]
+    ],
+    "disabled": true
   },
   "faq": {
     "name": "faq",
@@ -515,46 +515,46 @@
     "description": "Have another question? Contact us on Discord or by email.",
     "items": [
       {
-        "title": "What exactly is TinyToolFlare and how does it work?",
-        "description": "TinyToolFlare provides rich online tools covering text processing, image editing, code conversion and many other practical functions. No installation required, free to use."
+        "title": "What is TinyToolFlare?",
+        "description": "TinyToolFlare is a free online toolbox for images, formatters, generators, calculators, and everyday utilities. You can open a tool page and use it directly in your browser."
       },
       {
-        "title": "Do I need advanced technical skills to use TinyToolFlare?",
-        "description": "While basic programming knowledge is helpful, TinyToolFlare is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        "title": "Do I need to install anything?",
+        "description": "No. TinyToolFlare tools run online, so you can use them from a browser without installing extra software."
       },
       {
-        "title": "What types of AI SaaS can I build with TinyToolFlare?",
-        "description": "TinyToolFlare supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        "title": "Which tools are available?",
+        "description": "TinyToolFlare includes image compression, images to PDF, PDF to images, photo location removal, JSON and XML formatters, password and UUID generators, BMI calculator, raised bed soil calculator, laundry symbol decoder, and wake window calculator."
       },
       {
-        "title": "How long does it typically take to launch with TinyToolFlare?",
-        "description": "With TinyToolFlare, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        "title": "Is TinyToolFlare free?",
+        "description": "Yes. The public tools are designed to be free to use for everyday tasks."
       },
       {
-        "title": "What's included in the TinyToolFlare infrastructure?",
-        "description": "TinyToolFlare provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+        "title": "Can I use it on mobile?",
+        "description": "Yes. The site is designed to work on modern desktop and mobile browsers."
       },
       {
-        "title": "Can I customize the templates to match my brand?",
-        "description": "Absolutely! All TinyToolFlare templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        "title": "Which page should I bookmark?",
+        "description": "Bookmark the homepage for the full toolbox, or bookmark a specific tool page if you use one utility often."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with TinyToolFlare.",
+    "title": "Start with a Free Online Tool",
+    "description": "Choose a category and finish your next small task in the browser.",
     "buttons": [
       {
-        "title": "Get TinyToolFlare",
-        "url": "https://TinyToolFlare.ai",
-        "target": "_blank",
+        "title": "Browse Image Tools",
+        "url": "/image",
+        "target": "_self",
         "icon": "GoArrowUpRight"
       },
       {
-        "title": "Read Document",
-        "url": "https://docs.TinyToolFlare.ai",
-        "target": "_blank",
+        "title": "Open Formatters",
+        "url": "/formatter",
+        "target": "_self",
         "variant": "outline"
       }
     ]
@@ -574,62 +574,62 @@
     "nav": {
       "items": [
         {
-          "title": "About",
+          "title": "Tools",
           "children": [
             {
-              "title": "Features",
-              "url": "/#feature",
+              "title": "Image Tools",
+              "url": "/image",
               "target": "_self"
             },
             {
-              "title": "Showcases",
-              "url": "/#showcase",
+              "title": "Formatters",
+              "url": "/formatter",
               "target": "_self"
             },
             {
-              "title": "Pricing",
-              "url": "/#pricing",
+              "title": "Generators",
+              "url": "/generator",
               "target": "_self"
             }
           ]
         },
         {
-          "title": "Resources",
+          "title": "Categories",
           "children": [
             {
-              "title": "Documents",
-              "url": "https://docs.TinyToolFlare.ai",
-              "target": "_blank"
+              "title": "Calculators",
+              "url": "/calculator",
+              "target": "_self"
             },
             {
-              "title": "Components",
-              "url": "https://TinyToolFlare.ai/components",
-              "target": "_blank"
+              "title": "Life Tools",
+              "url": "/life",
+              "target": "_self"
             },
             {
-              "title": "Templates",
-              "url": "https://TinyToolFlare.ai/templates",
-              "target": "_blank"
+              "title": "All Tools",
+              "url": "/",
+              "target": "_self"
             }
           ]
         },
         {
-          "title": "Friends",
+          "title": "Popular",
           "children": [
             {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
+              "title": "Image Compressor",
+              "url": "/image/compressor",
+              "target": "_self"
             },
             {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
-              "target": "_blank"
+              "title": "JSON Formatter",
+              "url": "/formatter/json",
+              "target": "_self"
             },
             {
-              "title": "Pagen",
-              "url": "https://pagen.so",
-              "target": "_blank"
+              "title": "Password Generator",
+              "url": "/generator/password",
+              "target": "_self"
             }
           ]
         }
@@ -682,25 +682,52 @@
       {
         "name": "Text Tools",
         "tools": [
-          { "title": "Case Converter", "description": "Quickly convert text case." },
-          { "title": "Word Counter", "description": "Count words and characters in text." },
-          { "title": "Handwriting Generator", "description": "Convert text to handwriting image." }
+          {
+            "title": "Case Converter",
+            "description": "Quickly convert text case."
+          },
+          {
+            "title": "Word Counter",
+            "description": "Count words and characters in text."
+          },
+          {
+            "title": "Handwriting Generator",
+            "description": "Convert text to handwriting image."
+          }
         ]
       },
       {
         "name": "Image Tools",
         "tools": [
-          { "title": "Image Cropper", "description": "Crop images online." },
-          { "title": "Image Filters", "description": "Add filter effects to images." },
-          { "title": "Image Resizer", "description": "Change image resolution." }
+          {
+            "title": "Image Cropper",
+            "description": "Crop images online."
+          },
+          {
+            "title": "Image Filters",
+            "description": "Add filter effects to images."
+          },
+          {
+            "title": "Image Resizer",
+            "description": "Change image resolution."
+          }
         ]
       },
       {
         "name": "Coding Tools",
         "tools": [
-          { "title": "Base64 Encoder", "description": "Convert string and Base64." },
-          { "title": "JWT Decoder", "description": "Decode JWT Token online." },
-          { "title": "JSON Formatter", "description": "Beautify and view JSON data." }
+          {
+            "title": "Base64 Encoder",
+            "description": "Convert string and Base64."
+          },
+          {
+            "title": "JWT Decoder",
+            "description": "Decode JWT Token online."
+          },
+          {
+            "title": "JSON Formatter",
+            "description": "Beautify and view JSON data."
+          }
         ]
       }
     ]

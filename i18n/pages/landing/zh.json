@@ -13,11 +13,32 @@
     },
     "nav": {
       "items": [
-        { "title": "计算器", "url": "/zh/calculator", "icon": "HiOutlineSparkles" },
-        { "title": "生成器", "url": "/zh/generator", "icon": "HiOutlineSparkles" },
-        { "title": "图片工具", "url": "/zh/image", "icon": "HiOutlineSparkles" },
-        { "title": "生活工具", "url": "/zh/life", "icon": "HiOutlineSparkles" },
-        { "title": "格式化器", "url": "/zh/formatter", "icon": "MdPayment" }      ]
+        {
+          "title": "计算器",
+          "url": "/zh/calculator",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "生成器",
+          "url": "/zh/generator",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "图片工具",
+          "url": "/zh/image",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "生活工具",
+          "url": "/zh/life",
+          "icon": "HiOutlineSparkles"
+        },
+        {
+          "title": "格式化器",
+          "url": "/zh/formatter",
+          "icon": "MdPayment"
+        }
+      ]
     },
     "buttons": [],
     "show_sign": false,
@@ -34,119 +55,458 @@
     "show_badge": false
   },
   "branding": {
-    "title": "TinyToolFlare 建立在巨人的肩膀上",
+    "title": "TinyToolFlare 汇集实用的浏览器在线工具",
     "items": [
-      { "title": "Next.js", "image": { "src": "/imgs/logos/nextjs.svg", "alt": "Next.js" } },
-      { "title": "React", "image": { "src": "/imgs/logos/react.svg", "alt": "React" } },
-      { "title": "TailwindCSS", "image": { "src": "/imgs/logos/tailwindcss.svg", "alt": "TailwindCSS" } },
-      { "title": "Shadcn/UI", "image": { "src": "/imgs/logos/shadcn.svg", "alt": "Shadcn/UI" } },
-      { "title": "Vercel", "image": { "src": "/imgs/logos/vercel.svg", "alt": "Vercel" } }
+      {
+        "title": "Next.js",
+        "image": {
+          "src": "/imgs/logos/nextjs.svg",
+          "alt": "Next.js"
+        }
+      },
+      {
+        "title": "React",
+        "image": {
+          "src": "/imgs/logos/react.svg",
+          "alt": "React"
+        }
+      },
+      {
+        "title": "TailwindCSS",
+        "image": {
+          "src": "/imgs/logos/tailwindcss.svg",
+          "alt": "TailwindCSS"
+        }
+      },
+      {
+        "title": "Shadcn/UI",
+        "image": {
+          "src": "/imgs/logos/shadcn.svg",
+          "alt": "Shadcn/UI"
+        }
+      },
+      {
+        "title": "Vercel",
+        "image": {
+          "src": "/imgs/logos/vercel.svg",
+          "alt": "Vercel"
+        }
+      }
     ]
   },
   "introduce": {
     "name": "introduce",
     "title": "什么是 TinyToolFlare",
     "label": "介绍",
-    "description": "TinyToolFlare 是一个用于构建 AI SaaS 创业项目的 NextJS 模板，内置多种模板和组件。",
-    "image": { "src": "/imgs/features/1.png" },
+    "description": "TinyToolFlare 是一个免费的在线工具集合，覆盖图片处理、代码格式化、生成器、计算器和日常实用工具。无需安装，打开浏览器即可使用。",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
     "items": [
-      { "title": "即用型模板", "description": "从数十个生产就绪的 AI SaaS 模板中选择，快速启动您的项目。", "icon": "RiNextjsFill" },
-      { "title": "基础设施配置", "description": "立即获取内置最佳实践的可扩展基础设施。", "icon": "RiDatabase2Line" },
-      { "title": "快速部署", "description": "在几小时内将您的 AI SaaS 应用部署到生产环境，而不是几天。", "icon": "RiCloudyFill" }
+      {
+        "title": "即开即用的工具",
+        "description": "打开工具页即可完成图片压缩、JSON 格式化、密码生成等常见任务。",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "高效的浏览器流程",
+        "description": "围绕一次性小任务设计，输入清晰、结果直观，需要时可直接复制或下载。",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "免费且简单",
+        "description": "无需安装复杂软件，也无需为了日常工具注册账号。",
+        "icon": "RiCloudyFill"
+      }
     ]
   },
   "benefit": {
     "name": "benefit",
     "title": "为什么选择 TinyToolFlare",
     "label": "优势",
-    "description": "获取启动 AI 创业所需的一切 - 从即用型模板到技术支持。",
+    "description": "当你需要处理工作、学习、开发和日常生活里的小任务时，可以直接使用 TinyToolFlare。",
     "items": [
-      { "title": "完整框架", "description": "基于 Next.js 构建，集成身份验证、支付和 AI 功能 - 一切开箱即用。", "icon": "RiNextjsFill", "image": { "src": "/imgs/features/2.png" } },
-      { "title": "丰富的模板库", "description": "选择各种 AI SaaS 模板来启动您的项目 - 聊天机器人、图像生成等。", "icon": "RiClapperboardAiLine", "image": { "src": "/imgs/features/3.png" } },
-      { "title": "技术指导", "description": "获得专门支持并加入我们的开发者社区，确保您成功启动。", "icon": "RiCodeFill", "image": { "src": "/imgs/features/4.png" } }
+      {
+        "title": "日常实用工具",
+        "description": "计算器、生成器、格式化器、图片工具和生活工具按分类整理，方便快速找到对应功能。",
+        "icon": "RiNextjsFill",
+        "image": {
+          "src": "/imgs/features/2.png"
+        }
+      },
+      {
+        "title": "图片与文档助手",
+        "description": "在线压缩图片、将图片转为 PDF、把 PDF 页面导出为图片，并移除照片位置元数据。",
+        "icon": "RiClapperboardAiLine",
+        "image": {
+          "src": "/imgs/features/3.png"
+        }
+      },
+      {
+        "title": "开发者常用工具",
+        "description": "格式化 JSON/XML，生成 UUID 和强密码，快速处理常见开发小任务。",
+        "icon": "RiCodeFill",
+        "image": {
+          "src": "/imgs/features/4.png"
+        }
+      }
     ]
   },
   "usage": {
     "name": "usage",
-    "title": "如何使用 TinyToolFlare 启动项目",
-    "description": "通过三个简单步骤启动您的 AI SaaS 创业项目：",
-    "image": { "src": "/imgs/features/1.png" },
+    "title": "如何使用 TinyToolFlare",
+    "description": "通过几个简单步骤完成常见在线任务：",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
     "image_position": "left",
     "text_align": "center",
     "items": [
-      { "title": "获取 TinyToolFlare", "description": "一次性付款购买 TinyToolFlare。查收邮件获取代码和文档。", "image": { "src": "/imgs/features/5.png" } },
-      { "title": "开始您的项目", "description": "阅读文档并克隆 TinyToolFlare 代码。开始构建您的 AI SaaS 创业项目。", "image": { "src": "/imgs/features/6.png" } },
-      { "title": "定制您的项目", "description": "使用您的数据和内容修改模板。满足特定的 AI 功能需求。", "image": { "src": "/imgs/features/7.png" } },
-      { "title": "部署到生产环境", "description": "通过几个步骤将项目部署到生产环境，立即开始服务客户。", "image": { "src": "/imgs/features/8.png" } }
+      {
+        "title": "选择工具",
+        "description": "按分类浏览，或直接打开图片工具、格式化器、生成器、计算器和生活工具页面。",
+        "image": {
+          "src": "/imgs/features/5.png"
+        }
+      },
+      {
+        "title": "输入内容",
+        "description": "粘贴文本、上传文件、填写数字，或选择任务需要的选项。",
+        "image": {
+          "src": "/imgs/features/6.png"
+        }
+      },
+      {
+        "title": "查看结果",
+        "description": "检查格式化内容、生成值、转换文件或计算结果，确认无误后再使用。",
+        "image": {
+          "src": "/imgs/features/7.png"
+        }
+      },
+      {
+        "title": "复制或下载",
+        "description": "复制结果、下载生成文件，或继续使用相关工具处理下一步。",
+        "image": {
+          "src": "/imgs/features/8.png"
+        }
+      }
     ]
   },
   "feature": {
     "name": "feature",
     "title": "TinyToolFlare 核心功能",
-    "description": "快速高效启动 AI SaaS 创业所需的一切。",
+    "description": "围绕图片处理、代码格式化、生成器、计算器和日常任务打造的轻量在线工具。",
     "items": [
-      { "title": "Next.js 模板", "description": "生产就绪的 Next.js 模板，支持 SEO 友好结构和国际化。", "icon": "RiNextjsFill" },
-      { "title": "身份验证和支付", "description": "集成 Google OAuth、一键登录和 Stripe 支付处理。", "icon": "RiKey2Fill" },
-      { "title": "数据基础设施", "description": "内置 Supabase 集成，提供可靠和可扩展的数据存储。", "icon": "RiDatabase2Line" },
-      { "title": "一键部署", "description": "无缝部署到 Vercel 或 Cloudflare，自动化设置。", "icon": "RiCloudy2Fill" },
-      { "title": "业务分析", "description": "集成 Google Analytics 和 Search Console 追踪增长。", "icon": "RiBarChart2Line" },
-      { "title": "AI 就绪基础设施", "description": "预配置 AI 集成，内置积分系统和 API 销售。", "icon": "RiRobot2Line" }
+      {
+        "title": "图片工具",
+        "description": "压缩图片、图片转 PDF、PDF 转图片、移除照片位置信息，并从 Emoji 提示生成照片。",
+        "icon": "RiNextjsFill"
+      },
+      {
+        "title": "格式化器",
+        "description": "美化 JSON 和 XML，让数据更容易阅读、检查和分享。",
+        "icon": "RiKey2Fill"
+      },
+      {
+        "title": "生成器",
+        "description": "生成强密码、UUID、图标和文字卡片，不需要安装额外软件。",
+        "icon": "RiDatabase2Line"
+      },
+      {
+        "title": "计算器",
+        "description": "使用 BMI、种植床土壤体积等实用计算器辅助日常决策。",
+        "icon": "RiCloudy2Fill"
+      },
+      {
+        "title": "生活工具",
+        "description": "识别洗衣符号，并按月龄计算宝宝清醒窗口。",
+        "icon": "RiBarChart2Line"
+      },
+      {
+        "title": "浏览器优先体验",
+        "description": "页面轻量、控件清晰、结果直接，桌面和移动端都能快速使用。",
+        "icon": "RiRobot2Line"
+      }
     ]
   },
   "showcase": {
     "name": "showcase",
-    "title": "用 TinyToolFlare 构建的 AI SaaS 创业项目",
-    "description": "易于使用，快速发布。",
+    "title": "TinyToolFlare 热门工具",
+    "description": "TinyToolFlare 上可用的免费在线工具精选。",
     "items": [
-      { "title": "ThinkAny", "description": "AI 搜索引擎", "url": "https://thinkany.ai", "target": "_blank", "image": { "src": "/imgs/showcases/7.png" } },
-      { "title": "HeyBeauty", "description": "AI 虚拟试妆", "url": "https://heybeauty.ai", "target": "_blank", "image": { "src": "/imgs/showcases/5.png" } },
-      { "title": "AI Wallpaper", "description": "AI 壁纸生成器", "url": "https://aiwallpaper.shop", "target": "_blank", "image": { "src": "/imgs/showcases/1.png" } },
-      { "title": "AI Cover", "description": "AI 封面生成器", "url": "https://aicover.design", "target": "_blank", "image": { "src": "/imgs/showcases/2.png" } },
-      { "title": "GPTs Works", "description": "GPTs 目录", "url": "https://gpts.works", "target": "_blank", "image": { "src": "/imgs/showcases/3.png" } },
-      { "title": "Melodisco", "description": "AI 音乐播放器", "url": "https://melodis.co", "target": "_blank", "image": { "src": "/imgs/showcases/4.png" } },
-      { "title": "Pagen", "description": "AI 落地页生成器", "url": "https://pagen.so", "target": "_blank", "image": { "src": "/imgs/showcases/6.png" } },
-      { "title": "SoraFM", "description": "AI 视频生成器", "url": "https://sorafm.trys.ai", "target": "_blank", "image": { "src": "/imgs/showcases/8.png" } },
-      { "title": "PodLM", "description": "AI 播客生成器", "url": "https://podlm.ai", "target": "_blank", "image": { "src": "/imgs/showcases/9.png" } }
-    ]
+      {
+        "title": "ThinkAny",
+        "description": "AI 搜索引擎",
+        "url": "https://thinkany.ai",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/7.png"
+        }
+      },
+      {
+        "title": "HeyBeauty",
+        "description": "AI 虚拟试妆",
+        "url": "https://heybeauty.ai",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/5.png"
+        }
+      },
+      {
+        "title": "AI Wallpaper",
+        "description": "AI 壁纸生成器",
+        "url": "https://aiwallpaper.shop",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/1.png"
+        }
+      },
+      {
+        "title": "AI Cover",
+        "description": "AI 封面生成器",
+        "url": "https://aicover.design",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/2.png"
+        }
+      },
+      {
+        "title": "GPTs Works",
+        "description": "GPTs 目录",
+        "url": "https://gpts.works",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/3.png"
+        }
+      },
+      {
+        "title": "Melodisco",
+        "description": "AI 音乐播放器",
+        "url": "https://melodis.co",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/4.png"
+        }
+      },
+      {
+        "title": "Pagen",
+        "description": "AI 落地页生成器",
+        "url": "https://pagen.so",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/6.png"
+        }
+      },
+      {
+        "title": "SoraFM",
+        "description": "AI 视频生成器",
+        "url": "https://sorafm.trys.ai",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/8.png"
+        }
+      },
+      {
+        "title": "PodLM",
+        "description": "AI 播客生成器",
+        "url": "https://podlm.ai",
+        "target": "_blank",
+        "image": {
+          "src": "/imgs/showcases/9.png"
+        }
+      }
+    ],
+    "disabled": true
   },
   "stats": {
     "name": "stats",
     "label": "统计",
-    "title": "用户喜爱 TinyToolFlare",
-    "description": "因为它易于使用且快速发布。",
+    "title": "TinyToolFlare 概览",
+    "description": "持续增长的轻量在线工具集合。",
     "icon": "FaRegHeart",
     "items": [
-      { "title": "信任", "label": "99+", "description": "客户" },
-      { "title": "内置", "label": "20+", "description": "组件" },
-      { "title": "快速发布", "label": "5", "description": "分钟" }
+      {
+        "title": "工具分类",
+        "label": "5",
+        "description": "个分类"
+      },
+      {
+        "title": "在线工具",
+        "label": "15+",
+        "description": "个工具"
+      },
+      {
+        "title": "安装要求",
+        "label": "0",
+        "description": "无需安装"
+      }
     ]
   },
   "pricing": {
     "name": "pricing",
     "label": "定价",
     "title": "定价",
-    "description": "获取 TinyToolFlare 的所有功能，快速启动您的 AI SaaS 创业项目。",
+    "description": "TinyToolFlare 的在线工具可免费使用。",
     "groups": [],
     "items": [
-      { "title": "入门版", "description": "开始您的第一个 SaaS 创业项目。", "features_title": "包含", "features": ["100 积分，有效期 1 个月", "NextJS 模板", "SEO 友好结构", "Stripe 支付", "Supabase 数据存储", "Google OAuth 和一键登录", "国际化支持"], "interval": "one-time", "amount": 9900, "cn_amount": 69900, "currency": "USD", "price": "$99", "original_price": "$199", "unit": "USD", "is_featured": false, "tip": "一次付费，无限项目！", "button": { "title": "获取 TinyToolFlare", "url": "/#pricing", "icon": "RiFlashlightFill" }, "product_id": "starter", "product_name": "TinyToolFlare 模板入门版", "credits": 100, "valid_months": 1 },
-      { "title": "标准版", "description": "快速启动您的 SaaS 创业项目。", "label": "热门", "features_title": "包含入门版所有功能，另加", "features": ["200 积分，有效期 3 个月", "Vercel 或 Cloudflare 部署", "隐私和条款生成", "Google Analytics 集成", "Google Search Console 集成", "Discord 社区", "首次发布技术支持", "终身更新"], "interval": "one-time", "amount": 19900, "cn_amount": 139900, "currency": "USD", "price": "$199", "original_price": "$299", "unit": "USD", "is_featured": true, "tip": "一次付费，无限项目！", "button": { "title": "获取 TinyToolFlare", "url": "/#pricing", "icon": "RiFlashlightFill" }, "product_id": "standard", "product_name": "TinyToolFlare 模板标准版", "credits": 200, "valid_months": 3 },
-      { "title": "高级版", "description": "构建任何 AI SaaS 创业项目。", "features_title": "包含标准版所有功能，另加", "features": ["300 积分，有效期 1 年", "AI 业务功能", "用户中心", "积分系统", "SaaS API 销售", "管理系统", "优先技术支持"], "interval": "one-time", "amount": 29900, "cn_amount": 199900, "currency": "USD", "price": "$299", "original_price": "$399", "unit": "USD", "is_featured": false, "tip": "一次付费，无限项目！", "button": { "title": "获取 TinyToolFlare", "url": "/#pricing", "icon": "RiFlashlightFill" }, "product_id": "premium", "product_name": "TinyToolFlare 模板高级版", "credits": 300, "valid_months": 12 }
-    ]
+      {
+        "title": "入门版",
+        "description": "开始您的第一个 SaaS 创业项目。",
+        "features_title": "包含",
+        "features": [
+          "100 积分，有效期 1 个月",
+          "NextJS 模板",
+          "SEO 友好结构",
+          "Stripe 支付",
+          "Supabase 数据存储",
+          "Google OAuth 和一键登录",
+          "国际化支持"
+        ],
+        "interval": "one-time",
+        "amount": 9900,
+        "cn_amount": 69900,
+        "currency": "USD",
+        "price": "$99",
+        "original_price": "$199",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "一次付费，无限项目！",
+        "button": {
+          "title": "获取 TinyToolFlare",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "starter",
+        "product_name": "TinyToolFlare 模板入门版",
+        "credits": 100,
+        "valid_months": 1
+      },
+      {
+        "title": "标准版",
+        "description": "快速启动您的 SaaS 创业项目。",
+        "label": "热门",
+        "features_title": "包含入门版所有功能，另加",
+        "features": [
+          "200 积分，有效期 3 个月",
+          "Vercel 或 Cloudflare 部署",
+          "隐私和条款生成",
+          "Google Analytics 集成",
+          "Google Search Console 集成",
+          "Discord 社区",
+          "首次发布技术支持",
+          "终身更新"
+        ],
+        "interval": "one-time",
+        "amount": 19900,
+        "cn_amount": 139900,
+        "currency": "USD",
+        "price": "$199",
+        "original_price": "$299",
+        "unit": "USD",
+        "is_featured": true,
+        "tip": "一次付费，无限项目！",
+        "button": {
+          "title": "获取 TinyToolFlare",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard",
+        "product_name": "TinyToolFlare 模板标准版",
+        "credits": 200,
+        "valid_months": 3
+      },
+      {
+        "title": "高级版",
+        "description": "构建任何 AI SaaS 创业项目。",
+        "features_title": "包含标准版所有功能，另加",
+        "features": [
+          "300 积分，有效期 1 年",
+          "AI 业务功能",
+          "用户中心",
+          "积分系统",
+          "SaaS API 销售",
+          "管理系统",
+          "优先技术支持"
+        ],
+        "interval": "one-time",
+        "amount": 29900,
+        "cn_amount": 199900,
+        "currency": "USD",
+        "price": "$299",
+        "original_price": "$399",
+        "unit": "USD",
+        "is_featured": false,
+        "tip": "一次付费，无限项目！",
+        "button": {
+          "title": "获取 TinyToolFlare",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "TinyToolFlare 模板高级版",
+        "credits": 300,
+        "valid_months": 12
+      }
+    ],
+    "disabled": true
   },
   "testimonial": {
     "name": "testimonial",
     "label": "用户评价",
     "title": "用户如何评价 TinyToolFlare",
-    "description": "听听使用 TinyToolFlare 启动 AI 创业项目的开发者和创始人怎么说。",
+    "description": "TinyToolFlare 为快速、实用的在线任务而设计。",
     "icon": "GoThumbsup",
     "items": [
-      { "title": "陈大卫", "label": "AIWallpaper.shop 创始人", "description": "TinyToolFlare 为我们节省了数月的开发时间。我们仅用 2 天就启动了 AI 壁纸业务，一周内就获得了第一个付费客户！", "image": { "src": "/imgs/users/1.png" } },
-      { "title": "金瑞秋", "label": "HeyBeauty.ai 技术总监", "description": "预构建的 AI 基础设施是一个游戏规则改变者。我们无需担心架构 - 只需专注于 AI 美容技术并快速上线。", "image": { "src": "/imgs/users/2.png" } },
-      { "title": "马库斯", "label": "独立开发者", "description": "作为独立开发者，TinyToolFlare 给了我所需的一切 - 身份验证、支付、AI 集成和漂亮的 UI。一个周末就启动了我的 SaaS！", "image": { "src": "/imgs/users/3.png" } },
-      { "title": "索菲亚", "label": "Melodisco CEO", "description": "这些模板可直接用于生产且高度可定制。我们用几小时而不是几个月就建立了 AI 音乐平台。上市时间令人难以置信！", "image": { "src": "/imgs/users/4.png" } },
-      { "title": "詹姆斯", "label": "GPTs.works 技术主管", "description": "TinyToolFlare 的基础设施非常稳固。我们从 0 扩展到 1 万用户都没碰后端。这是我们 AI 创业最好的投资。", "image": { "src": "/imgs/users/5.png" } },
-      { "title": "张安娜", "label": "创业者", "description": "从想法到上线只用了 3 天！TinyToolFlare 的模板和部署工具让我们能够以令人难以置信的速度测试 AI 业务概念。", "image": { "src": "/imgs/users/6.png" } }
-    ]
+      {
+        "title": "陈大卫",
+        "label": "AIWallpaper.shop 创始人",
+        "description": "TinyToolFlare 为我们节省了数月的开发时间。我们仅用 2 天就启动了 AI 壁纸业务，一周内就获得了第一个付费客户！",
+        "image": {
+          "src": "/imgs/users/1.png"
+        }
+      },
+      {
+        "title": "金瑞秋",
+        "label": "HeyBeauty.ai 技术总监",
+        "description": "预构建的 AI 基础设施是一个游戏规则改变者。我们无需担心架构 - 只需专注于 AI 美容技术并快速上线。",
+        "image": {
+          "src": "/imgs/users/2.png"
+        }
+      },
+      {
+        "title": "马库斯",
+        "label": "独立开发者",
+        "description": "作为独立开发者，TinyToolFlare 给了我所需的一切 - 身份验证、支付、AI 集成和漂亮的 UI。一个周末就启动了我的 SaaS！",
+        "image": {
+          "src": "/imgs/users/3.png"
+        }
+      },
+      {
+        "title": "索菲亚",
+        "label": "Melodisco CEO",
+        "description": "这些模板可直接用于生产且高度可定制。我们用几小时而不是几个月就建立了 AI 音乐平台。上市时间令人难以置信！",
+        "image": {
+          "src": "/imgs/users/4.png"
+        }
+      },
+      {
+        "title": "詹姆斯",
+        "label": "GPTs.works 技术主管",
+        "description": "TinyToolFlare 的基础设施非常稳固。我们从 0 扩展到 1 万用户都没碰后端。这是我们 AI 创业最好的投资。",
+        "image": {
+          "src": "/imgs/users/5.png"
+        }
+      },
+      {
+        "title": "张安娜",
+        "label": "创业者",
+        "description": "从想法到上线只用了 3 天！TinyToolFlare 的模板和部署工具让我们能够以令人难以置信的速度测试 AI 业务概念。",
+        "image": {
+          "src": "/imgs/users/6.png"
+        }
+      }
+    ],
+    "disabled": true
   },
   "faq": {
     "name": "faq",
@@ -154,21 +514,49 @@
     "title": "关于 TinyToolFlare 的常见问题",
     "description": "还有其他问题？通过 Discord 或电子邮件联系我们。",
     "items": [
-      { "title": "TinyToolFlare 究竟是什么，它是如何工作的？", "description": "TinyToolFlare 是一个专门为构建 AI SaaS 创业项目设计的综合性 NextJS 模板。它提供即用型模板、基础设施设置和部署工具，帮助您在几小时内而不是几天内启动 AI 业务。" },
-      { "title": "使用 TinyToolFlare 需要高级技术技能吗？", "description": "虽然基本的编程知识会有帮助，但 TinyToolFlare 设计得非常开发者友好。我们的模板和文档使您即使不是 AI 或云基础设施专家也能轻松入门。" },
-      { "title": "我可以用 TinyToolFlare 构建什么类型的 AI SaaS？", "description": "TinyToolFlare 支持广泛的 AI 应用，从内容生成到数据分析工具。我们的模板涵盖流行用例，如 AI 聊天机器人、内容生成器、图像处理应用等。" },
-      { "title": "使用 TinyToolFlare 通常需要多长时间才能启动？", "description": "使用 TinyToolFlare，您可以在几小时内完成工作原型，并在几小时内完成生产就绪的应用。我们的一键部署和预配置基础设施显著缩短了传统的数月开发周期。" },
-      { "title": "TinyToolFlare 的基础设施包括什么？", "description": "TinyToolFlare 提供完整的基础设施栈，包括身份验证、数据库设置、API 集成、支付处理和可扩展的云部署。一切都按照行业最佳实践预先配置。" },
-      { "title": "我可以自定义模板以匹配我的品牌吗？", "description": "当然可以！所有 TinyToolFlare 模板都完全可定制。您可以修改设计、功能和功能性以匹配您的品牌标识和特定业务需求，同时保持强大的底层基础设施。" }
+      {
+        "title": "TinyToolFlare 是什么？",
+        "description": "TinyToolFlare 是一个免费的在线工具集合，覆盖图片工具、格式化器、生成器、计算器和日常实用工具。打开对应页面即可在浏览器中使用。"
+      },
+      {
+        "title": "需要安装软件吗？",
+        "description": "不需要。TinyToolFlare 工具在线运行，可直接通过浏览器使用。"
+      },
+      {
+        "title": "现在有哪些工具？",
+        "description": "目前包含图片压缩、图片转 PDF、PDF 转图片、照片位置移除、JSON/XML 格式化、密码/UUID 生成、BMI 计算、种植床土壤计算、洗衣符号识别和宝宝清醒窗口计算等工具。"
+      },
+      {
+        "title": "TinyToolFlare 免费吗？",
+        "description": "是的，公开在线工具面向日常任务免费使用。"
+      },
+      {
+        "title": "可以在手机上使用吗？",
+        "description": "可以。网站适配现代桌面和移动浏览器。"
+      },
+      {
+        "title": "应该收藏哪个页面？",
+        "description": "可以收藏首页查看完整工具集合，也可以收藏你经常使用的具体工具页。"
+      }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "启动您的第一个 AI SaaS 创业项目",
-    "description": "从这里开始，使用 TinyToolFlare 启动。",
+    "title": "从一个免费在线工具开始",
+    "description": "选择分类，在浏览器里完成下一个小任务。",
     "buttons": [
-      { "title": "获取 TinyToolFlare", "url": "https://TinyToolFlare.ai", "target": "_blank", "icon": "GoArrowUpRight" },
-      { "title": "阅读文档", "url": "https://docs.TinyToolFlare.ai", "target": "_blank", "variant": "outline" }
+      {
+        "title": "浏览图片工具",
+        "url": "/zh/image",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      },
+      {
+        "title": "打开格式化器",
+        "url": "/zh/formatter",
+        "target": "_self",
+        "variant": "outline"
+      }
     ]
   },
   "footer": {
@@ -176,38 +564,172 @@
     "brand": {
       "title": "TinyToolFlare",
       "description": "TinyToolFlare 提供丰富的在线工具，涵盖文本处理、图片编辑、代码转换等多种实用功能。无需安装，免费使用。",
-      "logo": { "src": "/logo.png", "alt": "TinyToolFlare" },
+      "logo": {
+        "src": "/logo.png",
+        "alt": "TinyToolFlare"
+      },
       "url": "/"
     },
     "copyright": "© 2025 • TinyToolFlare 保留所有权利。",
     "nav": {
       "items": [
-        { "title": "关于", "children": [ { "title": "功能特点", "url": "/#feature", "target": "_self" }, { "title": "案例展示", "url": "/#showcase", "target": "_self" }, { "title": "定价", "url": "/#pricing", "target": "_self" } ] },
-        { "title": "资源", "children": [ { "title": "文档", "url": "https://docs.TinyToolFlare.ai", "target": "_blank" }, { "title": "组件", "url": "https://TinyToolFlare.ai/components", "target": "_blank" }, { "title": "模板", "url": "https://TinyToolFlare.ai/templates", "target": "_blank" } ] },
-        { "title": "友情链接", "children": [ { "title": "ThinkAny", "url": "https://thinkany.ai", "target": "_blank" }, { "title": "HeyBeauty", "url": "https://heybeauty.ai", "target": "_blank" }, { "title": "Pagen", "url": "https://pagen.so", "target": "_blank" } ] }
+        {
+          "title": "工具",
+          "children": [
+            {
+              "title": "图片工具",
+              "url": "/zh/image",
+              "target": "_self"
+            },
+            {
+              "title": "格式化器",
+              "url": "/zh/formatter",
+              "target": "_self"
+            },
+            {
+              "title": "生成器",
+              "url": "/zh/generator",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "分类",
+          "children": [
+            {
+              "title": "计算器",
+              "url": "/zh/calculator",
+              "target": "_self"
+            },
+            {
+              "title": "生活工具",
+              "url": "/zh/life",
+              "target": "_self"
+            },
+            {
+              "title": "全部工具",
+              "url": "/zh",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "热门",
+          "children": [
+            {
+              "title": "图片压缩",
+              "url": "/zh/image/compressor",
+              "target": "_self"
+            },
+            {
+              "title": "JSON 格式化",
+              "url": "/zh/formatter/json",
+              "target": "_self"
+            },
+            {
+              "title": "密码生成器",
+              "url": "/zh/generator/password",
+              "target": "_self"
+            }
+          ]
+        }
       ]
     },
     "social": {
       "items": [
-        { "title": "X", "icon": "RiTwitterXFill", "url": "https://x.com/TinyToolFlareai", "target": "_blank" },
-        { "title": "Github", "icon": "RiGithubFill", "url": "https://github.com/TinyToolFlareai", "target": "_blank" },
-        { "title": "Discord", "icon": "RiDiscordFill", "url": "https://discord.gg/HQNnrzjZQS", "target": "_blank" },
-        { "title": "邮箱", "icon": "RiMailLine", "url": "mailto:support@TinyToolFlare.ai", "target": "_self" }
+        {
+          "title": "X",
+          "icon": "RiTwitterXFill",
+          "url": "https://x.com/TinyToolFlareai",
+          "target": "_blank"
+        },
+        {
+          "title": "Github",
+          "icon": "RiGithubFill",
+          "url": "https://github.com/TinyToolFlareai",
+          "target": "_blank"
+        },
+        {
+          "title": "Discord",
+          "icon": "RiDiscordFill",
+          "url": "https://discord.gg/HQNnrzjZQS",
+          "target": "_blank"
+        },
+        {
+          "title": "邮箱",
+          "icon": "RiMailLine",
+          "url": "mailto:support@TinyToolFlare.ai",
+          "target": "_self"
+        }
       ]
     },
     "agreement": {
       "items": [
-        { "title": "隐私政策", "url": "/privacy-policy" },
-        { "title": "服务条款", "url": "/terms-of-service" }
+        {
+          "title": "隐私政策",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "服务条款",
+          "url": "/terms-of-service"
+        }
       ]
     }
   },
   "tools_section": {
     "title": "在线工具分类",
     "categories": [
-      { "name": "文本工具", "tools": [ { "title": "大小写转换", "description": "快速转换文本大小写。" }, { "title": "字数统计", "description": "统计文本字数、字符数。" }, { "title": "手写体生成", "description": "将文本转为手写体图片。" } ] },
-      { "name": "图片工具", "tools": [ { "title": "图片裁剪", "description": "在线裁剪图片。" }, { "title": "图片滤镜", "description": "为图片添加滤镜效果。" }, { "title": "图片尺寸调整", "description": "修改图片分辨率。" } ] },
-      { "name": "编码工具", "tools": [ { "title": "Base64 编码", "description": "字符串与 Base64 相互转换。" }, { "title": "JWT 解码", "description": "在线解码 JWT Token。" }, { "title": "JSON 格式化", "description": "美化和查看 JSON 数据。" } ] }
+      {
+        "name": "文本工具",
+        "tools": [
+          {
+            "title": "大小写转换",
+            "description": "快速转换文本大小写。"
+          },
+          {
+            "title": "字数统计",
+            "description": "统计文本字数、字符数。"
+          },
+          {
+            "title": "手写体生成",
+            "description": "将文本转为手写体图片。"
+          }
+        ]
+      },
+      {
+        "name": "图片工具",
+        "tools": [
+          {
+            "title": "图片裁剪",
+            "description": "在线裁剪图片。"
+          },
+          {
+            "title": "图片滤镜",
+            "description": "为图片添加滤镜效果。"
+          },
+          {
+            "title": "图片尺寸调整",
+            "description": "修改图片分辨率。"
+          }
+        ]
+      },
+      {
+        "name": "编码工具",
+        "tools": [
+          {
+            "title": "Base64 编码",
+            "description": "字符串与 Base64 相互转换。"
+          },
+          {
+            "title": "JWT 解码",
+            "description": "在线解码 JWT Token。"
+          },
+          {
+            "title": "JSON 格式化",
+            "description": "美化和查看 JSON 数据。"
+          }
+        ]
+      }
     ]
   }
 }
