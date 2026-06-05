@@ -233,89 +233,7 @@
     "name": "showcase",
     "title": "TinyToolFlare 热门工具",
     "description": "TinyToolFlare 上可用的免费在线工具精选。",
-    "items": [
-      {
-        "title": "ThinkAny",
-        "description": "AI 搜索引擎",
-        "url": "https://thinkany.ai",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/7.png"
-        }
-      },
-      {
-        "title": "HeyBeauty",
-        "description": "AI 虚拟试妆",
-        "url": "https://heybeauty.ai",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/5.png"
-        }
-      },
-      {
-        "title": "AI Wallpaper",
-        "description": "AI 壁纸生成器",
-        "url": "https://aiwallpaper.shop",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/1.png"
-        }
-      },
-      {
-        "title": "AI Cover",
-        "description": "AI 封面生成器",
-        "url": "https://aicover.design",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/2.png"
-        }
-      },
-      {
-        "title": "GPTs Works",
-        "description": "GPTs 目录",
-        "url": "https://gpts.works",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/3.png"
-        }
-      },
-      {
-        "title": "Melodisco",
-        "description": "AI 音乐播放器",
-        "url": "https://melodis.co",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/4.png"
-        }
-      },
-      {
-        "title": "Pagen",
-        "description": "AI 落地页生成器",
-        "url": "https://pagen.so",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/6.png"
-        }
-      },
-      {
-        "title": "SoraFM",
-        "description": "AI 视频生成器",
-        "url": "https://sorafm.trys.ai",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/8.png"
-        }
-      },
-      {
-        "title": "PodLM",
-        "description": "AI 播客生成器",
-        "url": "https://podlm.ai",
-        "target": "_blank",
-        "image": {
-          "src": "/imgs/showcases/9.png"
-        }
-      }
-    ],
+    "items": [],
     "disabled": true
   },
   "stats": {
@@ -344,110 +262,11 @@
   },
   "pricing": {
     "name": "pricing",
-    "label": "定价",
-    "title": "定价",
+    "label": "免费工具",
+    "title": "免费在线工具",
     "description": "TinyToolFlare 的在线工具可免费使用。",
     "groups": [],
-    "items": [
-      {
-        "title": "入门版",
-        "description": "开始您的第一个 SaaS 创业项目。",
-        "features_title": "包含",
-        "features": [
-          "100 积分，有效期 1 个月",
-          "NextJS 模板",
-          "SEO 友好结构",
-          "Stripe 支付",
-          "Supabase 数据存储",
-          "Google OAuth 和一键登录",
-          "国际化支持"
-        ],
-        "interval": "one-time",
-        "amount": 9900,
-        "cn_amount": 69900,
-        "currency": "USD",
-        "price": "$99",
-        "original_price": "$199",
-        "unit": "USD",
-        "is_featured": false,
-        "tip": "一次付费，无限项目！",
-        "button": {
-          "title": "获取 TinyToolFlare",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "starter",
-        "product_name": "TinyToolFlare 模板入门版",
-        "credits": 100,
-        "valid_months": 1
-      },
-      {
-        "title": "标准版",
-        "description": "快速启动您的 SaaS 创业项目。",
-        "label": "热门",
-        "features_title": "包含入门版所有功能，另加",
-        "features": [
-          "200 积分，有效期 3 个月",
-          "Vercel 或 Cloudflare 部署",
-          "隐私和条款生成",
-          "Google Analytics 集成",
-          "Google Search Console 集成",
-          "Discord 社区",
-          "首次发布技术支持",
-          "终身更新"
-        ],
-        "interval": "one-time",
-        "amount": 19900,
-        "cn_amount": 139900,
-        "currency": "USD",
-        "price": "$199",
-        "original_price": "$299",
-        "unit": "USD",
-        "is_featured": true,
-        "tip": "一次付费，无限项目！",
-        "button": {
-          "title": "获取 TinyToolFlare",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "standard",
-        "product_name": "TinyToolFlare 模板标准版",
-        "credits": 200,
-        "valid_months": 3
-      },
-      {
-        "title": "高级版",
-        "description": "构建任何 AI SaaS 创业项目。",
-        "features_title": "包含标准版所有功能，另加",
-        "features": [
-          "300 积分，有效期 1 年",
-          "AI 业务功能",
-          "用户中心",
-          "积分系统",
-          "SaaS API 销售",
-          "管理系统",
-          "优先技术支持"
-        ],
-        "interval": "one-time",
-        "amount": 29900,
-        "cn_amount": 199900,
-        "currency": "USD",
-        "price": "$299",
-        "original_price": "$399",
-        "unit": "USD",
-        "is_featured": false,
-        "tip": "一次付费，无限项目！",
-        "button": {
-          "title": "获取 TinyToolFlare",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "premium",
-        "product_name": "TinyToolFlare 模板高级版",
-        "credits": 300,
-        "valid_months": 12
-      }
-    ],
+    "items": [],
     "disabled": true
   },
   "testimonial": {
@@ -456,56 +275,7 @@
     "title": "用户如何评价 TinyToolFlare",
     "description": "TinyToolFlare 为快速、实用的在线任务而设计。",
     "icon": "GoThumbsup",
-    "items": [
-      {
-        "title": "陈大卫",
-        "label": "AIWallpaper.shop 创始人",
-        "description": "TinyToolFlare 为我们节省了数月的开发时间。我们仅用 2 天就启动了 AI 壁纸业务，一周内就获得了第一个付费客户！",
-        "image": {
-          "src": "/imgs/users/1.png"
-        }
-      },
-      {
-        "title": "金瑞秋",
-        "label": "HeyBeauty.ai 技术总监",
-        "description": "预构建的 AI 基础设施是一个游戏规则改变者。我们无需担心架构 - 只需专注于 AI 美容技术并快速上线。",
-        "image": {
-          "src": "/imgs/users/2.png"
-        }
-      },
-      {
-        "title": "马库斯",
-        "label": "独立开发者",
-        "description": "作为独立开发者，TinyToolFlare 给了我所需的一切 - 身份验证、支付、AI 集成和漂亮的 UI。一个周末就启动了我的 SaaS！",
-        "image": {
-          "src": "/imgs/users/3.png"
-        }
-      },
-      {
-        "title": "索菲亚",
-        "label": "Melodisco CEO",
-        "description": "这些模板可直接用于生产且高度可定制。我们用几小时而不是几个月就建立了 AI 音乐平台。上市时间令人难以置信！",
-        "image": {
-          "src": "/imgs/users/4.png"
-        }
-      },
-      {
-        "title": "詹姆斯",
-        "label": "GPTs.works 技术主管",
-        "description": "TinyToolFlare 的基础设施非常稳固。我们从 0 扩展到 1 万用户都没碰后端。这是我们 AI 创业最好的投资。",
-        "image": {
-          "src": "/imgs/users/5.png"
-        }
-      },
-      {
-        "title": "张安娜",
-        "label": "创业者",
-        "description": "从想法到上线只用了 3 天！TinyToolFlare 的模板和部署工具让我们能够以令人难以置信的速度测试 AI 业务概念。",
-        "image": {
-          "src": "/imgs/users/6.png"
-        }
-      }
-    ],
+    "items": [],
     "disabled": true
   },
   "faq": {

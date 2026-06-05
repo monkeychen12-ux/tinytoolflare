@@ -344,6 +344,112 @@
             "page_title": "Raised Bed Soil Calculator - 高架菜床土壤袋数计算 | TinyToolFlare",
             "page_description": "免费 Raised Bed Soil Calculator，计算高架菜床需要多少土、4x8 菜床土量、袋数、升、立方码、配土比例和预估成本。",
             "page_keywords": "raised bed soil calculator, how much soil for raised bed, raised bed soil calculator 4x8, garden soil calculator, soil bag calculator, how many bags of soil do I need, 高架菜床土壤计算器, TinyToolFlare"
+          },
+          "unit_price_comparison_calculator": {
+            "title": "Grocery Unit Price Compare Calculator",
+            "description": "在超市货架前或网购下单前，比较不同包装、单位、优惠券、折扣和多件优惠后的真实单价。",
+            "tool_title": "比较真实货架单价",
+            "shelf_mode": "手机货架模式",
+            "add_item": "添加商品",
+            "reset": "重置",
+            "item_label": "商品",
+            "remove_item": "删除商品",
+            "name_label": "名称",
+            "price_label": "标价",
+            "quantity_label": "包装规格",
+            "unit_label": "单位",
+            "discount_type": "优惠",
+            "discount_none": "无优惠",
+            "discount_coupon": "优惠券减免",
+            "discount_percent": "百分比折扣",
+            "discount_multi": "多件总价",
+            "coupon_label": "优惠券金额",
+            "percent_label": "折扣百分比",
+            "multi_quantity": "优惠件数",
+            "multi_price": "多件总价",
+            "results_title": "真实单价",
+            "mixed_units_title": "混合单位类型",
+            "mixed_units_description": "重量、容量和件数不能直接互相比价，本工具会分别标出各类别最低单价。",
+            "unnamed_item": "未命名商品",
+            "needs_input": "输入价格和包装规格后即可计算。",
+            "effective_package": "折后单包价格：${price}",
+            "best_value": "更划算",
+            "per_unit": "每 {unit}",
+            "shrink_title": "缩水包装对比",
+            "old_price": "旧价格",
+            "old_size": "旧规格",
+            "new_price": "新价格",
+            "new_size": "新规格",
+            "shrink_unit": "规格单位",
+            "size_change": "包装规格变化",
+            "unit_price_change": "真实单价变化",
+            "shrink_summary": "旧单价为每 {unit} ${oldPrice}；新单价为每 {unit} ${newPrice}。",
+            "shrink_empty": "输入旧包装和新包装信息，查看真实单价变化。",
+            "use_cases": {
+              "title": "超市和网购真实单价比较",
+              "description": "这个 unit price calculator grocery 工具适合站在货架前、看促销标签时快速手输比较。",
+              "items": [
+                {
+                  "title": "比较 price per ounce",
+                  "description": "可输入麦片、零食、洗衣液、宠物食品或日用品的 oz、lb、g、kg、ml、L、fl oz、count，找出更低真实单价。"
+                },
+                {
+                  "title": "优惠券和多件折扣",
+                  "description": "支持优惠券、百分比折扣、2 件 $7 这类多件总价，按折后有效价格比较，而不是只看货架标价。"
+                },
+                {
+                  "title": "识别 shrinkflation",
+                  "description": "当价格看起来没变但包装变小时，用 shrinkflation calculator 比较旧包装和新包装的真实单价涨幅。"
+                }
+              ]
+            },
+            "tips": {
+              "title": "单价比较小技巧",
+              "description": "经常复购、买大包装或订阅购时，几分钱的单价差也会累积。",
+              "items": [
+                {
+                  "title": "先统一计量类型",
+                  "description": "重量和重量比、容量和容量比、件数和件数比。12 oz 和 1 lb 可以比较，但 oz 与 fl oz 不是同一类单位。"
+                },
+                {
+                  "title": "把结账优惠算进去",
+                  "description": "货架标签可能没有体现电子券、会员价或多件优惠。先输入折扣，再判断哪一包更划算。"
+                },
+                {
+                  "title": "看净含量而不是外盒",
+                  "description": "判断缩水包装时，以包装上的净重或净含量为准，不要只看盒子大小或品牌名称。"
+                }
+              ]
+            },
+            "faq": {
+              "title": "Unit Price Calculator FAQ",
+              "description": "关于超市真实单价、优惠券、多件折扣和缩水包装的常见问题。",
+              "items": [
+                {
+                  "question": "How do I calculate grocery unit price?",
+                  "answer": "用折后有效价格除以包装数量。例如 $8.49、24 oz 的商品，每 oz 约 $0.35。本工具会先计算优惠券、百分比折扣和多件优惠。"
+                },
+                {
+                  "question": "Can I compare price per ounce and price per pound?",
+                  "answer": "可以。ounces、pounds、grams、kilograms 都是重量单位，本工具会先转换再比较。"
+                },
+                {
+                  "question": "Why should I not compare oz and fl oz directly?",
+                  "answer": "oz 是重量，fl oz 是容量，衡量对象不同。本工具会把重量、容量和件数分开排名。"
+                },
+                {
+                  "question": "How do multi-buy deals affect unit price?",
+                  "answer": "例如 2 件 $7，本工具会先用总价除以件数得到单包有效价格，再除以每包规格。"
+                },
+                {
+                  "question": "How do I check if a product shrank?",
+                  "answer": "输入旧包装价格和规格，再输入新包装价格和规格。缩水包装对比会显示包装规格变化和真实单价变化。"
+                }
+              ]
+            },
+            "page_title": "Grocery Unit Price Calculator - 比较 Price Per Ounce | TinyToolFlare",
+            "page_description": "免费 Grocery Unit Price Compare Calculator，比较 price per ounce、lb、g、ml、count、优惠券、多件折扣和 shrinkflation 包装缩水。",
+            "page_keywords": "unit price calculator grocery, compare price per ounce, shrinkflation calculator, grocery unit price calculator, price per ounce calculator, 超市单价计算器, 包装缩水计算器, TinyToolFlare"
           }
         }
       },

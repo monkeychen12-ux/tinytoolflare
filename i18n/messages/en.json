@@ -344,6 +344,112 @@
             "page_title": "Raised Bed Soil Calculator - How Much Soil and Bags | TinyToolFlare",
             "page_description": "Free raised bed soil calculator. Calculate how much soil for a raised bed, 4x8 bed soil volume, bags needed, liters, cubic yards, fill mix, and estimated cost.",
             "page_keywords": "raised bed soil calculator, how much soil for raised bed, raised bed soil calculator 4x8, garden soil calculator, soil bag calculator, how many bags of soil do I need, TinyToolFlare"
+          },
+          "unit_price_comparison_calculator": {
+            "title": "Grocery Unit Price Compare Calculator",
+            "description": "Compare the real unit price for grocery, warehouse, and online deals after package size, units, coupons, percent discounts, and multi-buy offers.",
+            "tool_title": "Compare Shelf Prices",
+            "shelf_mode": "Shelf mode",
+            "add_item": "Add item",
+            "reset": "Reset",
+            "item_label": "Item",
+            "remove_item": "Remove item",
+            "name_label": "Name",
+            "price_label": "Shelf price",
+            "quantity_label": "Package size",
+            "unit_label": "Unit",
+            "discount_type": "Discount",
+            "discount_none": "No discount",
+            "discount_coupon": "Coupon amount off",
+            "discount_percent": "Percent off",
+            "discount_multi": "Multi-buy price",
+            "coupon_label": "Coupon amount",
+            "percent_label": "Percent off",
+            "multi_quantity": "Packages in deal",
+            "multi_price": "Total deal price",
+            "results_title": "Real Unit Prices",
+            "mixed_units_title": "Mixed unit types",
+            "mixed_units_description": "Weight, volume, and count items are ranked separately because they are not directly comparable.",
+            "unnamed_item": "Unnamed item",
+            "needs_input": "Enter price and package size to calculate.",
+            "effective_package": "Effective package price: ${price}",
+            "best_value": "Best value",
+            "per_unit": "per {unit}",
+            "shrink_title": "Shrinkflation Check",
+            "old_price": "Old price",
+            "old_size": "Old size",
+            "new_price": "New price",
+            "new_size": "New size",
+            "shrink_unit": "Size unit",
+            "size_change": "Package size change",
+            "unit_price_change": "Unit price change",
+            "shrink_summary": "Old unit price was ${oldPrice} per {unit}; new unit price is ${newPrice} per {unit}.",
+            "shrink_empty": "Enter old and new package details to compare the real unit price change.",
+            "use_cases": {
+              "title": "Compare Grocery Unit Prices",
+              "description": "Use this unit price calculator grocery shoppers can use at the shelf or before placing an online order.",
+              "items": [
+                {
+                  "title": "Compare price per ounce",
+                  "description": "Enter cereal, snacks, detergent, pet food, or pantry items in oz, lb, g, kg, ml, L, fl oz, or count to find the lower unit price."
+                },
+                {
+                  "title": "Check coupons and multi-buy offers",
+                  "description": "Apply a coupon, percent discount, or deal such as 2 for $7 so the calculator compares the effective price, not just the shelf tag."
+                },
+                {
+                  "title": "Spot shrinkflation",
+                  "description": "Use the shrinkflation calculator to compare an old package against a smaller new package when the sticker price looks unchanged."
+                }
+              ]
+            },
+            "tips": {
+              "title": "Unit Price Comparison Tips",
+              "description": "Small differences matter when you buy repeats, bulk packs, or subscription groceries.",
+              "items": [
+                {
+                  "title": "Use the same measurement type",
+                  "description": "Compare weight with weight, volume with volume, and count with count. A 12 oz bag and a 1 lb bag can be compared, but oz and fl oz mean different things."
+                },
+                {
+                  "title": "Include checkout discounts",
+                  "description": "Shelf labels often miss digital coupons, member pricing, and multi-pack deals. Add those discounts before choosing the better package."
+                },
+                {
+                  "title": "Check the actual net weight",
+                  "description": "For shrinkflation, compare net weight or volume on the package, not the box shape or brand name."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Unit Price Calculator FAQ",
+              "description": "Answers to common questions about comparing grocery unit prices, coupons, and shrinkflation.",
+              "items": [
+                {
+                  "question": "How do I calculate grocery unit price?",
+                  "answer": "Divide the effective package price by the package amount. For example, an $8.49 package with 24 oz costs about $0.35 per ounce. This calculator also applies coupons, percent discounts, and multi-buy deals first."
+                },
+                {
+                  "question": "Can I compare price per ounce and price per pound?",
+                  "answer": "Yes. Ounces, pounds, grams, and kilograms are all weight units, so the calculator converts them before ranking the better value."
+                },
+                {
+                  "question": "Why should I not compare oz and fl oz directly?",
+                  "answer": "Oz is weight and fl oz is volume. They measure different things, so the calculator ranks weight, volume, and count items separately."
+                },
+                {
+                  "question": "How do multi-buy deals affect unit price?",
+                  "answer": "For a deal such as 2 for $7, the calculator divides the total deal price across the number of packages, then divides by package size."
+                },
+                {
+                  "question": "How do I check if a product shrank?",
+                  "answer": "Enter the old package price and size, then the new package price and size. The shrinkflation check shows package size change and real unit price change."
+                }
+              ]
+            },
+            "page_title": "Grocery Unit Price Calculator - Compare Price Per Ounce | TinyToolFlare",
+            "page_description": "Free grocery unit price compare calculator. Compare price per ounce, pound, gram, ml, count, coupons, multi-buy deals, and shrinkflation changes.",
+            "page_keywords": "unit price calculator grocery, compare price per ounce, shrinkflation calculator, grocery unit price calculator, price per ounce calculator, coupon unit price calculator, TinyToolFlare"
           }
         }
       },
