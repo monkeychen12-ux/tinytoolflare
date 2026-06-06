@@ -1,0 +1,41 @@
+name: Tool request
+description: Suggest a new online tool for TinyToolFlare.
+title: "[Tool Request]: "
+labels: ["tool request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest a focused online tool that would fit TinyToolFlare.
+  - type: input
+    id: tool-name
+    attributes:
+      label: Tool name
+      placeholder: "Example: HEIC to JPG Converter"
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: What problem should it solve?
+      description: Explain the task users want to finish.
+      placeholder: Users need to...
+    validations:
+      required: true
+  - type: textarea
+    id: inputs-outputs
+    attributes:
+      label: Inputs and outputs
+      description: What should users enter or upload, and what should the tool return?
+      placeholder: |
+        Input:
+        Output:
+    validations:
+      required: false
+  - type: input
+    id: examples
+    attributes:
+      label: Similar tools or references
+      placeholder: Paste links if useful.
+    validations:
+      required: false

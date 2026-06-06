@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: TinyToolFlare website
+    url: https://www.tinytoolflare.com
+    about: Open the live online toolbox.
+  - name: Image Compressor
+    url: https://www.tinytoolflare.com/image/compressor
+    about: Compress images online.
+  - name: JSON Formatter
+    url: https://www.tinytoolflare.com/formatter/json
+    about: Format JSON online.
