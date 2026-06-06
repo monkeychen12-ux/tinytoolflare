@@ -494,6 +494,128 @@
             "page_description": "Free online UUID generator for creating standard unique identifiers for development, databases, distributed systems, sessions, and filenames.",
             "page_keywords": "UUID generator, online UUID, unique identifier, UUID v4, developer tool, TinyToolFlare"
           },
+          "classroom_seating_chart_generator": {
+            "title": "Classroom Seating Chart Generator",
+            "description": "Generate a printable classroom seating chart with front-row students, separate-pair rules, drag-and-drop seat swaps, and local browser privacy.",
+            "tool_title": "Build a Seating Chart",
+            "roster_label": "Student names",
+            "roster_placeholder": "Paste one student per line",
+            "rows_label": "Rows",
+            "columns_label": "Columns",
+            "front_rows_label": "Front rows",
+            "front_students_label": "Keep these students near the front",
+            "front_students_placeholder": "One student per line",
+            "separate_pairs_label": "Students who should not sit together",
+            "separate_pairs_placeholder": "Jordan, Riley\nCasey, Drew",
+            "privacy_title": "Local classroom data",
+            "privacy_text": "Names and constraints stay in this browser session. The chart is generated locally without uploads or accounts.",
+            "generate": "Generate chart",
+            "shuffle": "Shuffle again",
+            "reset": "Reset",
+            "result_title": "Seating Chart",
+            "students_count": "Students",
+            "seats_count": "Seats",
+            "empty_count": "Open seats",
+            "unresolved_count": "Unresolved",
+            "front_of_room": "Front of room / board",
+            "seat_label": "R{row} C{col}",
+            "row_label": "Row {row}",
+            "empty_seat": "Empty seat",
+            "empty_seat_short": "Empty",
+            "chart_stale_title": "Inputs changed",
+            "chart_stale_text": "Generate the chart again to apply the latest roster, room size, or constraints.",
+            "check_inputs": "Check inputs",
+            "too_many_students": "{students} students do not fit into {seats} seats. Increase rows or columns.",
+            "empty_roster": "Add at least one student name before generating a chart.",
+            "ignored_constraints_title": "Names to check",
+            "ignored_front_names": "Front-row names not found in the roster: {names}",
+            "ignored_pair_lines": "Pair lines ignored: {lines}",
+            "constraint_result_title": "Constraint check",
+            "all_constraints_clear": "No front-row or adjacent-pair conflicts found.",
+            "front_violations": "Still outside the front rows: {names}",
+            "pair_violations": "Still adjacent: {pairs}",
+            "print": "Print chart",
+            "copy": "Copy chart",
+            "copied": "Chart copied",
+            "copy_failed": "Copy failed",
+            "copy_title": "Classroom seating chart",
+            "print_title": "Classroom Seating Chart",
+            "print_meta": "{students} students, {rows} rows, {columns} columns",
+            "quick_notes_title": "Constraint Notes",
+            "quick_note_front": "Front-row rules are applied first, so students listed there take priority when front seats are limited.",
+            "quick_note_pairs": "Separate-pair rules avoid direct left, right, front, and back neighbors; diagonal seats are allowed.",
+            "use_cases": {
+              "title": "Printable Seating Charts for Everyday Classroom Changes",
+              "description": "Use the classroom seating chart generator for quick schedule changes, behavior plans, substitute folders, and parent-teacher conference layouts.",
+              "items": [
+                {
+                  "title": "Start a new term",
+                  "description": "Paste a new roster, set the room shape, and generate a first seating chart without opening a spreadsheet or design tool."
+                },
+                {
+                  "title": "Handle support needs",
+                  "description": "Keep selected students near the front for visibility, attention, or accessibility while still randomizing the rest of the class."
+                },
+                {
+                  "title": "Avoid known conflicts",
+                  "description": "Add pairs who should not sit together, then review any unresolved conflicts before printing the final chart."
+                }
+              ]
+            },
+            "constraint_guide": {
+              "title": "Supported Seating Constraints",
+              "description": "The generator is designed for practical classroom seating rules that can be checked locally and explained clearly.",
+              "type": "Constraint",
+              "entry": "How to enter it",
+              "behavior": "What the generator does",
+              "items": [
+                {
+                  "type": "Front-row priority",
+                  "entry": "Enter one student per line in the front list.",
+                  "behavior": "Those students are placed in the first row or rows before the remaining roster is shuffled."
+                },
+                {
+                  "type": "Separate pairs",
+                  "entry": "Enter each pair as Alice, Bob on its own line.",
+                  "behavior": "The chart tries to keep each pair from being direct left/right/front/back neighbors."
+                },
+                {
+                  "type": "Manual swaps",
+                  "entry": "Drag a filled seat to another seat.",
+                  "behavior": "The constraint check updates after the swap so the final printable chart remains auditable."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Classroom Seating Chart FAQ",
+              "description": "Answers for teachers looking for a no-signup random seating chart maker with simple classroom constraints.",
+              "items": [
+                {
+                  "question": "Can I make a classroom seating chart without signing up?",
+                  "answer": "Yes. This tool runs in your browser and does not require an account. Paste the roster, set the room size, generate the chart, then print or copy it."
+                },
+                {
+                  "question": "How do I keep certain students near the front?",
+                  "answer": "Add those names to the front-row list. The generator fills the configured front rows with those students first, then shuffles the rest of the roster."
+                },
+                {
+                  "question": "Can the seating chart keep two students apart?",
+                  "answer": "Yes. Add each pair on its own line, such as Jordan, Riley. The generator tries to avoid direct side-by-side and front-back adjacency."
+                },
+                {
+                  "question": "What happens if every constraint cannot be satisfied?",
+                  "answer": "The result panel lists unresolved front-row or adjacency conflicts. You can shuffle again, add seats, change the front-row count, or drag seats manually."
+                },
+                {
+                  "question": "Is student information uploaded?",
+                  "answer": "No. The roster and rules are processed locally in the browser session. The page does not need uploads, persistent storage, or a teacher account."
+                }
+              ]
+            },
+            "page_title": "Classroom Seating Chart Generator - Random Seats with Constraints | TinyToolFlare",
+            "page_description": "Free classroom seating chart generator. Create a random printable seating chart with front-row students, separate-pair rules, drag-and-drop swaps, and no signup.",
+            "page_keywords": "classroom seating chart generator, random seating chart maker, seating chart generator for teachers, printable classroom seating chart, student seating chart, TinyToolFlare"
+          },
           "qr_code_generator": {
             "title": "QR Code Generator",
             "description": "Generate custom QR codes."

@@ -8,6 +8,7 @@ export const toolIcons = {
   password_generator: "RiKey2Line",
   uuid_generator: "RiFingerprint2Line",
   qr_code_generator: "RiQrCodeLine",
+  classroom_seating_chart_generator: "RiLayoutGridLine",
   text_card_generator: "RiTextSnippet",
   json_formatter: "RiBracesLine",
   xml_formatter: "RiCodeSSlashLine",
@@ -28,6 +29,7 @@ export const toolLinks = {
   unit_price_comparison_calculator: "/unit-price-comparison-calculator",
   password_generator: "/generator/password",
   uuid_generator: "/generator/uuid",
+  classroom_seating_chart_generator: "/generator/classroom-seating-chart",
   icon_generator: "/generator/icon-gen",
   text_card_generator: "/generator/text-card",
   image_compressor: "/image/compressor",
@@ -57,6 +59,7 @@ export const toolCategories = [
     tools: [
       "password_generator",
       "uuid_generator",
+      "classroom_seating_chart_generator",
       "icon_generator",
       "text_card_generator",
     ],
