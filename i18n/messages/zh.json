@@ -754,7 +754,8 @@
             },
             "page_title": "Claude Fable 5 成本计算器 - AI 模型上下文、Cache 与 Batch 价格 | TinyToolFlare",
             "page_description": "免费 AI 模型成本计算器，支持 Claude Fable 5、Opus、Sonnet、Haiku，估算 1M context、输出 token、prompt cache 回本、Batch API 折扣和模型切换预算。",
-            "page_keywords": "Claude Fable 5 cost calculator, AI model cost calculator, Claude API pricing calculator, 1M context calculator, prompt cache break even, batch API discount calculator, Claude Opus cost comparison, AI模型成本计算器, TinyToolFlare"
+            "page_keywords": "Claude Fable 5 cost calculator, AI model cost calculator, Claude API pricing calculator, 1M context calculator, prompt cache break even, batch API discount calculator, Claude Opus cost comparison, AI模型成本计算器, TinyToolFlare",
+            "copy_failed": "复制失败"
           }
         }
       },

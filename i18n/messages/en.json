@@ -754,7 +754,8 @@
             },
             "page_title": "Claude Fable 5 Cost Calculator - AI Model Context, Cache and Batch Pricing | TinyToolFlare",
             "page_description": "Free AI model cost calculator for Claude Fable 5, Opus, Sonnet and Haiku. Estimate 1M context costs, output tokens, prompt cache break-even, Batch API discounts and model switching budgets.",
-            "page_keywords": "Claude Fable 5 cost calculator, AI model cost calculator, Claude API pricing calculator, 1M context calculator, prompt cache break even, batch API discount calculator, Claude Opus cost comparison, TinyToolFlare"
+            "page_keywords": "Claude Fable 5 cost calculator, AI model cost calculator, Claude API pricing calculator, 1M context calculator, prompt cache break even, batch API discount calculator, Claude Opus cost comparison, TinyToolFlare",
+            "copy_failed": "Copy failed"
           }
         }
       },

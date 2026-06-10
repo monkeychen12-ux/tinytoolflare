@@ -45,6 +45,7 @@ type ModelKey =
   | "claude-haiku-4-5"
   | "custom";
 type CacheMode = "none" | "5m" | "1h";
+type CopyStatus = "idle" | "copied" | "failed";
 
 interface ModelRates {
   key: ModelKey;
@@ -199,10 +200,12 @@ function parsePositiveInteger(value: string, fallback = 0) {
 }
 
 function formatMoney(value: number) {
+  const fractionDigits = value >= 100 ? 0 : 2;
+
   return new Intl.NumberFormat("en-US", {
     currency: "USD",
-    maximumFractionDigits: value >= 100 ? 0 : 2,
-    minimumFractionDigits: 2,
+    maximumFractionDigits: fractionDigits,
+    minimumFractionDigits: fractionDigits,
     style: "currency",
   }).format(value);
 }
@@ -231,6 +234,27 @@ function formatRate(value: number) {
 
 function serializeJsonLd(value: unknown) {
   return JSON.stringify(value).replace(/</g, "\\u003c");
+}
+
+async function writeClipboardText(value: string) {
+  try {
+    await navigator.clipboard.writeText(value);
+    return true;
+  } catch {
+    const textarea = document.createElement("textarea");
+    textarea.value = value;
+    textarea.setAttribute("readonly", "true");
+    textarea.style.position = "fixed";
+    textarea.style.left = "-9999px";
+    document.body.appendChild(textarea);
+    textarea.select();
+
+    try {
+      return document.execCommand("copy");
+    } finally {
+      document.body.removeChild(textarea);
+    }
+  }
 }
 
 function getPresetModel(key: ModelKey, customRates: ModelRates) {
@@ -387,7 +411,7 @@ export default function AiModelCostCalculatorPage() {
   const [outputTokens, setOutputTokens] = useState("20000");
   const [cacheMode, setCacheMode] = useState<CacheMode>("5m");
   const [batch, setBatch] = useState(false);
-  const [copied, setCopied] = useState(false);
+  const [copyStatus, setCopyStatus] = useState<CopyStatus>("idle");
   const [customInput, setCustomInput] = useState("10");
   const [customCacheWrite5m, setCustomCacheWrite5m] = useState("12.5");
   const [customCacheWrite1h, setCustomCacheWrite1h] = useState("20");
@@ -551,13 +575,9 @@ export default function AiModelCostCalculatorPage() {
       )}`,
     ].join("\n");
 
-    try {
-      await navigator.clipboard.writeText(summary);
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 1600);
-    } catch {
-      setCopied(false);
-    }
+    const didCopy = await writeClipboardText(summary);
+    setCopyStatus(didCopy ? "copied" : "failed");
+    window.setTimeout(() => setCopyStatus("idle"), 1800);
   }
 
   return (
@@ -904,7 +924,9 @@ export default function AiModelCostCalculatorPage() {
 
               <Button type="button" onClick={copySummary} className="w-full">
                 <Clipboard className="mr-2 size-4" />
-                {copied ? t("copied") : t("copy_summary")}
+                {copyStatus === "copied" && t("copied")}
+                {copyStatus === "failed" && t("copy_failed")}
+                {copyStatus === "idle" && t("copy_summary")}
               </Button>
             </CardContent>
           </Card>
