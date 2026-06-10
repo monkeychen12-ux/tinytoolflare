@@ -450,6 +450,176 @@
             "page_title": "Grocery Unit Price Calculator - Compare Price Per Ounce | TinyToolFlare",
             "page_description": "Free grocery unit price compare calculator. Compare price per ounce, pound, gram, ml, count, coupons, multi-buy deals, and shrinkflation changes.",
             "page_keywords": "unit price calculator grocery, compare price per ounce, shrinkflation calculator, grocery unit price calculator, price per ounce calculator, coupon unit price calculator, TinyToolFlare"
+          },
+          "fence_picket_spacing_calculator": {
+            "title": "Fence Picket Spacing Calculator",
+            "description": "Calculate fence pickets, post spacing, equal gaps, gate deductions, horizontal slats, and a printable DIY shopping list.",
+            "tool_title": "Plan Fence Pickets and Posts",
+            "unit_system": "Unit system",
+            "imperial": "Feet + inches",
+            "metric": "Meters + centimeters",
+            "mode_label": "Fence board mode",
+            "vertical_mode": "Vertical pickets",
+            "horizontal_mode": "Horizontal slats",
+            "presets": "Common presets",
+            "preset_privacy": "6 ft privacy fence",
+            "preset_spaced": "Spaced pickets",
+            "preset_horizontal": "Horizontal slats",
+            "run_length_label": "Total fence run ({unit})",
+            "max_post_spacing_label": "Max post spacing ({unit})",
+            "gate_count_label": "Gate openings",
+            "gate_width_label": "Each gate opening ({unit})",
+            "post_width_label": "Post width ({unit})",
+            "picket_width_label": "Picket width ({unit})",
+            "slat_height_label": "Slat height ({unit})",
+            "target_gap_label": "Target gap ({unit})",
+            "fence_height_label": "Fence height ({unit})",
+            "stock_length_label": "Board stock length ({unit})",
+            "waste_label": "Waste allowance (%)",
+            "rails_per_bay_label": "Rails per bay",
+            "local_title": "Browser-only math",
+            "local_text": "All dimensions are calculated locally in your browser. No project plan, address, or measurement data is uploaded.",
+            "results_title": "Fence Layout Results",
+            "check_inputs": "Check inputs",
+            "note": "Note",
+            "bay_count": "Fence bays",
+            "bay_spacing_detail": "Actual post spacing: {spacing}",
+            "exact_gap": "Exact equal gap",
+            "pieces_per_bay": "{count} {piece} per bay",
+            "net_fence_length": "Net fence length",
+            "bay_opening": "Opening per bay",
+            "total_posts": "Total posts",
+            "piece_picket": "pickets",
+            "piece_slat": "slats",
+            "summary_unavailable": "Fence layout is unavailable until the inputs are valid.",
+            "summary_title": "Fence picket spacing plan",
+            "summary_run": "Net fence length: {net} from {total} total run.",
+            "summary_posts": "{bays} bays, {posts} total posts, {spacing} actual post spacing.",
+            "summary_gap": "{pieces} {piece} per bay with an exact equal gap of {gap}.",
+            "print_title": "Fence Picket Spacing Shopping List",
+            "print": "Print list",
+            "copy": "Copy list",
+            "copied": "List copied",
+            "copy_failed": "Copy failed",
+            "visual_title": "Fence Bay Visualizer",
+            "mode_badge": "Mode: {mode}",
+            "gate_badge": "Gate deducted: {width}",
+            "visual_caption": "Each preview bay represents about {opening} of open span with {gap} equal gaps.",
+            "visual_caption_more": "Showing {shown} of {total} bays. Each bay represents about {opening} of open span with {gap} equal gaps.",
+            "validation": {
+              "run_length": "Total fence run must be greater than 0.",
+              "gate_count": "Gate openings cannot be negative.",
+              "gate_width": "Gate opening width cannot be negative.",
+              "post_spacing": "Maximum post spacing must be greater than 0.",
+              "post_width": "Post width must be greater than 0.",
+              "picket_width": "Picket width must be greater than 0.",
+              "slat_height": "Slat height must be greater than 0.",
+              "target_gap": "Target gap cannot be negative.",
+              "fence_height": "Fence height must be greater than 0.",
+              "stock_length": "Board stock length must be greater than 0.",
+              "rails": "Rails per bay must be at least 1.",
+              "waste": "Waste allowance cannot be negative.",
+              "gate_too_large": "Gate openings are equal to or longer than the total fence run.",
+              "no_bay_opening": "The calculated bay opening is 0. Check post width and post spacing.",
+              "piece_too_large": "The selected board size is too large for the available opening.",
+              "gap_notice": "The exact equal gap is far from the target gap. Try changing board size, run length, or post spacing.",
+              "spacing_near_limit": "Actual post spacing is close to the maximum. Confirm local code, soil, wind, and product requirements before building."
+            },
+            "materials": {
+              "title": "Printable Shopping List",
+              "item": "Item",
+              "qty": "Qty",
+              "note": "Planning note",
+              "empty": "Fix the input errors to build a shopping list.",
+              "line_posts": "Line/end posts",
+              "line_posts_note": "Based on {spacing} actual spacing across the net fence run.",
+              "gate_posts": "Gate posts",
+              "gate_posts_note": "Adds two posts for each gate opening.",
+              "pickets": "Fence pickets with waste",
+              "pickets_note": "{eachBay} pickets per bay, rounded up with {waste}% waste.",
+              "rails": "Rail boards",
+              "rails_note": "{pieces} rail pieces estimated from bay openings, converted to {stock} stock boards.",
+              "slats": "Horizontal slat boards",
+              "slats_note": "{pieces} cut slat pieces estimated, converted to {stock} stock boards with {waste}% waste.",
+              "total_posts": "Total posts",
+              "total_posts_note": "Line/end posts plus gate posts. Corner, terminal, and bracing details may add more."
+            },
+            "use_cases": {
+              "title": "DIY Fence Planning Tasks",
+              "description": "Use this fence picket spacing calculator before buying boards, setting posts, or laying out a horizontal fence panel.",
+              "items": [
+                {
+                  "title": "How many pickets do I need?",
+                  "description": "Enter the run length, gate openings, post spacing, picket width, and target gap to estimate pickets per bay and total pickets."
+                },
+                {
+                  "title": "Equal gap layout",
+                  "description": "Start with your preferred gap, then use the exact equal gap result to mark consistent spacing across every fence bay."
+                },
+                {
+                  "title": "Horizontal fence slats",
+                  "description": "Switch to horizontal mode to calculate slat rows, cut pieces per bay, and stock boards based on fence height and board length."
+                }
+              ]
+            },
+            "planning_guide": {
+              "title": "Fence Spacing Inputs Explained",
+              "description": "These planning inputs keep the calculator practical without pretending to replace local code, structural design, or product instructions.",
+              "item": "Input",
+              "value": "Common value",
+              "note": "How to use it",
+              "items": [
+                {
+                  "item": "Post spacing",
+                  "value": "6-8 ft",
+                  "note": "Many DIY wood fences are planned around this range, but conditions and codes vary."
+                },
+                {
+                  "item": "Privacy picket width",
+                  "value": "5.5 in",
+                  "note": "Common nominal 1x6 boards are often about 5.5 inches wide."
+                },
+                {
+                  "item": "Gate deduction",
+                  "value": "Opening width",
+                  "note": "Gate openings are subtracted from fence run length, then gate posts are counted separately."
+                },
+                {
+                  "item": "Waste allowance",
+                  "value": "10%",
+                  "note": "Use extra allowance for angled cuts, sorting boards, mistakes, and damaged stock."
+                }
+              ]
+            },
+            "faq": {
+              "title": "Fence Picket Spacing FAQ",
+              "description": "Answers for DIY users calculating fence pickets, post spacing, equal gaps, and horizontal slat layouts.",
+              "items": [
+                {
+                  "question": "How do I calculate how many fence pickets I need?",
+                  "answer": "Subtract gate openings from the total run, divide the remaining fence into bays based on maximum post spacing, then calculate pickets per bay from picket width and equal gap spacing. This calculator does those steps and adds a waste allowance."
+                },
+                {
+                  "question": "How does the equal gap calculation work?",
+                  "answer": "The calculator estimates the number of boards that fit in a bay, then distributes the remaining open space evenly across the gaps on both sides and between boards."
+                },
+                {
+                  "question": "Can I use this for horizontal fence slat spacing?",
+                  "answer": "Yes. Switch to horizontal slat mode. The calculator uses fence height, slat height, and target gap to solve slat rows, then estimates cut pieces and stock boards."
+                },
+                {
+                  "question": "Does the gate width count as fence boards?",
+                  "answer": "No. Gate openings are deducted from the fence run before bay spacing and board counts are calculated. Gate posts are listed separately in the shopping list."
+                },
+                {
+                  "question": "Is this a structural fence design tool?",
+                  "answer": "No. It is a layout and materials planning tool. Confirm local code, wind load, frost depth, soil conditions, fasteners, and manufacturer requirements before building."
+                }
+              ]
+            },
+            "page_title": "Fence Picket Spacing Calculator - Posts, Gates, Slats | TinyToolFlare",
+            "page_description": "Free fence picket spacing calculator with visual fence bays, gate deduction, post spacing, horizontal slat mode, equal gap math, and printable shopping list.",
+            "page_keywords": "fence picket spacing calculator, fence picket calculator, post spacing calculator, horizontal fence slat spacing calculator, how many pickets do I need, fence bay calculator, TinyToolFlare"
           }
         }
       },

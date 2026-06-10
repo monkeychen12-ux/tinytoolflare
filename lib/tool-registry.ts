@@ -5,6 +5,7 @@ export const toolIcons = {
   bmi_calculator: "RiBarChart2Line",
   raised_bed_soil_calculator: "RiSeedlingLine",
   unit_price_comparison_calculator: "RiScales3Line",
+  fence_picket_spacing_calculator: "RiRuler2Line",
   password_generator: "RiKey2Line",
   uuid_generator: "RiFingerprint2Line",
   qr_code_generator: "RiQrCodeLine",
@@ -27,6 +28,7 @@ export const toolLinks = {
   bmi_calculator: "/calculator/bmi",
   raised_bed_soil_calculator: "/raised-bed-soil-calculator",
   unit_price_comparison_calculator: "/unit-price-comparison-calculator",
+  fence_picket_spacing_calculator: "/fence-picket-spacing-calculator",
   password_generator: "/generator/password",
   uuid_generator: "/generator/uuid",
   classroom_seating_chart_generator: "/generator/classroom-seating-chart",
@@ -50,6 +52,7 @@ export const toolCategories = [
     tools: [
       "unit_price_comparison_calculator",
       "raised_bed_soil_calculator",
+      "fence_picket_spacing_calculator",
       "bmi_calculator",
     ],
   },

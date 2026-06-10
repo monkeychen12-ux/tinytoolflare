@@ -450,6 +450,176 @@
             "page_title": "Grocery Unit Price Calculator - 比较 Price Per Ounce | TinyToolFlare",
             "page_description": "免费 Grocery Unit Price Compare Calculator，比较 price per ounce、lb、g、ml、count、优惠券、多件折扣和 shrinkflation 包装缩水。",
             "page_keywords": "unit price calculator grocery, compare price per ounce, shrinkflation calculator, grocery unit price calculator, price per ounce calculator, 超市单价计算器, 包装缩水计算器, TinyToolFlare"
+          },
+          "fence_picket_spacing_calculator": {
+            "title": "Fence Picket Spacing Calculator",
+            "description": "计算栅栏木板数量、post spacing、等距缝隙、gate 扣除、horizontal slats，并生成可打印 DIY 采购清单。",
+            "tool_title": "规划栅栏木板和立柱",
+            "unit_system": "单位系统",
+            "imperial": "英尺 + 英寸",
+            "metric": "米 + 厘米",
+            "mode_label": "栅栏板模式",
+            "vertical_mode": "竖向 pickets",
+            "horizontal_mode": "横向 slats",
+            "presets": "常用预设",
+            "preset_privacy": "6 ft privacy fence",
+            "preset_spaced": "Spaced pickets",
+            "preset_horizontal": "Horizontal slats",
+            "run_length_label": "总栅栏长度 ({unit})",
+            "max_post_spacing_label": "最大 post spacing ({unit})",
+            "gate_count_label": "Gate openings 数量",
+            "gate_width_label": "每个 gate opening ({unit})",
+            "post_width_label": "Post 宽度 ({unit})",
+            "picket_width_label": "Picket 宽度 ({unit})",
+            "slat_height_label": "Slat 高度 ({unit})",
+            "target_gap_label": "目标缝隙 ({unit})",
+            "fence_height_label": "栅栏高度 ({unit})",
+            "stock_length_label": "板材原料长度 ({unit})",
+            "waste_label": "损耗余量 (%)",
+            "rails_per_bay_label": "每段 bay 的横梁数",
+            "local_title": "纯浏览器计算",
+            "local_text": "所有尺寸都在本地浏览器计算，不上传项目地址、施工计划或测量数据。",
+            "results_title": "栅栏布局结果",
+            "check_inputs": "检查输入",
+            "note": "提示",
+            "bay_count": "Fence bays",
+            "bay_spacing_detail": "实际 post spacing：{spacing}",
+            "exact_gap": "精确等距缝隙",
+            "pieces_per_bay": "每段 bay {count} 根 {piece}",
+            "net_fence_length": "扣除 gate 后长度",
+            "bay_opening": "每段 bay 净开口",
+            "total_posts": "总 posts",
+            "piece_picket": "pickets",
+            "piece_slat": "slats",
+            "summary_unavailable": "输入有效后才能生成 fence layout。",
+            "summary_title": "Fence picket spacing plan",
+            "summary_run": "扣除 gate 后长度：{net}，总长度：{total}。",
+            "summary_posts": "{bays} 段 bay，{posts} 根 posts，实际 post spacing 为 {spacing}。",
+            "summary_gap": "每段 bay {pieces} 根 {piece}，精确等距缝隙为 {gap}。",
+            "print_title": "Fence Picket Spacing 采购清单",
+            "print": "打印清单",
+            "copy": "复制清单",
+            "copied": "已复制",
+            "copy_failed": "复制失败",
+            "visual_title": "Fence Bay 可视化",
+            "mode_badge": "模式：{mode}",
+            "gate_badge": "已扣除 gate：{width}",
+            "visual_caption": "每个预览 bay 代表约 {opening} 净开口，等距缝隙为 {gap}。",
+            "visual_caption_more": "当前显示 {shown}/{total} 段 bay。每段代表约 {opening} 净开口，等距缝隙为 {gap}。",
+            "validation": {
+              "run_length": "总栅栏长度必须大于 0。",
+              "gate_count": "Gate openings 数量不能为负数。",
+              "gate_width": "Gate opening 宽度不能为负数。",
+              "post_spacing": "最大 post spacing 必须大于 0。",
+              "post_width": "Post 宽度必须大于 0。",
+              "picket_width": "Picket 宽度必须大于 0。",
+              "slat_height": "Slat 高度必须大于 0。",
+              "target_gap": "目标缝隙不能为负数。",
+              "fence_height": "栅栏高度必须大于 0。",
+              "stock_length": "板材原料长度必须大于 0。",
+              "rails": "每段 bay 的横梁数至少为 1。",
+              "waste": "损耗余量不能为负数。",
+              "gate_too_large": "Gate openings 总宽度已经等于或超过总栅栏长度。",
+              "no_bay_opening": "计算出的 bay 净开口为 0。请检查 post 宽度和 post spacing。",
+              "piece_too_large": "所选板材尺寸大于可用开口。",
+              "gap_notice": "精确等距缝隙与目标缝隙差距较大。可调整板宽、总长度或 post spacing。",
+              "spacing_near_limit": "实际 post spacing 接近最大值。施工前请确认当地规范、土壤、风载和产品要求。"
+            },
+            "materials": {
+              "title": "可打印采购清单",
+              "item": "项目",
+              "qty": "数量",
+              "note": "规划说明",
+              "empty": "修正输入错误后会生成采购清单。",
+              "line_posts": "Line/end posts",
+              "line_posts_note": "按扣除 gate 后长度和 {spacing} 实际 spacing 估算。",
+              "gate_posts": "Gate posts",
+              "gate_posts_note": "每个 gate opening 额外计 2 根 posts。",
+              "pickets": "Fence pickets（含损耗）",
+              "pickets_note": "每段 bay {eachBay} 根，按 {waste}% 损耗向上取整。",
+              "rails": "Rail boards",
+              "rails_note": "估算 {pieces} 根 rail pieces，并换算为 {stock} 原料板数量。",
+              "slats": "Horizontal slat boards",
+              "slats_note": "估算 {pieces} 根切割 slat pieces，并按 {stock} 原料板和 {waste}% 损耗换算。",
+              "total_posts": "Total posts",
+              "total_posts_note": "Line/end posts 加 gate posts。转角、终端、支撑可能需要更多材料。"
+            },
+            "use_cases": {
+              "title": "DIY 栅栏规划任务",
+              "description": "在购买木板、设置 posts 或规划 horizontal fence panel 之前，用这个 fence picket spacing calculator 快速估算。",
+              "items": [
+                {
+                  "title": "How many pickets do I need?",
+                  "description": "输入栅栏长度、gate openings、post spacing、picket 宽度和目标缝隙，估算每段 bay 和总 pickets 数量。"
+                },
+                {
+                  "title": "等距缝隙布局",
+                  "description": "先输入你想要的缝隙，再用精确等距结果标记每段 fence bay，让 spacing 更统一。"
+                },
+                {
+                  "title": "Horizontal fence slats",
+                  "description": "切换到 horizontal 模式，根据栅栏高度、slat 高度和板材原料长度估算层数、切割件和采购数量。"
+                }
+              ]
+            },
+            "planning_guide": {
+              "title": "Fence Spacing 输入说明",
+              "description": "这些输入用于快速 DIY 规划，但不替代当地规范、结构设计或产品安装说明。",
+              "item": "输入项",
+              "value": "常见值",
+              "note": "如何使用",
+              "items": [
+                {
+                  "item": "Post spacing",
+                  "value": "6-8 ft",
+                  "note": "许多 DIY 木栅栏会按这个范围规划，但实际受规范、土壤、风载和材料影响。"
+                },
+                {
+                  "item": "Privacy picket width",
+                  "value": "5.5 in",
+                  "note": "常见 nominal 1x6 木板实际宽度通常约为 5.5 inches。"
+                },
+                {
+                  "item": "Gate deduction",
+                  "value": "Opening width",
+                  "note": "Gate openings 会先从总长度扣除，gate posts 在清单中单独计算。"
+                },
+                {
+                  "item": "Waste allowance",
+                  "value": "10%",
+                  "note": "斜切、挑板、误差和损坏板材都可能增加损耗。"
+                }
+              ]
+            },
+            "faq": {
+              "title": "Fence Picket Spacing FAQ",
+              "description": "关于 fence pickets、post spacing、等距缝隙和 horizontal slat layout 的常见问题。",
+              "items": [
+                {
+                  "question": "How do I calculate how many fence pickets I need?",
+                  "answer": "先从总长度扣除 gate openings，再按最大 post spacing 拆成多个 bays，最后根据 picket 宽度和等距缝隙计算每段 bay 的 pickets。这个工具会自动完成这些步骤，并加入损耗余量。"
+                },
+                {
+                  "question": "等距缝隙是怎么计算的？",
+                  "answer": "工具会估算每段 bay 能放入多少板，然后把剩余开口平均分配到两侧和板与板之间的所有 gaps。"
+                },
+                {
+                  "question": "可以用于 horizontal fence slat spacing 吗？",
+                  "answer": "可以。切换到 horizontal slat 模式后，工具会使用栅栏高度、slat 高度和目标缝隙计算层数，再估算每段 bay 的切割件和原料板数量。"
+                },
+                {
+                  "question": "Gate 宽度会算进木板数量吗？",
+                  "answer": "不会。Gate openings 会先从 fence run 中扣除，再计算 bay spacing 和木板数量。Gate posts 会在采购清单中单独列出。"
+                },
+                {
+                  "question": "这是结构设计工具吗？",
+                  "answer": "不是。它是布局和材料规划工具。实际施工前仍需确认当地规范、风载、冻土深度、土壤条件、连接件和厂家安装要求。"
+                }
+              ]
+            },
+            "page_title": "Fence Picket Spacing Calculator - Posts, Gates, Slats | TinyToolFlare",
+            "page_description": "免费 Fence Picket Spacing Calculator，支持 fence bay 可视化、gate 扣除、post spacing、horizontal slat mode、等距缝隙和可打印采购清单。",
+            "page_keywords": "fence picket spacing calculator, fence picket calculator, post spacing calculator, horizontal fence slat spacing calculator, how many pickets do I need, fence bay calculator, 栅栏木板间距计算器, TinyToolFlare"
           }
         }
       },
