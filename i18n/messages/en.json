@@ -620,6 +620,141 @@
             "page_title": "Fence Picket Spacing Calculator - Posts, Gates, Slats | TinyToolFlare",
             "page_description": "Free fence picket spacing calculator with visual fence bays, gate deduction, post spacing, horizontal slat mode, equal gap math, and printable shopping list.",
             "page_keywords": "fence picket spacing calculator, fence picket calculator, post spacing calculator, horizontal fence slat spacing calculator, how many pickets do I need, fence bay calculator, TinyToolFlare"
+          },
+          "ai_model_cost_calculator": {
+            "title": "AI Model Cost & Context Calculator",
+            "description": "Estimate Claude Fable 5 and other Claude API costs for 1M context, output tokens, prompt caching, Batch API discounts, and Fable-to-Opus switching budgets.",
+            "tool_title": "Cost scenario",
+            "batch_label": "Batch API 50% discount",
+            "preset_1m": "1M context",
+            "preset_agent": "Agent loop",
+            "preset_batch": "Batch eval",
+            "model_label": "Model preset",
+            "compare_model_label": "Compare with",
+            "custom_model": "Custom rates",
+            "custom_rates_title": "Custom USD per MTok rates",
+            "input_rate": "Base input",
+            "cache_write_5m_rate": "5m cache write",
+            "cache_write_1h_rate": "1h cache write",
+            "cache_read_rate": "Cache hit/read",
+            "output_rate": "Output",
+            "context_window_label": "Context window tokens",
+            "requests_label": "Requests using this context",
+            "fresh_input_label": "Fresh input tokens/request",
+            "cached_tokens_label": "Shared cached context tokens",
+            "output_label": "Output tokens/request",
+            "cache_mode_label": "Prompt cache mode",
+            "cache_modes": {
+              "none": "No cache",
+              "5m": "5-minute cache write",
+              "1h": "1-hour cache write"
+            },
+            "source_title": "Pricing reference",
+            "source_text": "Preset rates are based on Anthropic Claude API pricing checked on June 9, 2026. Always verify before committing spend.",
+            "source_link": "Open official pricing",
+            "results_title": "Estimated cost",
+            "per_request": "{cost} average per request",
+            "context_warning_title": "Context window exceeded",
+            "context_warning_text": "This scenario is above the selected model context window of {context}. Reduce fresh input or cached context tokens.",
+            "line_items": {
+              "input": "Input tokens",
+              "fresh_input": "Fresh input tokens",
+              "cache_write": "Cache write tokens",
+              "cache_read": "Cache hit tokens",
+              "output": "Output tokens"
+            },
+            "context_title": "Long-context budget",
+            "context_detail": "{used} used out of {window} per request.",
+            "copy_summary": "Copy cost summary",
+            "copied": "Copied",
+            "switch_title": "Fable to Opus switch check",
+            "selected_model": "Selected",
+            "compare_model": "Comparison",
+            "switch_delta_title": "Switching impact",
+            "switch_delta_text": "The selected model is {amount} ({percent}%) {direction} than the comparison model for this scenario.",
+            "more_expensive": "more expensive",
+            "less_expensive": "less expensive",
+            "cache_title": "Cache break-even",
+            "break_even_5m": "5-minute cache pays off after",
+            "break_even_1h": "1-hour cache pays off after",
+            "reads_count": "{count} cache read(s)",
+            "cache_savings_title": "Current cache savings",
+            "cache_disabled_text": "Caching is disabled, so the shared context is billed as normal input on every request.",
+            "cache_savings_text": "Caching saves about {amount} versus {noCache} with no cache for the same requests and Batch setting.",
+            "yes": "Yes",
+            "no": "No",
+            "copy_model": "Model",
+            "copy_requests": "Requests",
+            "copy_context": "Context used",
+            "copy_cache": "Cache mode",
+            "copy_batch": "Batch discount",
+            "copy_total": "Estimated total",
+            "copy_compare": "Comparison total",
+            "use_cases": {
+              "title": "When to use this calculator",
+              "items": [
+                {
+                  "title": "Budget a 1M-context Claude Fable 5 call",
+                  "description": "Enter a long prompt, expected output, and request count to see whether a million-token context fits your per-run budget."
+                },
+                {
+                  "title": "Compare Fable with Opus before switching",
+                  "description": "Use the side-by-side model total to estimate the premium or savings when routing the same workload between Fable, Opus, Sonnet, or Haiku."
+                },
+                {
+                  "title": "Check whether prompt caching is worth it",
+                  "description": "Separate fresh input from shared context and see the cache write, cache hit, and no-cache totals before designing your API flow."
+                }
+              ]
+            },
+            "pricing_notes": {
+              "title": "Pricing assumptions in this tool",
+              "items": [
+                {
+                  "title": "Rates are per million tokens",
+                  "description": "The calculator uses USD per MTok for base input, cache writes, cache hits, and output. It does not estimate provider taxes, enterprise discounts, or marketplace-specific pricing."
+                },
+                {
+                  "title": "Batch discount stacks with caching",
+                  "description": "When Batch API is enabled, the tool applies the 50% discount to input, output, cache write, and cache read line items because Anthropic says Batch and prompt caching discounts can be combined."
+                },
+                {
+                  "title": "Long context is still token billing",
+                  "description": "Fable 5, Opus 4.8/4.7/4.6, and Sonnet 4.6 presets use a 1M token window at standard rates. A 900K prompt costs much more than a 9K prompt even without a separate long-context surcharge."
+                }
+              ]
+            },
+            "rate_table_title": "Quick preset rates",
+            "output_short": "Output {rate}",
+            "faq": {
+              "title": "AI model cost calculator FAQ",
+              "description": "Quick answers for Claude Fable 5 cost, cache break-even, Batch API discounts, and long-context budgeting.",
+              "items": [
+                {
+                  "question": "How much does 1M context cost on Claude Fable 5?",
+                  "answer": "Using the current preset, 1M input tokens on Claude Fable 5 costs $10 before output tokens, cache writes, Batch discounts, or other modifiers. Output is billed separately at the output token rate."
+                },
+                {
+                  "question": "When does Claude prompt caching pay off?",
+                  "answer": "With the current Claude multipliers, a 5-minute cache write pays off after one cache read, while a 1-hour cache write pays off after two cache reads. The calculator shows the exact break-even for the selected rates."
+                },
+                {
+                  "question": "Does the Batch API discount output tokens too?",
+                  "answer": "Yes. Anthropic lists Batch API pricing as a 50% discount on both input and output tokens. This calculator also applies the discount to prompt cache line items because the pricing docs say those modifiers stack."
+                },
+                {
+                  "question": "Is this only for Claude Fable 5?",
+                  "answer": "No. Fable 5 is the default because it is a high-cost long-context use case, but the model dropdown also includes Opus, Sonnet, Haiku, and editable custom rates."
+                },
+                {
+                  "question": "Why does my cached scenario still include fresh input cost?",
+                  "answer": "Prompt caching only discounts the stable context that can be reused. New user messages, tool results, retrieved documents, and output tokens are still billed separately."
+                }
+              ]
+            },
+            "page_title": "Claude Fable 5 Cost Calculator - AI Model Context, Cache and Batch Pricing | TinyToolFlare",
+            "page_description": "Free AI model cost calculator for Claude Fable 5, Opus, Sonnet and Haiku. Estimate 1M context costs, output tokens, prompt cache break-even, Batch API discounts and model switching budgets.",
+            "page_keywords": "Claude Fable 5 cost calculator, AI model cost calculator, Claude API pricing calculator, 1M context calculator, prompt cache break even, batch API discount calculator, Claude Opus cost comparison, TinyToolFlare"
           }
         }
       },

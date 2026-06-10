@@ -620,6 +620,141 @@
             "page_title": "Fence Picket Spacing Calculator - Posts, Gates, Slats | TinyToolFlare",
             "page_description": "免费 Fence Picket Spacing Calculator，支持 fence bay 可视化、gate 扣除、post spacing、horizontal slat mode、等距缝隙和可打印采购清单。",
             "page_keywords": "fence picket spacing calculator, fence picket calculator, post spacing calculator, horizontal fence slat spacing calculator, how many pickets do I need, fence bay calculator, 栅栏木板间距计算器, TinyToolFlare"
+          },
+          "ai_model_cost_calculator": {
+            "title": "AI 模型成本与上下文计算器",
+            "description": "估算 Claude Fable 5 和其他 Claude API 的 1M context、输出 token、prompt caching、Batch API 50% 折扣，以及 Fable 切到 Opus 的预算差异。",
+            "tool_title": "成本场景",
+            "batch_label": "Batch API 50% 折扣",
+            "preset_1m": "1M 上下文",
+            "preset_agent": "Agent 循环",
+            "preset_batch": "批量评测",
+            "model_label": "模型预设",
+            "compare_model_label": "对比模型",
+            "custom_model": "自定义单价",
+            "custom_rates_title": "自定义 USD/MTok 单价",
+            "input_rate": "基础输入",
+            "cache_write_5m_rate": "5 分钟 cache 写入",
+            "cache_write_1h_rate": "1 小时 cache 写入",
+            "cache_read_rate": "Cache hit/read",
+            "output_rate": "输出",
+            "context_window_label": "上下文窗口 token",
+            "requests_label": "复用该上下文的请求数",
+            "fresh_input_label": "每次 fresh input token",
+            "cached_tokens_label": "共享可缓存上下文 token",
+            "output_label": "每次输出 token",
+            "cache_mode_label": "Prompt cache 模式",
+            "cache_modes": {
+              "none": "不使用 cache",
+              "5m": "5 分钟 cache 写入",
+              "1h": "1 小时 cache 写入"
+            },
+            "source_title": "价格来源",
+            "source_text": "预设价格基于 2026-06-09 查询到的 Anthropic Claude API pricing；真正花钱前请再核对官方页面。",
+            "source_link": "打开官方价格页",
+            "results_title": "预计成本",
+            "per_request": "平均每次请求 {cost}",
+            "context_warning_title": "超过上下文窗口",
+            "context_warning_text": "当前场景超过所选模型 {context} 的上下文窗口。请减少 fresh input 或 cached context token。",
+            "line_items": {
+              "input": "输入 token",
+              "fresh_input": "Fresh input token",
+              "cache_write": "Cache 写入 token",
+              "cache_read": "Cache hit token",
+              "output": "输出 token"
+            },
+            "context_title": "长上下文预算",
+            "context_detail": "每次请求使用 {used} / {window}。",
+            "copy_summary": "复制成本摘要",
+            "copied": "已复制",
+            "switch_title": "Fable 切 Opus 成本对比",
+            "selected_model": "当前模型",
+            "compare_model": "对比模型",
+            "switch_delta_title": "切换影响",
+            "switch_delta_text": "在这个场景下，当前模型比对比模型{direction} {amount}（{percent}%）。",
+            "more_expensive": "更贵",
+            "less_expensive": "更便宜",
+            "cache_title": "Cache 回本点",
+            "break_even_5m": "5 分钟 cache 回本需要",
+            "break_even_1h": "1 小时 cache 回本需要",
+            "reads_count": "{count} 次 cache read",
+            "cache_savings_title": "当前 cache 节省",
+            "cache_disabled_text": "当前未启用 cache，共享上下文会在每次请求中按普通 input 计费。",
+            "cache_savings_text": "在相同请求数和 Batch 设置下，cache 相比不使用 cache 约节省 {amount}；不使用 cache 约为 {noCache}。",
+            "yes": "是",
+            "no": "否",
+            "copy_model": "模型",
+            "copy_requests": "请求数",
+            "copy_context": "上下文使用量",
+            "copy_cache": "Cache 模式",
+            "copy_batch": "Batch 折扣",
+            "copy_total": "预计总价",
+            "copy_compare": "对比总价",
+            "use_cases": {
+              "title": "适合用来估算什么",
+              "items": [
+                {
+                  "title": "估算 Claude Fable 5 的 1M context 预算",
+                  "description": "输入长 prompt、预计输出和请求次数，快速判断百万 token 上下文是否符合你的单次或批量预算。"
+                },
+                {
+                  "title": "Fable 和 Opus 切换前先算差价",
+                  "description": "用侧边对比结果估算同一工作负载在 Fable、Opus、Sonnet、Haiku 之间路由时的成本差异。"
+                },
+                {
+                  "title": "判断 prompt caching 是否值得做",
+                  "description": "把 fresh input 和稳定共享上下文拆开，查看 cache write、cache hit 和完全不使用 cache 的成本。"
+                }
+              ]
+            },
+            "pricing_notes": {
+              "title": "本工具的计费假设",
+              "items": [
+                {
+                  "title": "价格按每百万 token 计算",
+                  "description": "计算器使用 USD/MTok 来估算基础输入、cache 写入、cache hit 和输出。不包含税费、企业折扣或云市场的特殊价格。"
+                },
+                {
+                  "title": "Batch 折扣可与 cache 叠加",
+                  "description": "开启 Batch API 时，本工具对 input、output、cache write 和 cache read 都应用 50% 折扣，因为官方价格页说明 Batch 与 prompt caching modifier 可以组合。"
+                },
+                {
+                  "title": "长上下文本质仍是 token 计费",
+                  "description": "Fable 5、Opus 4.8/4.7/4.6、Sonnet 4.6 预设按 1M 窗口处理。即使没有额外长上下文附加费，900K prompt 也会比 9K prompt 贵很多。"
+                }
+              ]
+            },
+            "rate_table_title": "常用预设单价",
+            "output_short": "输出 {rate}",
+            "faq": {
+              "title": "AI 模型成本计算器常见问题",
+              "description": "关于 Claude Fable 5 成本、cache 回本、Batch API 折扣和长上下文预算的快速答案。",
+              "items": [
+                {
+                  "question": "Claude Fable 5 的 1M context 大概多少钱？",
+                  "answer": "按当前预设，Claude Fable 5 的 1M input token 在不考虑输出、cache、Batch 或其他 modifier 前是 10 美元。输出 token 会按输出单价另算。"
+                },
+                {
+                  "question": "Claude prompt caching 什么时候回本？",
+                  "answer": "按当前 Claude multiplier，5 分钟 cache 写入通常一次 cache read 后就回本；1 小时 cache 写入通常两次 cache read 后回本。本工具会按所选模型单价显示回本点。"
+                },
+                {
+                  "question": "Batch API 折扣也适用于输出 token 吗？",
+                  "answer": "是。Anthropic 将 Batch API 列为 input 和 output 都 50% 折扣。由于官方文档说明 Batch 与 prompt caching modifier 可叠加，本工具也把折扣应用到 cache 相关行项。"
+                },
+                {
+                  "question": "这个工具只适合 Claude Fable 5 吗？",
+                  "answer": "不是。Fable 5 是默认值，因为它适合高成本长上下文预算场景；下拉框也包含 Opus、Sonnet、Haiku 和可编辑自定义单价。"
+                },
+                {
+                  "question": "为什么启用 cache 后仍然有 fresh input 成本？",
+                  "answer": "Prompt caching 只降低可复用稳定上下文的成本。新的用户消息、工具结果、检索文档和输出 token 仍然需要单独计费。"
+                }
+              ]
+            },
+            "page_title": "Claude Fable 5 成本计算器 - AI 模型上下文、Cache 与 Batch 价格 | TinyToolFlare",
+            "page_description": "免费 AI 模型成本计算器，支持 Claude Fable 5、Opus、Sonnet、Haiku，估算 1M context、输出 token、prompt cache 回本、Batch API 折扣和模型切换预算。",
+            "page_keywords": "Claude Fable 5 cost calculator, AI model cost calculator, Claude API pricing calculator, 1M context calculator, prompt cache break even, batch API discount calculator, Claude Opus cost comparison, AI模型成本计算器, TinyToolFlare"
           }
         }
       },
