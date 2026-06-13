@@ -968,9 +968,9 @@
             "faq_how_to_use_note3": "- 自动生成常用HTML代码，集成更便捷。"
           },
           "text_card_generator": {
-            "title": "文字卡片生成器",
-            "description": "生成适合社交平台分享的文字卡片，支持多种主流分享风格、关键词高亮、作者信息和 PNG 下载。",
-            "editor_title": "制作文字卡片",
+            "title": "分享卡片生成器",
+            "description": "生成适合社交平台分享的观点卡片、通知卡片和短句海报，支持多种主流分享风格、关键词高亮、作者信息和 PNG 下载。",
+            "editor_title": "制作分享卡片",
             "text_label": "卡片文字",
             "style_label": "样式",
             "size_label": "画布尺寸",
@@ -1013,18 +1013,18 @@
               "story": "Story 9:16"
             },
             "defaults": {
-              "text": "中大怎么又烧起来了\n有没有现场的同志讲讲具体情况",
-              "highlight": "中大,现场",
-              "author": "盐然一夏",
+              "text": "把一句话做成卡片\n比截图更清楚\n也更适合分享",
+              "highlight": "卡片,分享",
+              "author": "灵感手账",
               "footer": "10:31 Sunday"
             },
             "templates": {
               "items": [
                 {
                   "key": "breaking",
-                  "label": "热点追问",
-                  "text": "中大怎么又烧起来了\n有没有现场的同志讲讲具体情况",
-                  "highlight": "中大,现场",
+                  "label": "分享开场",
+                  "text": "把一句话做成卡片\n比截图更清楚\n也更适合分享",
+                  "highlight": "卡片,分享",
                   "footer": "10:31 Sunday"
                 },
                 {
@@ -1068,7 +1068,7 @@
               ]
             },
             "faq": {
-              "title": "文字卡片生成器常见问题",
+              "title": "分享卡片生成器常见问题",
               "items": [
                 {
                   "question": "可以做类似短视频平台的黑底文字卡片吗？",
@@ -1088,9 +1088,9 @@
                 }
               ]
             },
-            "page_title": "文字卡片生成器 - 社交平台文字图片制作工具 | TinyToolFlare",
-            "page_description": "免费文字卡片生成器，制作 quote card、短视频黑底文字图、小红书笔记风格卡片、Story 分享图，支持关键词高亮和本地 PNG 导出。",
-            "page_keywords": "文字卡片生成器, 文字图片制作, quote card maker, 社交分享图, 小红书文字卡片, 短视频文字图, TinyToolFlare"
+            "page_title": "分享卡片生成器 - 社交平台文字图片制作工具 | TinyToolFlare",
+            "page_description": "免费分享卡片生成器，制作 quote card、短视频黑底文字图、小红书笔记风格卡片、Story 分享图，支持关键词高亮和本地 PNG 导出。",
+            "page_keywords": "分享卡片生成器, 文字图片制作, quote card maker, 社交分享图, 小红书文字卡片, 短视频文字图, TinyToolFlare"
           }
         }
       },
